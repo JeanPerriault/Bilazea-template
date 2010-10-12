@@ -1,0 +1,7 @@
+Bilazea template is the PHP/AJAX/HTML used on http://bilazea.com
+
+It is a very simple framework designed creating quickly a website.
+
+- Main language used is PHP, to create navigation stuff mainly
+- MOOTOOLS, XHTML and CSS are used to present content
+
