@@ -1,7 +1,10 @@
 Bilazea template is the PHP/AJAX/HTML used on http://bilazea.com
 
-It is a very simple framework designed creating quickly a website.
+It is a very simple framework designed to create quickly a website.
 
 - Main language used is PHP, to create navigation stuff mainly
 - MOOTOOLS, XHTML and CSS are used to present content
 
+
+
+MOOTOOLS is on github: http://github.com/mootools/mootools-core
