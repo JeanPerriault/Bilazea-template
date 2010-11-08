@@ -1,0 +1,132 @@
+; File:
+; inc/lang/es.lng
+; 
+; Description:
+; This file contains all variables in spanich
+;
+; Date:
+; 2010/10/10
+;
+; Author:
+; Bilazea.com - Jean Perriault <bilazea@aol.fr>
+; Copyright:
+; Copyright (c) 2000-2010, Bilazea.com Agence web
+
+
+[General]
+SITE_NAME = "Bilazea - Web template"
+SITE_NAME2 = "Bilazea"
+SITE_DESC = "Web template"
+SITE_TITLE_H1 = "TPL Bilazea"
+LEFT_TITLE = "B<br />I<br />L<br />A<br />Z<br />E<br />A"
+RSS = "RSS 2.0"
+RSS_DESC = "Reciba las últimas noticias del sitio con tu lector de feeds."
+COPYRIGHT = "©2000-2010, Bilazea.com - Agencia web"
+COPYRIGHT2 = "Copyright (c) 2000-2010, Bilazea.com - Agencia web"
+GO_TO_HOME = "Ir a la página principal"
+GO_TO_TOP = "Retourner en haut"
+MADE_WITH = "Sitio desarrollado con"
+SITE_MAP = "Mapa del sitio"
+MAP = "Mapa"
+APTANA = "Aptana"
+APTANA_HOME = "Aller sur le site d'Aptana"
+LINKS = "Enlaces"
+MORE_ON = "Más información sobre la página"
+OPEN_PANEL = "Abrir esta parte"
+CLOSE_PANEL = "Cerrar esta parte"
+SITE_ASIDE_TEXT = "Guardar un árbol: Coma un castor !"
+CONTENT = "contenido"
+ARTICLE = "artículo"
+CONTACTS = "Contactos"
+CONTACTS_DESC = "Póngase en contacto con Bilazea.com"
+LANGUAGE = "Idioma"
+DOCUMENTATION = "Documentación"
+LOAD_MSG = "Cargando..."
+ERROR_DESC = "Descripción del error"
+ERROR_TYPE_DESC = "El servidor devuelve un error"
+DIR_NOT_EXIST_BG = "Error: El directorio"
+DIR_NOT_EXIST_END = "no existe"
+FILE_NOT_EXIST = "Error: el archivo no existe"
+OPEN_DIR = "Abrir carpeta"
+OPEN_DIR_DESC_BG = "Demostración de"
+OPEN_DIR_DESC_END = ""
+CONSTRUCT_MSG = "Lo sentimos pero el sitio está actualmente cerrado por 
+mantenimiento. Gracias, vuelva más tarde!"
+MAINTENANCE = "Mantenimiento"
+PREVIOUS_PAGE = "Página anterior"
+
+[Meta]
+META_CONTENT_KEY_VALUE = "Lorem ipsum dolor sit amet, consectetuer adipiscing 
+elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing 
+nec, ultricies sed, dolor. Cras elementum ultrices diam."
+META_CONTENT_DESC_VALUE = "Lorem ipsum dolor sit amet, consectetuer adipiscing 
+elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing 
+nec, ultricies sed, dolor. Cras elementum ultrices diam."
+
+[Last/Most read]
+LAST_NEWS = "Últimas noticias"
+MOST_READ = "Más vistos"
+
+[Bilazea]
+SITE_FOOTER_LINK1_L = "Bilazea.com"
+SITE_DESC_FOOTER_LINK1_L = "Bilazea - Web agency"
+SITE_FOOTER_LINK2_L = "ENLACE 2 L"
+SITE_DESC_FOOTER_LINK2_L = "Descripción enlace 2 L"
+SITE_FOOTER_LINK3_L = "ENLACE 3 L"
+SITE_DESC_FOOTER_LINK3_L = "Descripción enlace 3 L"
+SITE_FOOTER_LINK4_L = "ENLACE 4 L"
+SITE_DESC_FOOTER_LINK4_L = "Descripción enlace 4 L"
+SITE_FOOTER_LINK5_L = "ENLACE 5 L"
+SITE_DESC_FOOTER_LINK5_L = "Descripción enlace 5 L"
+
+SITE_FOOTER_LINK1_R = "Mootools"
+SITE_DESC_FOOTER_LINK1_R = "Mootools.net"
+SITE_FOOTER_LINK2_R = "Reflexion.js"
+SITE_DESC_FOOTER_LINK2_R = "Script Reflexion.js"
+SITE_FOOTER_LINK3_R = "Aptana"
+SITE_DESC_FOOTER_LINK3_R = "Editor Aptana"
+
+[Valid]
+FOOTER_VALID_XHTML1 = "Validator W3C XHTML"
+FOOTER_VALID_XHTML2 = "XHTML válid"
+FOOTER_VALID_CSS1 = "Validator W3C CSS"
+FOOTER_VALID_CSS2 = "CSS válid"
+FOOTER_VALID_ACCESS1 = "Validator de accesibilidad Ocawa"
+FOOTER_VALID_ACCESS2 = "Accesibilidad válida"
+
+[Error]
+TITLE_PAGE_ERR_400 = "Bilazea.com - Error 400"
+TYPE_ERR_400 = "400"
+TITLE_PAGE_ERR_401 = "Bilazea.com - Error 401"
+TYPE_ERR_401 = "401"
+TITLE_PAGE_ERR_403 = "Bilazea.com - Error 403"
+TYPE_ERR_403 = "403"
+TITLE_PAGE_ERR_404 = "Bilazea.com - Error 404"
+TYPE_ERR_404 = "404"
+TITLE_PAGE_ERR_500 = "Bilazea.com - Error 500"
+TYPE_ERR_500 = "500"
+
+
+[Site]
+CAT_0 = "Inicio"
+DOWNLOAD = "DESCARGAR"
+DAILY_VIDEO = "VIDEO DEL DÍA"
+
+[Categories]
+CAT_1 = "Categoría 1"
+CAT_1_1 = "Categoría 1 - 1"
+CAT_1_2 = "Categoría 1 - 2"
+CAT_1_3 = "Categoría 1 - 3"
+CAT_1_4 = "Categoría 1 - 4"
+
+CAT_2 = "Categoría 2"
+CAT_2_1 = "Categoría 2 - 1"
+CAT_2_2 = "Categoría 2 - 2"
+CAT_2_3 = "Categoría 2 - 3"
+
+CAT_3 = "Categoría 3"
+CAT_3_1 = "Categoría 3 - 1"
+CAT_3_2 = "Categoría 3 - 2"
+
+CAT_4 = "Catégorie 4"
+CAT_4_1 = "Categoría 4 - 1"

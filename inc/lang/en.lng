@@ -1,0 +1,132 @@
+; File:
+; inc/lang/en.lng
+; 
+; Description:
+; This file contains all variables in english
+;
+; Date:
+; 2010/10/10
+;
+; Author:
+; Bilazea.com - Jean Perriault <bilazea@aol.fr>
+; Copyright:
+; Copyright (c) 2000-2010, Bilazea.com Agence web
+
+
+[General]
+SITE_NAME = "Bilazea - Web template"
+SITE_NAME2 = "Bilazea"
+SITE_DESC = "Web template"
+SITE_TITLE_H1 = "TPL Bilazea"
+LEFT_TITLE = "B<br />I<br />L<br />A<br />Z<br />E<br />A"
+RSS = "RSS 2.0"
+RSS_DESC = "Get the latest news from the site with your feed reader."
+COPYRIGHT = "©2000-2010, Bilazea.com - Web agency"
+COPYRIGHT2 = "Copyright (c) 2000-2010, Bilazea.com - Web agency"
+GO_TO_HOME = "Go to homepage"
+GO_TO_TOP = "Go to top"
+MADE_WITH = "Site created with"
+SITE_MAP = "Map site"
+MAP = "Map"
+APTANA = "Aptana"
+APTANA_HOME = "Go to Aptana website"
+LINKS = "Links"
+MORE_ON = "More information about the page"
+OPEN_PANEL = "Open this part"
+CLOSE_PANEL = "Close this part"
+SITE_ASIDE_TEXT = "Save a tree: Eat a beaver!"
+CONTENT = "content"
+ARTICLE = "article"
+CONTACTS = "Contacts"
+CONTACTS_DESC = "Contact Bilazea.com by mail"
+LANGUAGE = "Languages"
+DOCUMENTATION = "Documentation"
+LOAD_MSG = "Loading..."
+ERROR_DESC = "Error description"
+ERROR_TYPE_DESC = "The server returns an error"
+DIR_NOT_EXIST_BG = "Error: directory doesn't exist"
+DIR_NOT_EXIST_END = "doesn't exist"
+FILE_NOT_EXIST = "Error: directory doesn't exist"
+OPEN_DIR = "Open folder"
+OPEN_DIR_DESC_BG = "Demonstration"
+OPEN_DIR_DESC_END = ""
+CONSTRUCT_MSG = "Sorry but the site is currently down for maintenance. 
+Please come back a few later!"
+MAINTENANCE = "Maintenance"
+PREVIOUS_PAGE = "Previous Page"
+
+[Meta]
+META_CONTENT_KEY_VALUE = "Lorem ipsum dolor sit amet, consectetuer adipiscing 
+elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing 
+nec, ultricies sed, dolor. Cras elementum ultrices diam."
+META_CONTENT_DESC_VALUE = "Lorem ipsum dolor sit amet, consectetuer adipiscing 
+elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing 
+nec, ultricies sed, dolor. Cras elementum ultrices diam."
+
+[Last/Most read]
+LAST_NEWS = "Latest articles"
+MOST_READ = "Most viewed"
+
+[Footer]
+SITE_FOOTER_LINK1_L = "Bilazea.com"
+SITE_DESC_FOOTER_LINK1_L = "Bilazea - Web agency"
+SITE_FOOTER_LINK2_L = "LIEN 2 L"
+SITE_DESC_FOOTER_LINK2_L = "Link 2 description L"
+SITE_FOOTER_LINK3_L = "LIEN 3 L"
+SITE_DESC_FOOTER_LINK3_L = "Link 3 description L"
+SITE_FOOTER_LINK4_L = "LIEN 4 L"
+SITE_DESC_FOOTER_LINK4_L = "Link 4 description L"
+SITE_FOOTER_LINK5_L = "LIEN 5 L"
+SITE_DESC_FOOTER_LINK5_L = "Link 5 description L"
+
+SITE_FOOTER_LINK1_R = "Mootools"
+SITE_DESC_FOOTER_LINK1_R = "Mootools.net"
+SITE_FOOTER_LINK2_R = "Reflexion.js"
+SITE_DESC_FOOTER_LINK2_R = "Reflexion.js script"
+SITE_FOOTER_LINK3_R = "Aptana"
+SITE_DESC_FOOTER_LINK3_R = "Aptana editor"
+
+[Valid]
+FOOTER_VALID_XHTML1 = "W3C XHTML validator"
+FOOTER_VALID_XHTML2 = "Valid XHTML"
+FOOTER_VALID_CSS1 = "W3C CSS validator"
+FOOTER_VALID_CSS2 = "Valid CSS"
+FOOTER_VALID_ACCESS1 = "Ocawa accessibility validator"
+FOOTER_VALID_ACCESS2 = "Valid accessibility"
+
+[Error]
+TITLE_PAGE_ERR_400 = "Bilazea.com - Error 400"
+TYPE_ERR_400 = "400"
+TITLE_PAGE_ERR_401 = "Bilazea.com - Error 401"
+TYPE_ERR_401 = "401"
+TITLE_PAGE_ERR_403 = "Bilazea.com - Error 403"
+TYPE_ERR_403 = "403"
+TITLE_PAGE_ERR_404 = "Bilazea.com - Error 404"
+TYPE_ERR_404 = "404"
+TITLE_PAGE_ERR_500 = "Bilazea.com - Error 500"
+TYPE_ERR_500 = "500"
+
+
+[Site]
+CAT_0 = "Home"
+DOWNLOAD = "DOWNLOAD"
+DAILY_VIDEO = "VIDEO OF THE DAY"
+
+[Categories]
+CAT_1 = "Category 1"
+CAT_1_1 = "Category 1 - 1"
+CAT_1_2 = "Category 1 - 2"
+CAT_1_3 = "Category 1 - 3"
+CAT_1_4 = "Category 1 - 4"
+
+CAT_2 = "Category 2"
+CAT_2_1 = "Category 2 - 1"
+CAT_2_2 = "Category 2 - 2"
+CAT_2_3 = "Category 2 - 3"
+
+CAT_3 = "Category 3"
+CAT_3_1 = "Category 3 - 1"
+CAT_3_2 = "Category 3 - 2"
+
+CAT_4 = "Category 4"
+CAT_4_1 = "Category 4 - 1"

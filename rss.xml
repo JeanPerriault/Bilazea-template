@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+  <channel>
+    <title>Bilazea - Web template</title>
+    <link>http://bilazea.com</link>
+    <description>Les news de Bilazea.com</description>
+
+    <item>
+      <title>Le site web de Bilazea.com</title>
+      <link>http://bilazea.com/</link>
+      <guid isPermaLink="true">http://bilazea.com</guid>
+      <description>Le site http://bilazea.com vous presente l'agence web Bilzea.</description>
+      <pubDate>Mer., 26 Mai 2010 19:30:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Le site web de Jean Perriault</title>
+      <link>http://jean-perriault.com/</link>
+      <guid isPermaLink="true">http://jean-perriault.com</guid>
+      <description>Le site http://jean-perriault.com vous presente Jean Perriault.</description>
+      <pubDate>Mer., 26 Mai 2010 19:30:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Le site web du Collectif Chauffe !</title>
+      <link>http://collectif-chauffe.com</link>
+      <guid isPermaLink="true">http://collectif-chauffe.com</guid>
+      <description>Le site http://collectif-chauffe.com vous presente le groupe Meylanais Collectif Chauffe.</description>
+      <pubDate>Mer., 26 Mai 2010 19:30:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Le site web du Serpent Grenoblois</title>
+      <link>http://serpent-grenoblois.com</link>
+      <guid isPermaLink="true">http://serpent-grenoblois.com</guid>
+      <description>Le site http://serpent-grenoblois.com vous presente l'association.</description>
+      <pubDate>Mar., 25 Mai 2010 19:30:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Le site web de Jùan Alézaïs</title>
+      <link>http://juan-alezais.com/</link>
+      <guid isPermaLink="true">http://juan-alezais.com</guid>
+      <description>Le site http://juan-alezais.com vous presente Jùan Alézaïs.</description>
+      <pubDate>Mer., 26 Mai 2010 19:30:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

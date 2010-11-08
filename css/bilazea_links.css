@@ -1,0 +1,139 @@
+/**
+ * File:
+ * css/bilazea_links.css
+ * 
+ * Description:
+ * This file contains css used for links in Bilazea template
+ * 
+ * Date:
+ * 2010/10/10
+ * 
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
+ * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
+ */
+
+/* LINKS *********************************************************************/
+
+/* GENERAL *******************************************************************/
+a,a:visited,a:link{
+  color:#DDD;
+  text-decoration:none;
+}
+a:hover{
+  color:#FFF;
+}
+
+
+/* TITLE *********************************************************************/
+a.title,a:visited.title,a:link.title{
+  color:#DDD;
+  text-decoration:none;
+  font-size:1.8em;
+}
+a:hover.title{
+  color:#FFF;
+}
+
+/* SMOOTH ANCHORS ************************************************************/
+a.smoothAnchors{
+  cursor:pointer;
+}
+
+/* MENU **********************************************************************/
+a.menu,a:visited.menu,a:link.menu{
+  text-align:center;
+  float:left;
+  background:#222;
+  color:#EEE;
+  padding-top:5px;
+  margin-right:5px;
+  height:25px;
+  display:block;
+  width:120px;
+  border-left:1px #444 solid;
+  border-bottom:1px #444 solid;
+  text-decoration:none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+a:hover.menu{
+  font-size:1.1em;
+  height:28px;
+  background:#333;
+  color:#FFF;
+}
+
+a.activeMenu{
+  font-size:1.1em !important;
+  height:28px !important;
+  background:#555 !important;
+}
+
+/* FIXED TITLE ***************************************************************/
+a.fixedTitleLeft{
+  color:#646464;
+  display:block;
+  font-family:"Arial Black";
+  font-size:89px;
+  line-height:1;
+  overflow:hidden;
+  position:fixed;
+  text-align:center;
+  width:90px;
+}
+
+
+/* LANG **********************************************************************/
+a.lang,a:visited.lang,a:link.lang{
+  color:#646464;
+}
+
+a:hover.lang{
+  color:#DDDDDD;
+}
+
+
+/* EXTERNAL LINK *************************************************************/
+a.externalLink{
+  padding-right:15px;
+  background:url('../img/externalLink.gif') center right no-repeat;
+}
+a:hover.externalLink{
+  background:url('../img/externalLink_h.gif') center right no-repeat;
+}
+
+a.closeImg{
+  width:30px;
+  height:30px;
+  float:right;
+  background:url('../img/panel.gif') 0 0 no-repeat;
+}
+a:hover.closeImg{
+  background:url('../img/panel_h.gif') 0 0 no-repeat;
+}
+
+a.openImg{
+  height:10px;
+  background:#DDD;
+  width:800px;
+  display:block;
+  margin: 0px auto;
+  width:30px;
+  height:25px;
+  background:url('../img/panel.gif') 0 0 no-repeat;
+}
+a:hover.openImg{
+  background:url('../img/panel_h2.gif') 0 0 no-repeat;
+}
+
+
+a.iconHideLan{
+  background:url('../img/settings.gif') 0 0 no-repeat;
+  float:right;
+  width:16px;
+  height:16px;
+}
+a:hover.iconHideLan{
+  background:url('../img/settings_h.gif') 0 0 no-repeat;
+}
+
