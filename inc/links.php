@@ -19,7 +19,7 @@
 
   /////////////////////////////////////////////////////////////////////////////
   // GENERAL LINKS
-  define(LINK_WEBSITE,            'http://localhost/bilazea/');
+  define(LINK_WEBSITE,            'http://localhost/Bilazea-template/');
   define(LINK_FAVICON,             LINK_WEBSITE.'favicon.ico');
   define(LINK_DIRECTORY_CSS,       LINK_WEBSITE.'css/');
   define(LINK_DIRECTORY_JS,        LINK_WEBSITE.'js/');
