@@ -8,7 +8,7 @@
      src="<?php echo LINK_DIRECTORY_CNT?>category_0/img/category_0_img.jpg" 
      alt="Image Accueil" />
 
-<p><b>Bienvenue sur l'agence web Bilazea.com !</b>
+<p><b>Bienvenue sur l'agence web Bilazea.com !</b></p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. 
 Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, 
 dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper 
@@ -20,8 +20,8 @@ Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
 dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci 
 luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed 
 pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales 
-hendrerit. 
-Ut velit:
+hendrerit.</p>
+<p>Ut velit:</p>
 <ul>
 <li>mauris,</li>
 <li>egestas sed,</li>
@@ -29,7 +29,7 @@ Ut velit:
 <li>ornare ut,</li>
 <li>mi.</li>
 </ul>
-Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, 
+<p>Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, 
 ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien 
 eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. 
 Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis 
@@ -60,7 +60,7 @@ purus. Curabitur eu amet.</p>
      src="<?php echo LINK_DIRECTORY_CNT?>category_0/img/category_0_img.jpg" 
      alt="Image Accueil" />
 
-<p><b>Welcome to Bilazea.com web agency !</b>
+<p><b>Welcome to Bilazea.com web agency !</b></p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. 
 Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, 
 dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper 
@@ -72,8 +72,8 @@ Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
 dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci 
 luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed 
 pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales 
-hendrerit. 
-Ut velit:
+hendrerit.</p>
+<p>Ut velit:</p>
 <ul>
 <li>mauris,</li>
 <li>egestas sed,</li>
@@ -81,7 +81,7 @@ Ut velit:
 <li>ornare ut,</li>
 <li>mi.</li>
 </ul>
-Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, 
+<p>Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, 
 ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien 
 eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. 
 Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis 
@@ -112,7 +112,7 @@ purus. Curabitur eu amet.</p>
      src="<?php echo LINK_DIRECTORY_CNT?>category_0/img/category_0_img.jpg" 
      alt="Image Accueil" />
 
-<p><b>Bienvenido a la agencia web Bilazea.com !</b>
+<p><b>Bienvenido a la agencia web Bilazea.com !</b></p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. 
 Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, 
 dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper 
@@ -124,8 +124,8 @@ Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed
 dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci 
 luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed 
 pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales 
-hendrerit. 
-Ut velit:
+hendrerit.</p>
+<p>Ut velit:</p>
 <ul>
 <li>mauris,</li>
 <li>egestas sed,</li>
@@ -133,7 +133,7 @@ Ut velit:
 <li>ornare ut,</li>
 <li>mi.</li>
 </ul>
-Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, 
+<p>Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, 
 ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien 
 eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. 
 Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis 
@@ -149,6 +149,7 @@ placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum
 augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus 
 faucibus, felis magna fermentum augue, et ultricies lacus lorem varius 
 purus. Curabitur eu amet.</p>
+
 
 <!-- End spanich content ///////////////////////////////////////////////////-->
 <?php } ?>

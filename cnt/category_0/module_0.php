@@ -7,7 +7,7 @@
 <div class="box">
   <br />
   <p class="box_txt">Le template utilisé pour créer ce site est un projet 
-  opensource
+  opensource.</p>
   <ul class="box_ul">
     <li>hébergé sur <a class="externalLink external box_link" 
                        href="http://github.com/">Github.com</a></li>
@@ -21,7 +21,6 @@
   <br />
   <br />
   <br />
-  </p>
 
   <!-- Gravatar (get avatar) -->
   <?php

@@ -43,17 +43,17 @@
           <ul id="navlist">
             <li>
               <form action="<?php echo getPageUrlForLanguage(LG_FR); ?>" method="post">
-                <input type="submit" name="lg" value="<?php echo LANG_FR; ?>" />
+                <p><input type="submit" name="lg" value="<?php echo LANG_FR; ?>" /></p>
               </form>
             </li>
             <li>
               <form action="<?php echo getPageUrlForLanguage(LG_EN); ?>" method="post">
-                <input type="submit" name="lg" value="<?php echo LANG_EN; ?>" />
+                <p><input type="submit" name="lg" value="<?php echo LANG_EN; ?>" /></p>
               </form>
             </li>
             <li>
               <form action="<?php echo getPageUrlForLanguage(LG_ES); ?>" method="post">
-                <input type="submit" name="lg" value="<?php echo LANG_ES; ?>" />
+                <p><input type="submit" name="lg" value="<?php echo LANG_ES; ?>" /></p>
               </form>
             </li>
           </ul>
