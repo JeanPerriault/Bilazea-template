@@ -8,3 +8,23 @@ It is a very simple framework designed to create quickly a website.
 
 
 MOOTOOLS is on github: http://github.com/mootools/mootools-core
+
+
+HOW TO CLONE DEPO WITH APTANA ?
+
+- Download git extensions of aptana, using Help>Install Aptana Features ... menu
+- When git feature is installed, go to the menu Window>Open Perspective, and open git perspective.
+- In this perspective, click on 'Clone' icon, above project explorer.
+- Enter the path given above, git@github.com:JeanPerriault/Bilazea-template.git
+
+- Clone repository, and then with rigth click, choose 'Import Projects...'
+
+
+- Depending on your server location and your aptana workspace.
+
+-> In my case, my workspace is also my server root, so I just have to
+--> Choose import as General project, keeping the same directory name.
+--> Go to my brower, and it's up: yes I see my template at this address: http:/localhost/Bilazea-template
+
+#TODO: comment other cases
+ 
