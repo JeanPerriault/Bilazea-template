@@ -34,6 +34,7 @@
   define(LINK_CSS_BILA_SUPP,       LINK_DIRECTORY_CSS.'bilazea_supp.css');
   define(LINK_CSS_BILA_PERS,       LINK_DIRECTORY_CSS.'bilazea.css');
   define(LINK_CSS_BILA_PERS_LINKS, LINK_DIRECTORY_CSS.'bilazea_links.css');
+  define(LINK_CSS_BILA_CNT,        LINK_DIRECTORY_CNT.'bilazea_cnt.css');
 
   // JS
   define(LINK_MT_CORE,             LINK_DIRECTORY_JS.'mootools-core.js');
