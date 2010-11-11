@@ -87,6 +87,17 @@ hr
   margin:0;
 }
 
+input
+{
+  cursor:pointer;
+}
+input:hover
+{
+  border:1px solid #CCC;
+  color:#FFF;
+  background-color:#333;
+  -moz-border-radius: 10px;
+}
 
 /* Site **********************************************************************/
 #site
@@ -516,36 +527,8 @@ p.box_title_txt
   margin-bottom:20px;
 }
 
-#language
-{
-  border:1px solid #DDDDDD;
-  float:right;
-  margin-right:10px;
-  text-align:center;
-  width:272px;
-}
-#language p
-{
-  margin:0;
-}
 
-#documentation
-{
-  border:1px solid #DDDDDD;
-  float:right;
-  margin-right:10px;
-  text-align:center;
-  width:200px;
-}
-#documentation p
-{
-  margin:0;
-}
-#documentation a:hover
-{
-  color:red;
-}
-
+/* DIV settings template *****************************************************/
 #settings
 {
   text-align:right;
@@ -573,3 +556,43 @@ p.box_title_txt
   list-style-type: none;
   padding-right: 20px;
 }
+
+/* DIV language **************************************************************/
+#language
+{
+  border:1px solid #DDDDDD;
+  float:right;
+  margin-right:10px;
+  text-align:center;
+  width:272px;
+}
+#language p
+{
+  margin:0;
+}
+#language_doc
+{
+  text-align:right;
+  color:#333;
+  margin-right:5px;
+}
+
+
+/* DIV documentation *********************************************************/
+#documentation
+{
+  border:1px solid #DDDDDD;
+  float:right;
+  margin-right:10px;
+  text-align:center;
+  width:200px;
+}
+#documentation p
+{
+  margin:0;
+}
+#documentation a:hover
+{
+  color:red;
+}
+

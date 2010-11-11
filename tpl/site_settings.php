@@ -65,9 +65,9 @@
           <p>
             <a class="externalLink external toolTips" 
                href="./doc/index.html"
-               title="<?php printLgFileText("SITE_FOOTER_LINK1_L"); ?>" 
-               rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK1_L"); ?>">
-               Go to documentation
+               title="<?php printLgFileText("SITE_NAME2"); ?>" 
+               rel="<?php printLgFileText("GOTO_DOCUMENTATION"); ?>">
+               <?php printLgFileText("GOTO_DOCUMENTATION"); ?>
              </a>
           </p>
         </div>
