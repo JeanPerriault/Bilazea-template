@@ -87,17 +87,63 @@ hr
   margin:0;
 }
 
-input
+
+
+
+
+/* Last/Most *****************************************************************/
+#lastMost
 {
-  cursor:pointer;
+  background-color:#FFF;
+  padding:5px;
+  border-bottom:5px solid #DDD;
+  margin-bottom:10px;
+  height:120px;
 }
-input:hover
+#lastMostHidden
 {
-  border:1px solid #CCC;
-  color:#FFF;
-  background-color:#333;
-  -moz-border-radius: 10px;
+  height:25px;
+  background:#DDD;
+  opacity:0.4;
+  filter:alpha(opacity=40);
 }
+
+.titleLastMost
+{
+  background-color:#4C4C4C;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  padding-left:5px;
+  padding-right:2px;
+  padding-top:2px;
+  padding-bottom:2px;
+  margin:2px;
+}
+#last
+{
+  float:left;
+  width:45%;
+}
+#most
+{
+  float:left;
+  width:45%;
+  margin-left:20px;
+}
+#lastMost a
+{
+  color:black;
+}
+#lastMost a:hover
+{
+  color:grey;
+}
+
+
+
+
+
+
 
 /* Site **********************************************************************/
 #site
@@ -173,95 +219,6 @@ input:hover
 
 
 
-/* Last/Most *****************************************************************/
-#lastMost
-{
-  background-color:#FFF;
-  padding:5px;
-  border-bottom:5px solid #DDD;
-  margin-bottom:10px;
-  height:120px;
-}
-#lastMostHidden
-{
-  height:25px;
-  background:#DDD;
-  opacity:0.4;
-  filter:alpha(opacity=40);
-}
-
-.titlelastmost
-{
-  background-color:#4C4C4C;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  padding-left:5px;
-  padding-right:2px;
-  padding-top:2px;
-  padding-bottom:2px;
-  margin:2px;
-}
-#last
-{
-  float:left;
-  width:45%;
-}
-#most
-{
-  float:left;
-  width:45%;
-  margin-left:20px;
-}
-#lastMost a{color:black;}
-#lastMost a:hover{color:grey;}
-
-
-
-
-
-/* Footer ********************************************************************/
-#footer
-{
-  opacity:0.8;
-  filter:alpha(opacity=80);
-  height:180px;
-}
-#footerHidden
-{
-  height:25px;
-  opacity:0.4;
-  filter:alpha(opacity=40);
-}
-#underFooterHidden
-{
-  background:#DDD;
-  width:800px;
-  margin-left:auto;
-  margin-right:auto;
-}
-#footer a:link {color: #AAA;}
-#footer a:visited {color: #AAA;}
-#footer a:hover {color: #BBB;}
-#footer a:focus {color: #BBB;}
-#footer a:active {color: #AAA;}
-
-#underFooter
-{
-  width:800px;
-  margin-left:auto;
-  margin-right:auto;
-  border-bottom:5px solid #646464;
-  height:175px;
-}
-
-.footer-link
-{
-  color:#FFF;
-  background:none repeat scroll 0 0 #646464;
-  margin:0 0 10px 0;
-  padding:0 0 0 10px;
-  text-transform:uppercase;
-}
 
 /* Aside *********************************************************************/
 #aside
@@ -324,6 +281,73 @@ a.iconGoToTopRcl:hover
   float:right;
   text-align:right;
   padding-right:25px;
+}
+
+
+/* Footer ********************************************************************/
+#footer
+{
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  height:180px;
+}
+#footerIn
+{
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  border-bottom:5px solid #646464;
+  height:175px;
+}
+
+#footerHidden
+{
+  height:25px;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
+#footerHiddenIn
+{
+  background:#DDD;
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.footerLinkTitle
+{
+  color:#FFF;
+  background:none repeat scroll 0 0 #646464;
+  margin:0 0 10px 0;
+  padding:0 0 0 10px;
+  text-transform:uppercase;
+}
+
+#footerLinksDiv1
+{
+  float:left;
+  margin-left:10px;
+  *border-left:1px solid #CCC;
+  height:134px;
+  width:200px;
+}
+#footerLinksDiv2
+{
+  float:left;
+  margin-left:20px;
+  *border-left:1px solid #CCC;
+  height:134px;
+  width:200px;
+}
+.footerLinksUl
+{
+  
+}
+.footerLinksP
+{
+  margin:0;
+  padding-left:5px;
+  background:#646464;
 }
 
 
@@ -527,72 +551,4 @@ p.box_title_txt
   margin-bottom:20px;
 }
 
-
-/* DIV settings template *****************************************************/
-#settings
-{
-  text-align:right;
-  background-color:#FFF;
-  padding:5px;
-  border-bottom:5px solid #DDD;
-  height:50px;
-  opacity:0.8;
-}
-
-#settingsHidden
-{
-  height:16px;
-  background:#000;
-  opacity:0.4;
-  filter:alpha(opacity=40);
-  padding-right:5px;
-  padding-top:1px;
-}
-
-#navlist li
-{
-  float:left;
-  display: inline;
-  list-style-type: none;
-  padding-right: 20px;
-}
-
-/* DIV language **************************************************************/
-#language
-{
-  border:1px solid #DDDDDD;
-  float:right;
-  margin-right:10px;
-  text-align:center;
-  width:272px;
-}
-#language p
-{
-  margin:0;
-}
-#language_doc
-{
-  text-align:right;
-  color:#333;
-  margin-right:5px;
-}
-
-
-/* DIV documentation *********************************************************/
-#documentation
-{
-  border:1px solid #DDDDDD;
-  float:right;
-  margin-right:10px;
-  text-align:center;
-  width:200px;
-}
-#documentation p
-{
-  margin:0;
-}
-#documentation a:hover
-{
-  color:red;
-}
 

@@ -15,32 +15,38 @@
 /* LINKS *********************************************************************/
 
 /* GENERAL *******************************************************************/
-a,a:visited,a:link{
+a,a:visited,a:link
+{
   color:#DDD;
   text-decoration:none;
 }
-a:hover{
+a:hover
+{
   color:#FFF;
 }
 
 
 /* TITLE *********************************************************************/
-a.title,a:visited.title,a:link.title{
+a.title,a:visited.title,a:link.title
+{
   color:#DDD;
   text-decoration:none;
   font-size:1.8em;
 }
-a:hover.title{
+a:hover.title
+{
   color:#FFF;
 }
 
 /* SMOOTH ANCHORS ************************************************************/
-a.smoothAnchors{
+a.smoothAnchors
+{
   cursor:pointer;
 }
 
 /* MENU **********************************************************************/
-a.menu,a:visited.menu,a:link.menu{
+a.menu,a:visited.menu,a:link.menu
+{
   text-align:center;
   float:left;
   background:#222;
@@ -56,21 +62,24 @@ a.menu,a:visited.menu,a:link.menu{
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-a:hover.menu{
+a:hover.menu
+{
   font-size:1.1em;
   height:28px;
   background:#333;
   color:#FFF;
 }
 
-a.activeMenu{
+a.activeMenu
+{
   font-size:1.1em !important;
   height:28px !important;
   background:#555 !important;
 }
 
 /* FIXED TITLE ***************************************************************/
-a.fixedTitleLeft{
+a.fixedTitleLeft
+{
   color:#646464;
   display:block;
   font-family:"Arial Black";
@@ -84,35 +93,42 @@ a.fixedTitleLeft{
 
 
 /* LANG **********************************************************************/
-a.lang,a:visited.lang,a:link.lang{
+a.lang,a:visited.lang,a:link.lang
+{
   color:#646464;
 }
 
-a:hover.lang{
+a:hover.lang
+{
   color:#DDDDDD;
 }
 
 
 /* EXTERNAL LINK *************************************************************/
-a.externalLink{
+a.externalLink
+{
   padding-right:15px;
   background:url('../img/externalLink.gif') center right no-repeat;
 }
-a:hover.externalLink{
+a:hover.externalLink
+{
   background:url('../img/externalLink_h.gif') center right no-repeat;
 }
 
-a.closeImg{
+a.closeImg
+{
   width:30px;
   height:30px;
   float:right;
   background:url('../img/panel.gif') 0 0 no-repeat;
 }
-a:hover.closeImg{
+a:hover.closeImg
+{
   background:url('../img/panel_h.gif') 0 0 no-repeat;
 }
 
-a.openImg{
+a.openImg
+{
   height:10px;
   background:#DDD;
   width:800px;
@@ -122,18 +138,45 @@ a.openImg{
   height:25px;
   background:url('../img/panel.gif') 0 0 no-repeat;
 }
-a:hover.openImg{
+a:hover.openImg
+{
   background:url('../img/panel_h2.gif') 0 0 no-repeat;
 }
 
 
-a.iconHideLan{
+a.iconHideLan
+{
   background:url('../img/settings.gif') 0 0 no-repeat;
   float:right;
   width:16px;
   height:16px;
 }
-a:hover.iconHideLan{
+a:hover.iconHideLan
+{
   background:url('../img/settings_h.gif') 0 0 no-repeat;
 }
+
+
+/* Footer links **************************************************************/
+#footer a:link
+{
+  color: #AAA;
+}
+#footer a:visited
+{
+  color: #AAA;
+}
+#footer a:hover
+{
+  color: #BBB;
+}
+#footer a:focus
+{
+  color: #BBB;
+}
+#footer a:active
+{
+  color: #AAA;
+}
+
 

@@ -19,6 +19,8 @@
 
       <!-- Language hidden div -->
       <div id="settingsHidden">
+
+        <!-- Slide in -->
         <a id="settingsLinkSlideIn" 
            href="#" 
            class="iconHideLan toolTips" 
@@ -27,9 +29,11 @@
         </a>
       </div>
 
+
       <!-- Language div -->
       <div id="settings">
 
+        <!-- Slide out -->
         <a id="settingsLinkSlideOut" 
            href="#" 
            class="iconHideLan toolTips" 
@@ -62,13 +66,23 @@
         <!-- Documentation link -->
         <div id="documentation">
           <p><?php printLgFileText("DOCUMENTATION"); ?></p>
-          <p>
-            <a class="externalLink external toolTips" 
-               href="./doc/index.html"
-               title="<?php printLgFileText("SITE_NAME2"); ?>" 
-               rel="<?php printLgFileText("GOTO_DOCUMENTATION"); ?>">
-               <?php printLgFileText("GOTO_DOCUMENTATION"); ?>
-             </a>
-          </p>
+          <ul>
+            <li>
+              <a class="externalLink external toolTips" 
+                 href="<?php echo LINK_INTERNAL_DOC; ?>"
+                 title="<?php printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("GOTO_DOCUMENTATION"); ?>">
+                 <?php printLgFileText("GOTO_DOCUMENTATION"); ?>
+               </a>
+            </li>
+            <li>
+              <a class="externalLink external toolTips" 
+                 href="<?php echo LINK_WIKI_DOC; ?>"
+                 title="<?php printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("GOTO_DOCUMENTATION_WIKI"); ?>">
+                 <?php printLgFileText("GOTO_DOCUMENTATION_WIKI"); ?>
+               </a>
+            </li>
+          </ul>          
         </div>
       </div>

@@ -46,6 +46,8 @@
         type="text/css" media="projection, screen, tv" />
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_LINKS ?>" 
         type="text/css" media="projection, screen, tv" />
+  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_SETS ?>" 
+        type="text/css" media="projection, screen, tv" />
 
   <!-- TEMPLATE ARTICLE -->
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_CNT ?>" 

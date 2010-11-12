@@ -42,6 +42,7 @@ CONTACTS_DESC = "Contact Bilazea.com by mail"
 LANGUAGE = "Languages"
 DOCUMENTATION = "Documentation"
 GOTO_DOCUMENTATION = "Go to documentation"
+GOTO_DOCUMENTATION_WIKI = "Go to wiki (Github)"
 LOAD_MSG = "Loading..."
 ERROR_DESC = "Error description"
 ERROR_TYPE_DESC = "The server returns an error"
@@ -67,6 +68,10 @@ nec, ultricies sed, dolor. Cras elementum ultrices diam."
 [Last/Most read]
 LAST_NEWS = "Latest articles"
 MOST_READ = "Most viewed"
+
+[Footer]
+WEB_GALAXY = "Web galaxy"
+TOOLS = "Tools"
 
 [Footer]
 SITE_FOOTER_LINK1_L = "Bilazea.com"

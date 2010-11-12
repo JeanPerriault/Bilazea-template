@@ -24,6 +24,7 @@
   define(LINK_DIRECTORY_CSS,       LINK_WEBSITE.'css/');
   define(LINK_DIRECTORY_JS,        LINK_WEBSITE.'js/');
   define(LINK_DIRECTORY_TPL,       './tpl/');
+  define(LINK_DIRECTORY_DOC,       './doc/');
   define(LINK_DIRECTORY_TPL_ART,   LINK_DIRECTORY_TPL.'article/');
   define(LINK_DIRECTORY_TPL_ERROR, LINK_DIRECTORY_TPL.'error/');
   define(LINK_DIRECTORY_TPL_MAINT, LINK_DIRECTORY_TPL.'maintenance/');
@@ -34,6 +35,7 @@
   define(LINK_CSS_BILA_SUPP,       LINK_DIRECTORY_CSS.'bilazea_supp.css');
   define(LINK_CSS_BILA_PERS,       LINK_DIRECTORY_CSS.'bilazea.css');
   define(LINK_CSS_BILA_PERS_LINKS, LINK_DIRECTORY_CSS.'bilazea_links.css');
+  define(LINK_CSS_BILA_PERS_SETS,  LINK_DIRECTORY_CSS.'bilazea_settings.css');
   define(LINK_CSS_BILA_CNT,        LINK_DIRECTORY_CNT.'bilazea_cnt.css');
 
   // JS
@@ -66,6 +68,9 @@
   define(LINK_PAGE_ERR_404,    LINK_DIRECTORY_TPL_ERROR.'404.php');
   define(LINK_PAGE_ERR_500,    LINK_DIRECTORY_TPL_ERROR.'500.php');
 
+  // DOCUMENTATION
+  define(LINK_INTERNAL_DOC,    LINK_DIRECTORY_DOC.'index.html');
+  
   // NAVIGATION ///////////////////////////////////////////////////////////////
   define(LINK_INDEX,           LINK_WEBSITE.'index.php?');
 
@@ -102,4 +107,6 @@
   define(FOOTER_LINK1_R,    'http://mootools.net');
   define(FOOTER_LINK2_R,    'http://www.digitalia.be/software/reflectionjs-for-mootools');
   define(FOOTER_LINK3_R,    'http://www.aptana.com/');
+
+  define(LINK_WIKI_DOC,     'https://github.com/JeanPerriault/Bilazea-template/wiki');
 ?>

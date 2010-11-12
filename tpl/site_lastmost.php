@@ -30,7 +30,7 @@
       <!-- Last / Most read articles links -->
       <div id="lastMost">
         <div id="last">
-          <p class="titlelastmost"><?php echo printLgFileText("LAST_NEWS"); ?></p>
+          <p class="titleLastMost"><?php echo printLgFileText("LAST_NEWS"); ?></p>
           <ul>
             <li><a href="<?php echo LINK_CAT_1 ?>"><?php echo printLgFileText("CAT_1"); ?></a></li>
             <li><a href="<?php echo LINK_CAT_3 ?>"><?php echo printLgFileText("CAT_3"); ?></a></li>
@@ -39,7 +39,7 @@
         </div>
 
         <div id="most">
-          <p class="titlelastmost"><?php printLgFileText("MOST_READ"); ?></p>
+          <p class="titleLastMost"><?php printLgFileText("MOST_READ"); ?></p>
           <ul>
             <li><a href="<?php echo LINK_CAT_4_1 ?>"><?php printLgFileText("CAT_4_1"); ?></a></li>
             <li><a href="<?php echo LINK_CAT_4 ?>"><?php printLgFileText("CAT_4"); ?></a></li>

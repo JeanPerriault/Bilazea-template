@@ -1,0 +1,134 @@
+/**
+ * File:
+ * css/bilazea_settings.css
+ * 
+ * Description:
+ * This file contains css used in Bilazea template settings part
+ * 
+ * Date:
+ * 2010/10/10
+ * 
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
+ * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
+ */
+
+/* DIV settings template *****************************************************/
+#settings
+{
+  text-align:right;
+  background-color:#FFF;
+  padding:5px;
+  border-bottom:5px solid #DDD;
+  height:70px;
+  opacity:0.8;
+}
+
+#settingsHidden
+{
+  height:16px;
+  background:#000;
+  opacity:0.4;
+  filter:alpha(opacity=40);
+  padding-right:5px;
+  padding-top:1px;
+}
+
+ul#navlist
+{
+  padding-top:10px;
+}
+
+#navlist li
+{
+  float:left;
+  display: inline;
+  list-style-type: none;
+  padding-right: 5px;
+}
+
+
+/* DIV language **************************************************************/
+#language
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border:1px solid #DDDDDD;
+  float:right;
+  margin-right:10px;
+  text-align:center;
+  width:300px;
+  padding-bottom:5px;
+  height:70px;
+}
+#language p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  margin:0;
+  background-color:#333;
+  color:#FFF;
+}
+#language_doc
+{
+  text-align:right;
+  color:#333;
+  margin-right:5px;
+}
+#language input
+{
+  cursor:pointer;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  background:#222222;
+  color:#EEEEEE;
+  display:block;
+  float:left;
+  height:25px;
+  text-align:center;
+  text-decoration:none;
+  width:80px;
+  font-size:0.8em;
+}
+#language input:hover
+{
+  color:#FFF;
+  font-size:0.9em;
+  background-color:#646464;
+}
+
+
+/* DIV documentation *********************************************************/
+#documentation
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border:1px solid #DDDDDD;
+  float:right;
+  margin-right:10px;
+  text-align:center;
+  width:200px;
+  height:75px;
+}
+#documentation p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  margin:0;
+  background-color:#333;
+  color:#FFF;
+}
+#documentation a:hover
+{
+  color:#646464;
+}
+
+
+
