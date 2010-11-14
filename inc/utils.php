@@ -147,6 +147,26 @@
 
 
   /**
+   * Get documentation link, according to user language
+   */
+  function getDocumentationLink()
+  {
+    if (getLanguage() == LG_FR)
+    {
+      return LINK_INTERNAL_DOC_FR;
+    }
+    else if (getLanguage() == LG_EN)
+    {
+      return LINK_INTERNAL_DOC_EN;
+    }
+    else if (getLanguage() == LG_ES)
+    {
+      return LINK_INTERNAL_DOC_ES;
+    }
+  }
+
+
+  /**
    * Is the site under maintenance?
    * 
    * @param $maintenance
@@ -537,5 +557,58 @@
       }
     }
     return $title;
+  }
+  
+  /**
+   * 
+   */
+  function printContent($filename)
+  {
+    // get contents of a category file
+    $handle = fopen($filename, "r");
+    $contents = fread($handle, filesize($filename));
+    $explodedContent = explode('<!--', $contents);
+
+    // Get localized language corresponding to current language
+    if (getLanguage() == LG_FR)
+    {
+      if ($explodedContent[1] != "")
+      {
+        $cnt_fr = explode('-->',$explodedContent[1]);
+        print($cnt_fr[1]);        
+      }
+    }
+    else if (getLanguage() == LG_EN)
+    {
+      if ($explodedContent[2] != "")
+      {
+        $cnt_en = explode('-->',$explodedContent[2]);
+        print($cnt_en[1]);        
+      }
+    }
+    else if (getLanguage() == LG_ES)
+    {
+      if ($explodedContent[3] != "")
+      {
+        $cnt_es = explode('-->',$explodedContent[3]);
+        print($cnt_es[1]);
+      }
+    }
+
+    // Module content
+    if ($explodedContent[4] != "")
+    {
+      $cnt_mods = explode('-->',$explodedContent[4]);
+      $cnt_mod = explode(';',$cnt_mods[1]);
+      foreach($cnt_mod as &$mod)
+      {
+        $modTrimed = trim($mod);
+        if($modTrimed != "")
+        {
+          include(constant($modTrimed));
+        }
+      }
+    }
+    fclose($handle);
   }
 ?>

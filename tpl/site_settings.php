@@ -17,7 +17,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 ?>
 
-      <!-- Language hidden div -->
+      <!-- Settings hidden div /////////////////////////////////////////////-->
       <div id="settingsHidden">
 
         <!-- Slide in -->
@@ -30,7 +30,7 @@
       </div>
 
 
-      <!-- Language div -->
+      <!-- Settings div ////////////////////////////////////////////////////-->
       <div id="settings">
 
         <!-- Slide out -->
@@ -63,21 +63,24 @@
           </ul>
         </div>
 
+        <!-- Get current doc file -->
+        <?php $linkDoc = getDocumentationLink(); ?>
+
         <!-- Documentation link -->
         <div id="documentation">
           <p><?php printLgFileText("DOCUMENTATION"); ?></p>
           <ul>
             <li>
-              <a class="externalLink external toolTips" 
-                 href="<?php echo LINK_INTERNAL_DOC; ?>"
+              <a class="externalLink external toolTips box_link" 
+                 href="<?php echo $linkDoc; ?>" 
                  title="<?php printLgFileText("SITE_NAME2"); ?>" 
                  rel="<?php printLgFileText("GOTO_DOCUMENTATION"); ?>">
                  <?php printLgFileText("GOTO_DOCUMENTATION"); ?>
                </a>
             </li>
             <li>
-              <a class="externalLink external toolTips" 
-                 href="<?php echo LINK_WIKI_DOC; ?>"
+              <a class="externalLink external toolTips box_link" 
+                 href="<?php echo LINK_WIKI_DOC; ?>" 
                  title="<?php printLgFileText("SITE_NAME2"); ?>" 
                  rel="<?php printLgFileText("GOTO_DOCUMENTATION_WIKI"); ?>">
                  <?php printLgFileText("GOTO_DOCUMENTATION_WIKI"); ?>

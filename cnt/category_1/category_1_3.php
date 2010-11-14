@@ -1,7 +1,4 @@
-<?php if (getLanguage() == LG_FR) { ?>
 <!-- French content ////////////////////////////////////////////////////////-->
-
-
 <h1>Catégorie 1 - 3</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. 
@@ -22,11 +19,7 @@ eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
 Curabitur aliquet pellentesque diam.</p>
 
 
-<!-- End french content ////////////////////////////////////////////////////-->
-<?php } else if (getLanguage() == LG_EN) { ?>
 <!-- English content ///////////////////////////////////////////////////////-->
-
-
 <h1>Category 1 - 3</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. 
@@ -47,11 +40,7 @@ eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis.
 Curabitur aliquet pellentesque diam.</p>
 
 
-<!-- End english content ///////////////////////////////////////////////////-->
-<?php } else if (getLanguage() == LG_ES) { ?>
 <!-- Spanich content ///////////////////////////////////////////////////////-->
-
-
 <h1>Categoría 1 - 3</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. 
@@ -70,7 +59,3 @@ ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius,
 ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien 
 eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. 
 Curabitur aliquet pellentesque diam.</p>
-
-
-<!-- End spanich content ///////////////////////////////////////////////////-->
-<?php } ?>

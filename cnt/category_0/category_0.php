@@ -1,11 +1,8 @@
-<?php if (getLanguage() == LG_FR) { ?>
 <!-- French content ////////////////////////////////////////////////////////-->
-
-
 <h1>BILAZEA</h1>
 
 <img class="img-accueil reflect" 
-     src="<?php echo LINK_DIRECTORY_CNT?>category_0/img/category_0_img.jpg" 
+     src="./cnt/category_0/img/category_0_img.jpg" 
      alt="Image Accueil" />
 
 <p><b>Bienvenue sur l'agence web Bilazea.com !</b></p>
@@ -47,17 +44,12 @@ faucibus, felis magna fermentum augue, et ultricies lacus lorem varius
 purus. Curabitur eu amet.</p>
 
 
-<!-- End french content ////////////////////////////////////////////////////-->
 
-
-<?php } else if (getLanguage() == LG_EN) { ?>
 <!-- English content ///////////////////////////////////////////////////////-->
-
-
 <h1>BILAZEA</h1>
 
 <img class="img-accueil reflect" 
-     src="<?php echo LINK_DIRECTORY_CNT?>category_0/img/category_0_img.jpg" 
+     src="./cnt/category_0/img/category_0_img.jpg" 
      alt="Image Accueil" />
 
 <p><b>Welcome to Bilazea.com web agency !</b></p>
@@ -99,17 +91,12 @@ faucibus, felis magna fermentum augue, et ultricies lacus lorem varius
 purus. Curabitur eu amet.</p>
 
 
-<!-- End english content ///////////////////////////////////////////////////-->
 
-
-<?php } else if (getLanguage() == LG_ES) { ?>
 <!-- Spanich content ///////////////////////////////////////////////////////-->
-
-
 <h1>BILAZEA</h1>
 
 <img class="img-accueil reflect" 
-     src="<?php echo LINK_DIRECTORY_CNT?>category_0/img/category_0_img.jpg" 
+     src="./cnt/category_0/img/category_0_img.jpg" 
      alt="Image Accueil" />
 
 <p><b>Bienvenido a la agencia web Bilazea.com !</b></p>
@@ -151,12 +138,7 @@ faucibus, felis magna fermentum augue, et ultricies lacus lorem varius
 purus. Curabitur eu amet.</p>
 
 
-<!-- End spanich content ///////////////////////////////////////////////////-->
-<?php } ?>
-
 
 <!-- Modules ///////////////////////////////////////////////////////////////-->
-<?php
-  include(LINK_CNT_CAT_0_MOD_0);
-  include(LINK_CNT_CAT_0_MOD_1);
-?>
+LINK_CNT_CAT_0_MOD_0;
+LINK_CNT_CAT_0_MOD_1;

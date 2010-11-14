@@ -69,8 +69,11 @@
   define(LINK_PAGE_ERR_500,    LINK_DIRECTORY_TPL_ERROR.'500.php');
 
   // DOCUMENTATION
-  define(LINK_INTERNAL_DOC,    LINK_DIRECTORY_DOC.'index.html');
-  
+  define(LINK_INTERNAL_DOC_FR, LINK_DIRECTORY_DOC.'index_fr.html');
+  define(LINK_INTERNAL_DOC_EN, LINK_DIRECTORY_DOC.'index_en.html');
+  define(LINK_INTERNAL_DOC_ES, LINK_DIRECTORY_DOC.'index_es.html');
+
+
   // NAVIGATION ///////////////////////////////////////////////////////////////
   define(LINK_INDEX,           LINK_WEBSITE.'index.php?');
 

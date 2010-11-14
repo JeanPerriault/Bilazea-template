@@ -110,6 +110,7 @@ hr
 
 .titleLastMost
 {
+  color:#EEE;
   background-color:#4C4C4C;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
@@ -130,14 +131,7 @@ hr
   width:45%;
   margin-left:20px;
 }
-#lastMost a
-{
-  color:black;
-}
-#lastMost a:hover
-{
-  color:grey;
-}
+
 
 
 
@@ -176,15 +170,6 @@ hr
   padding:7px;
 }
 
-#nav_inf,#nav_mus,#nav_lit,#nav_soc,#nav_aut
-{
-  color:#EEE;
-  height:30px;
-  padding:5px 5px 7px 5px;
-  clear:both;
-  float:right;
-}
-
 .navigationDiv
 {
   color:#EEE;
@@ -211,13 +196,6 @@ hr
   background-color:#FFF;
   margin-bottom:40px;
 }
-#content a:link {color: #AAA;}
-#content a:visited {color: #AAA;}
-#content a:hover {color: #BBB;}
-#content a:focus {color: #BBB;}
-#content a:active {color: #AAA;}
-
-
 
 
 /* Aside *********************************************************************/
@@ -271,18 +249,6 @@ a.iconGoToTopRcl:hover
   background:url('../img/arrow_top_h.gif') no-repeat scroll right 0 transparent;
 }
 
-/* SPAN */
-.left
-{
-  text-align:left;
-}
-.right
-{
-  float:right;
-  text-align:right;
-  padding-right:25px;
-}
-
 
 /* Footer ********************************************************************/
 #footer
@@ -327,17 +293,15 @@ a.iconGoToTopRcl:hover
 {
   float:left;
   margin-left:10px;
-  *border-left:1px solid #CCC;
   height:134px;
-  width:200px;
+  width:45%;
 }
 #footerLinksDiv2
 {
   float:left;
-  margin-left:20px;
-  *border-left:1px solid #CCC;
   height:134px;
-  width:200px;
+  width:45%;
+  margin-left:20px;
 }
 .footerLinksUl
 {
@@ -349,6 +313,18 @@ a.iconGoToTopRcl:hover
   padding-left:5px;
   background:#646464;
 }
+
+#last
+{
+  float:left;
+
+}
+#most
+{
+  float:left;
+
+}
+
 
 
 /* class tool-tip ************************************************************/
@@ -495,14 +471,7 @@ p.box_title_txt
 }
 
 
-
-
-
-#contentX
-{
-  opacity:0;
-}
-
+/* Navigation ****************************************************************/
 #navigation ul
 {
   list-style-type:none;
@@ -513,6 +482,8 @@ p.box_title_txt
   
 }
 
+
+/* Mask & Spinner ************************************************************/
 .mask
 {
   position: absolute;
@@ -522,6 +493,7 @@ p.box_title_txt
   z-index: 999;
   background: #fff;
 }
+
 .spinner
 {
   position: absolute;
@@ -536,7 +508,6 @@ p.box_title_txt
   text-align: center;
   font-weight: bold;
 }
-
 .spinner-img
 {
   background: url("../img/spinner.gif") no-repeat;
@@ -546,9 +517,8 @@ p.box_title_txt
 }
 
 
+/* Cv panel ******************************************************************/
 .cvPanel
 {
   margin-bottom:20px;
 }
-
-

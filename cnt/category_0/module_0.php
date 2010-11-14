@@ -1,13 +1,12 @@
-<?php if (getLanguage() == LG_FR) { ?>
-<!-- French content ////////////////////////////////////////////////////////-->
-
-
 <!-- DIV Box title -->
 <div class="box_title">
   <p class="box_title_txt"><?php printLgFileText("DOWNLOAD"); ?></p>
 </div>
 
-<!-- DIV Box title -->
+<!-- DIV Box -->
+
+<?php if (getLanguage() == LG_FR) { ?>
+<!-- French content ////////////////////////////////////////////////////////-->
 <div class="box">
   <br />
   <p class="box_txt">Le template utilisé pour créer ce site est un projet 
@@ -21,39 +20,21 @@
         http://github.com/JeanPerriault/Bilazea-template</a>
     </li>
   </ul>
-
   <br />
   <br />
   <br />
-
   <!-- Gravatar (get avatar) -->
-  <?php
-    $urlAvatar = getGravatar("jean.perriault@gmail.com");
-  ?>
   <div id="gravatar">
     <b>GrAvatar</b><br />
     <a href="http://fr.gravatar.com/jeanperriault">
-      <img src="<?php echo $urlAvatar ?>" alt="Gravatar avatar" />
+      <img src="<?php echo getGravatar("jean.perriault@gmail.com"); ?>" alt="Gravatar avatar" />
     </a>
   </div>
-
 </div>
-
-
-<!-- End french content ////////////////////////////////////////////////////-->
 
 
 <?php } else if (getLanguage() == LG_EN) { ?>
 <!-- English content ///////////////////////////////////////////////////////-->
-
-
-
-<!-- DIV Box title -->
-<div class="box_title">
-  <p class="box_title_txt"><?php printLgFileText("DOWNLOAD"); ?></p>
-</div>
-
-<!-- DIV Box title -->
 <div class="box">
   <br />
   <p class="box_txt">The template used to create this site is an open source 
@@ -67,41 +48,20 @@
         http://github.com/JeanPerriault/Bilazea-template</a>
     </li>
   </ul>
-
   <br />
   <br />
   <br />
-
-  <!-- Gravatar (get avatar) -->
-  <?php
-    $urlAvatar = getGravatar("jean.perriault@gmail.com");
-  ?>
   <div id="gravatar">
     <b>GrAvatar</b><br />
     <a href="http://fr.gravatar.com/jeanperriault">
-      <img src="<?php echo $urlAvatar ?>" alt="Gravatar avatar" />
+      <img src="<?php echo getGravatar("jean.perriault@gmail.com"); ?>" alt="Gravatar avatar" />
     </a>
   </div>
-
 </div>
-
-
-
-<!-- End english content ///////////////////////////////////////////////////-->
 
 
 <?php } else if (getLanguage() == LG_ES) { ?>
 <!-- Spanich content ///////////////////////////////////////////////////////-->
-
-
-
-
-<!-- DIV Box title -->
-<div class="box_title">
-  <p class="box_title_txt"><?php printLgFileText("DOWNLOAD"); ?></p>
-</div>
-
-<!-- DIV Box title -->
 <div class="box">
   <br />
   <p class="box_txt">Le template utilizada para crear este sitio es un proyecto 
@@ -115,24 +75,17 @@
         http://github.com/JeanPerriault/Bilazea-template</a>
     </li>
   </ul>
-
   <br />
   <br />
   <br />
-
   <!-- Gravatar (get avatar) -->
-  <?php
-    $urlAvatar = getGravatar("jean.perriault@gmail.com");
-  ?>
   <div id="gravatar">
     <b>GrAvatar</b><br />
     <a href="http://fr.gravatar.com/jeanperriault">
-      <img src="<?php echo $urlAvatar ?>" alt="Gravatar avatar" />
+      <img src="<?php echo getGravatar("jean.perriault@gmail.com"); ?>" alt="Gravatar avatar" />
     </a>
   </div>
-
 </div>
 
 
-<!-- End spanich content ///////////////////////////////////////////////////-->
 <?php } ?>

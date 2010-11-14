@@ -104,6 +104,63 @@ a:hover.lang
 }
 
 
+/* Last most *****************************************************************/
+#lastMost a
+{
+  color:black;
+}
+#lastMost a:hover
+{
+  color:grey;
+}
+
+
+/* Content *******************************************************************/
+#content a:link
+{
+  color: #AAA;
+}
+#content a:visited
+{
+  color: #AAA;
+}
+#content a:hover
+{
+  color: #BBB;
+}
+#content a:focus
+{
+  color: #BBB;
+}
+#content a:active
+{
+  color: #AAA;
+}
+
+
+/* Footer links **************************************************************/
+#footer a:link
+{
+  color: #AAA;
+}
+#footer a:visited
+{
+  color: #AAA;
+}
+#footer a:hover
+{
+  color: #BBB;
+}
+#footer a:focus
+{
+  color: #BBB;
+}
+#footer a:active
+{
+  color: #AAA;
+}
+
+
 /* EXTERNAL LINK *************************************************************/
 a.externalLink
 {
@@ -154,29 +211,6 @@ a.iconHideLan
 a:hover.iconHideLan
 {
   background:url('../img/settings_h.gif') 0 0 no-repeat;
-}
-
-
-/* Footer links **************************************************************/
-#footer a:link
-{
-  color: #AAA;
-}
-#footer a:visited
-{
-  color: #AAA;
-}
-#footer a:hover
-{
-  color: #BBB;
-}
-#footer a:focus
-{
-  color: #BBB;
-}
-#footer a:active
-{
-  color: #AAA;
 }
 
 
