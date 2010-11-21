@@ -26,9 +26,7 @@
   define(LINK_DIRECTORY_JS,        LINK_WEBSITE.'js/');
   define(LINK_DIRECTORY_TPL,       './tpl/');
   define(LINK_DIRECTORY_DOC,       './doc/');
-  define(LINK_DIRECTORY_TPL_ART,   LINK_DIRECTORY_TPL.'article/');
-  define(LINK_DIRECTORY_TPL_ERROR, LINK_DIRECTORY_TPL.'error/');
-  define(LINK_DIRECTORY_TPL_MAINT, LINK_DIRECTORY_TPL.'maintenance/');
+  define(LINK_DIRECTORY_TPL_ERROR, LINK_DIRECTORY_TPL.'err/');
   define(LINK_DIRECTORY_CNT,       './cnt/');
 
   // CSS bilazea base and supp

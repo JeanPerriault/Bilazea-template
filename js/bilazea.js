@@ -197,7 +197,7 @@ window.addEvent('domready',function()
 
 
   /* COOKIES STUFF ***********************************************************/
-  var cookies = new Hash.Cookie('JPWEB Cookies - For design',{duration: 3600});
+  var cookies = new Hash.Cookie('Bilazea.com Cookies - For design',{duration: 3600});
   var cookTop = cookies.get('top');
   var cookAside = cookies.get('aside');
   var cookSettings = cookies.get('settings');
