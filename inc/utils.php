@@ -29,6 +29,11 @@
     define(LANG_FR, 'Français');
     define(LANG_EN, 'English');
     define(LANG_ES, 'Español');
+    define(ERROR_400, "Error400");
+    define(ERROR_401, "Error401");
+    define(ERROR_403, "Error403");
+    define(ERROR_404, "Error404");
+    define(ERROR_500, "Error500");
 
     // Get curl page url and find index.php pattern
     $url = curPageURL();

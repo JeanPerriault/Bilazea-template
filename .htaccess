@@ -5,9 +5,8 @@ deny from all
 
 IndexIgnore *
 
-ErrorDocument 400 http://localhost/Bilazea-template/tpl/error/400.php
-ErrorDocument 401 http://localhost/Bilazea-template/tpl/error/401.php
-ErrorDocument 403 http://localhost/Bilazea-template/tpl/error/403.php
-ErrorDocument 404 http://localhost/Bilazea-template/tpl/error/404.php
-ErrorDocument 500 http://localhost/Bilazea-template/tpl/error/500.php
-
+ErrorDocument 400 http://localhost/Bilazea-template/index.php?content=Error400
+ErrorDocument 401 http://localhost/Bilazea-template/index.php?content=Error401
+ErrorDocument 403 http://localhost/Bilazea-template/index.php?content=Error403
+ErrorDocument 404 http://localhost/Bilazea-template/index.php?content=Error404
+ErrorDocument 500 http://localhost/Bilazea-template/index.php?content=Error500

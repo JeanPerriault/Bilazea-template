@@ -65,6 +65,26 @@
             {
               include(LINK_MAP);
             }
+            else if ($_GET["content"] == ERROR_400)
+            {
+              include(LINK_PAGE_ERR_400);
+            }
+            else if ($_GET["content"] == ERROR_401)
+            {
+              include(LINK_PAGE_ERR_401);
+            }
+            else if ($_GET["content"] == ERROR_403)
+            {
+              include(LINK_PAGE_ERR_403);
+            }
+            else if ($_GET["content"] == ERROR_404)
+            {
+              include(LINK_PAGE_ERR_404);
+            }
+            else if ($_GET["content"] == ERROR_500)
+            {
+              include(LINK_PAGE_ERR_500);
+            }
             else
             {
               include(LINK_CONTENT);

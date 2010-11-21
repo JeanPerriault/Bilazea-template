@@ -22,6 +22,7 @@
   define(LINK_WEBSITE,            'http://localhost/Bilazea-template/');
   define(LINK_FAVICON,             LINK_WEBSITE.'favicon.ico');
   define(LINK_DIRECTORY_CSS,       LINK_WEBSITE.'css/');
+  define(LINK_DIRECTORY_IMG,       LINK_WEBSITE.'img/');
   define(LINK_DIRECTORY_JS,        LINK_WEBSITE.'js/');
   define(LINK_DIRECTORY_TPL,       './tpl/');
   define(LINK_DIRECTORY_DOC,       './doc/');
@@ -36,7 +37,7 @@
   define(LINK_CSS_BILA_PERS,       LINK_DIRECTORY_CSS.'bilazea.css');
   define(LINK_CSS_BILA_PERS_LINKS, LINK_DIRECTORY_CSS.'bilazea_links.css');
   define(LINK_CSS_BILA_PERS_SETS,  LINK_DIRECTORY_CSS.'bilazea_settings.css');
-  define(LINK_CSS_BILA_CNT,        LINK_DIRECTORY_CNT.'bilazea_cnt.css');
+  define(LINK_CSS_BILA_PERS_CNT,   LINK_DIRECTORY_CSS.'bilazea_cnt.css');
 
   // JS
   define(LINK_MT_CORE,             LINK_DIRECTORY_JS.'mootools-core.js');
@@ -62,43 +63,45 @@
   define(LINK_MAINTENANCE,     LINK_DIRECTORY_TPL.'site_maintenance.php');
 
   // ERROR PAGES
-  define(LINK_PAGE_ERR_400,    LINK_DIRECTORY_TPL_ERROR.'400.php');
-  define(LINK_PAGE_ERR_401,    LINK_DIRECTORY_TPL_ERROR.'401.php');
-  define(LINK_PAGE_ERR_403,    LINK_DIRECTORY_TPL_ERROR.'403.php');
-  define(LINK_PAGE_ERR_404,    LINK_DIRECTORY_TPL_ERROR.'404.php');
-  define(LINK_PAGE_ERR_500,    LINK_DIRECTORY_TPL_ERROR.'500.php');
+  define(LINK_PAGE_ERR_400,    LINK_DIRECTORY_TPL_ERROR.'400.html');
+  define(LINK_PAGE_ERR_401,    LINK_DIRECTORY_TPL_ERROR.'401.html');
+  define(LINK_PAGE_ERR_403,    LINK_DIRECTORY_TPL_ERROR.'403.html');
+  define(LINK_PAGE_ERR_404,    LINK_DIRECTORY_TPL_ERROR.'404.html');
+  define(LINK_PAGE_ERR_500,    LINK_DIRECTORY_TPL_ERROR.'500.html');
 
   // DOCUMENTATION
   define(LINK_INTERNAL_DOC_FR, LINK_DIRECTORY_DOC.'index_fr.html');
   define(LINK_INTERNAL_DOC_EN, LINK_DIRECTORY_DOC.'index_en.html');
   define(LINK_INTERNAL_DOC_ES, LINK_DIRECTORY_DOC.'index_es.html');
 
+  // IMG
+  define(LINK_IMG_MAINTENANCE, LINK_WEBSITE.'img/maintenance.jpg');
 
   // NAVIGATION ///////////////////////////////////////////////////////////////
   define(LINK_INDEX,           LINK_WEBSITE.'index.php?');
 
   // CONTENT //////////////////////////////////////////////////////////////////
-  define(LINK_CNT_CAT_0,       LINK_DIRECTORY_CNT.'category_0/category_0.php');
+  define(LINK_CNT_CAT_0,       LINK_DIRECTORY_CNT.'category_0/category_0.html');
   define(LINK_CNT_CAT_0_MOD_0, LINK_DIRECTORY_CNT.'category_0/module_0.php');
   define(LINK_CNT_CAT_0_MOD_1, LINK_DIRECTORY_CNT.'category_0/module_1.php');
 
-  define(LINK_CNT_CAT_1,    LINK_DIRECTORY_CNT.'category_1/category_1.php');
-  define(LINK_CNT_CAT_1_1,  LINK_DIRECTORY_CNT.'category_1/category_1_1.php');
-  define(LINK_CNT_CAT_1_2,  LINK_DIRECTORY_CNT.'category_1/category_1_2.php');
-  define(LINK_CNT_CAT_1_3,  LINK_DIRECTORY_CNT.'category_1/category_1_3.php');
-  define(LINK_CNT_CAT_1_4,  LINK_DIRECTORY_CNT.'category_1/category_1_4.php');
+  define(LINK_CNT_CAT_1,    LINK_DIRECTORY_CNT.'category_1/category_1.html');
+  define(LINK_CNT_CAT_1_1,  LINK_DIRECTORY_CNT.'category_1/category_1_1.html');
+  define(LINK_CNT_CAT_1_2,  LINK_DIRECTORY_CNT.'category_1/category_1_2.html');
+  define(LINK_CNT_CAT_1_3,  LINK_DIRECTORY_CNT.'category_1/category_1_3.html');
+  define(LINK_CNT_CAT_1_4,  LINK_DIRECTORY_CNT.'category_1/category_1_4.html');
 
-  define(LINK_CNT_CAT_2,    LINK_DIRECTORY_CNT.'category_2/category_2.php');
-  define(LINK_CNT_CAT_2_1,  LINK_DIRECTORY_CNT.'category_2/category_2_1.php');
-  define(LINK_CNT_CAT_2_2,  LINK_DIRECTORY_CNT.'category_2/category_2_2.php');
-  define(LINK_CNT_CAT_2_3,  LINK_DIRECTORY_CNT.'category_2/category_2_3.php');
+  define(LINK_CNT_CAT_2,    LINK_DIRECTORY_CNT.'category_2/category_2.html');
+  define(LINK_CNT_CAT_2_1,  LINK_DIRECTORY_CNT.'category_2/category_2_1.html');
+  define(LINK_CNT_CAT_2_2,  LINK_DIRECTORY_CNT.'category_2/category_2_2.html');
+  define(LINK_CNT_CAT_2_3,  LINK_DIRECTORY_CNT.'category_2/category_2_3.html');
 
-  define(LINK_CNT_CAT_3,    LINK_DIRECTORY_CNT.'category_3/category_3.php');
-  define(LINK_CNT_CAT_3_1,  LINK_DIRECTORY_CNT.'category_3/category_3_1.php');
-  define(LINK_CNT_CAT_3_2,  LINK_DIRECTORY_CNT.'category_3/category_3_2.php');
+  define(LINK_CNT_CAT_3,    LINK_DIRECTORY_CNT.'category_3/category_3.html');
+  define(LINK_CNT_CAT_3_1,  LINK_DIRECTORY_CNT.'category_3/category_3_1.html');
+  define(LINK_CNT_CAT_3_2,  LINK_DIRECTORY_CNT.'category_3/category_3_2.html');
 
-  define(LINK_CNT_CAT_4,    LINK_DIRECTORY_CNT.'category_4/category_4.php');
-  define(LINK_CNT_CAT_4_1,  LINK_DIRECTORY_CNT.'category_4/category_4_1.php');
+  define(LINK_CNT_CAT_4,    LINK_DIRECTORY_CNT.'category_4/category_4.html');
+  define(LINK_CNT_CAT_4_1,  LINK_DIRECTORY_CNT.'category_4/category_4_1.html');
 
   // EXTERNAL LINKS ///////////////////////////////////////////////////////////
   define(FOOTER_LINK1_L,    'http://bilazea.com');
@@ -112,4 +115,7 @@
   define(FOOTER_LINK3_R,    'http://www.aptana.com/');
 
   define(LINK_WIKI_DOC,     'https://github.com/JeanPerriault/Bilazea-template/wiki');
+
+  // MAIL TO //////////////////////////////////////////////////////////////////
+  define(MAILTO_ADMIN,      'mailto:bilazea@aol.fr');
 ?>

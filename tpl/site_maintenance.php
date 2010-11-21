@@ -2,7 +2,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 /**
  * File:
- * tpl/maintenance/maintenance.php
+ * tpl/site_maintenance.php
  * 
  * Description:
  * This file contains code
@@ -24,5 +24,5 @@
 </div>
 
 <img class="img-accueil reflect" 
-     src="<?php echo LINK_DIRECTORY_CNT?>category_0/img/category_0_img.jpg" 
+     src="<?php echo LINK_IMG_MAINTENANCE ?>" 
      alt="Image Accueil" />

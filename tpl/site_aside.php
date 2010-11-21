@@ -22,11 +22,13 @@
       <div id="underAside">
 
         <!-- Go to top links -->
-        <a id="iconGoToTopL" class="toolTips smoothAnchors iconGoToTopLcl" 
+        <a id="iconGoToTopL" 
+           class="toolTips smoothAnchors iconGoToTopLcl" 
            title="<?php printLgFileText("SITE_NAME2"); ?>" 
            rel="<?php printLgFileText("GO_TO_TOP"); ?>">
         </a>
-        <a id="iconGoToTopR" class="toolTips smoothAnchors iconGoToTopRcl" 
+        <a id="iconGoToTopR" 
+           class="toolTips smoothAnchors iconGoToTopRcl" 
            title="<?php printLgFileText("SITE_NAME2"); ?>" 
            rel="<?php printLgFileText("GO_TO_TOP"); ?>">
         </a>
@@ -52,7 +54,7 @@
             <?php printLgFileText("RSS"); ?>
           </a> | 
           <a class="toolTips" 
-             href="mailto:bilazea@aol.fr" 
+             href="<?php echo MAILTO_ADMIN; ?>" 
              title="<?php printLgFileText("SITE_NAME2"); ?>" 
              rel="<?php printLgFileText("CONTACTS_DESC"); ?>">
             <?php printLgFileText("CONTACTS"); ?>
@@ -61,7 +63,7 @@
         <p><?php printLgFileText("COPYRIGHT"); ?></p>
         <p><?php printLgFileText("MADE_WITH"); ?> 
           <a class="externalLink external toolTips" 
-             href="http://www.aptana.com/" 
+             href="<?php echo FOOTER_LINK3_R; ?>" 
              title="<?php printLgFileText("APTANA"); ?>" 
              rel="<?php printLgFileText("APTANA_HOME"); ?>">
             <?php printLgFileText("APTANA"); ?>
