@@ -53,7 +53,7 @@
              rel="<?php printLgFileText("RSS_DESC"); ?>">
             <?php printLgFileText("RSS"); ?>
           </a> | 
-          <a class="toolTips" 
+          <a class="toolTips aContact" 
              href="<?php echo MAILTO_ADMIN; ?>" 
              title="<?php printLgFileText("SITE_NAME2"); ?>" 
              rel="<?php printLgFileText("CONTACTS_DESC"); ?>">

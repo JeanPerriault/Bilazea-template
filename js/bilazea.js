@@ -144,6 +144,28 @@ window.addEvent('domready',function()
     }
   });
 
+  var myAccordionPart = new Fx.Accordion($$('h4.cvTitleAcc'), $$('div.element'),{
+    opacity: false,
+    onActive: function(toggler, element){
+      var myTog = new Fx.Tween(toggler);
+      var myEl = new Fx.Tween(element);
+      myTog.set('color', '#FFF');
+      myTog.set('background-color', '#4C4C4C');
+      myTog.set('background-image', 'url("./img/opened.png")');
+      myTog.set('background-position', 'right center');
+      myTog.set('background-repeat', 'no-repeat');
+    },
+    onBackground: function(toggler, element){
+      var myTog = new Fx.Tween(toggler);
+      var myEl = new Fx.Tween(element);
+      myTog.set('color', '#EEE');
+      myTog.set('background-color', '#61615F');
+      myTog.set('background-image', 'url("./img/closed.png")');
+      myTog.set('background-position', 'right center');
+      myTog.set('background-repeat', 'no-repeat');
+    }
+  });
+
 
   /* Tips ********************************************************************/
   var toolTips = new Tips('.toolTips',{showDelay:200});

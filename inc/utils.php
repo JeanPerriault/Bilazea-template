@@ -54,11 +54,11 @@
       {
         $lang = LG_FR;
       }
-      else if ($paramExplode[0] == getLgFileText("CONTENT",LG_EN))
+      else if($paramExplode[0] == getLgFileText("CONTENT",LG_EN))
       {
         $lang = LG_EN;
       }
-      else if ($paramExplode[0] == getLgFileText("CONTENT",LG_ES))
+      else if($paramExplode[0] == getLgFileText("CONTENT",LG_ES))
       {
         $lang = LG_ES;
       }
@@ -156,15 +156,15 @@
    */
   function getDocumentationLink()
   {
-    if (getLanguage() == LG_FR)
+    if(getLanguage() == LG_FR)
     {
       return LINK_INTERNAL_DOC_FR;
     }
-    else if (getLanguage() == LG_EN)
+    else if(getLanguage() == LG_EN)
     {
       return LINK_INTERNAL_DOC_EN;
     }
-    else if (getLanguage() == LG_ES)
+    else if(getLanguage() == LG_ES)
     {
       return LINK_INTERNAL_DOC_ES;
     }
@@ -181,7 +181,7 @@
     $maintenanceTag = $maintenance;
     if(isset($_GET['maintenance']))
     {
-      if ($_GET['maintenance'] == "true")
+      if($_GET['maintenance'] == "true")
       {
         $maintenanceTag = true;
       }
@@ -200,22 +200,23 @@
    */
   function getLgFileText($key,$lg = "")
   {
-    if ($lg != ""){
-      if ($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
-      if ($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
-      if ($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
+    if($lg != "")
+    {
+      if($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
+      if($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
+      if($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
     }
     else
     {
-    $lang_array = parse_ini_file(LINK_LANG);      
+      $lang_array = parse_ini_file(LINK_LANG);
     }
-    if (array_key_exists($key, $lang_array))
+    if(array_key_exists($key, $lang_array))
     {
       return $lang_array[$key];
     }
     else
     {
-      addErrors("<u>getLgFileText</u>", "No value for <b>".$key."</b>");
+      addErrors("<u>getLgFileText</u>", "No value for <b>'".$key."'</b>");
       return ST_EMPTY;
     }
   }
@@ -230,14 +231,15 @@
    */
   function printLgFileText($key,$lg = "")
   {
-    if ($lg != ""){
+    if($lg != "")
+    {
       if ($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
       if ($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
       if ($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
     }
     else
     {
-    $lang_array = parse_ini_file(LINK_LANG);      
+      $lang_array = parse_ini_file(LINK_LANG);      
     }
     if (array_key_exists($key, $lang_array))
     {
@@ -245,7 +247,7 @@
     }
     else
     {
-      addErrors("<u>printLgFileText</u>", "No value for <b>".$key."</b>");
+      addErrors("<u>printLgFileText</u>", "No value for <b>''".$key."'</b>");
       echo NO_VALUE;
     }
   }
@@ -259,14 +261,15 @@
    */
   function getLgFileTextForUrl($key,$lg = "")
   {
-    if ($lg != ""){
-      if ($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
-      if ($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
-      if ($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
+    if($lg != "")
+    {
+      if($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
+      if($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
+      if($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
     }
     else
     {
-    $lang_array = parse_ini_file(LINK_LANG);      
+      $lang_array = parse_ini_file(LINK_LANG);
     }
 
     if (array_key_exists($key, $lang_array))
@@ -276,11 +279,11 @@
     }
     else
     {
-      addErrors("<u>getTextForUrl</u>", "No value for <b>".$key."</b>");
+      addErrors("<u>getTextForUrl</u>", "No value for <b>''".$key."'</b>");
       return ST_EMPTY;
     }
   }
-  
+
 
   /**
    * Build menu
@@ -301,20 +304,20 @@
     $previousCat = "CAT_1";
     $previousNavCat = "CAT_1_1";
     // Loop on number of keys
-    for ($j = 0;$j<count($lang_array_keys);$j++)
+    for($j = 0;$j<count($lang_array_keys);$j++)
     {
       // Get only categories
-      if (substr($lang_array_keys[$j],0,3) == "CAT")
+      if(substr($lang_array_keys[$j],0,3) == "CAT")
       {
         // Get category, trimed and where spaces are replaced by dashes
         $lineL = $lang_array_keys[$j];
 
         // Main menu
-        if (strlen($lineL) == 5)
+        if(strlen($lineL) == 5)
         {
           define("LINK_".$lineL, LINK_INDEX.getLgFileText("CONTENT").'='.
                   getLgFileTextForUrl($lineL));
-          if ($lineL != "CAT_0")
+          if($lineL != "CAT_0")
           {
             $nav .= '<a id="'.$lineL.'" class="menu" href="'
                    .constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
@@ -323,20 +326,20 @@
         }
 
         // Sub menu
-        else if (strlen($lineL) == 7)
+        else if(strlen($lineL) == 7)
         {
           define("LINK_".$lineL, constant("LINK_".substr($lineL, 0, 5))
                   .'>'.getLgFileTextForUrl($lineL));
           $navCat = 'nav'.substr($lineL, 0, 5);
 
-          if ($firstTime == 0)
+          if($firstTime == 0)
           {
             $$navCat = '<div id="nav'.$navCat.'" class="navigationDiv">';
             $firstTime++;
           }
 
           $currentCat = substr($lineL, 0, 5);
-          if ($previousCat == $currentCat)
+          if($previousCat == $currentCat)
           {
             $$navCat .= '<a id="'.$lineL.'" class="menu" href="'
                         .constant("LINK_".$lineL).'">'
@@ -361,7 +364,7 @@
 
     // Set menus array
     $menusArray[0] = $nav;
-    for ($m = 1; $m<$nbCat+1; $m++)
+    for($m = 1; $m<$nbCat+1; $m++)
     {
       $navCat = "navCAT_$m";
       $menusArray[$m] = $$navCat;
@@ -381,7 +384,7 @@
    */
   function addErrors($title,$msg)
   {
-  	if ((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
+  	if((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
     {
       $errorsArray = $_SESSION['error_msg'];
     }
@@ -398,7 +401,7 @@
    * Show errors
    */
   function showErrors(){
-  	if ((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
+  	if((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
     {
   	  // Error div
   	  echo '<div id="error">';
@@ -491,14 +494,25 @@
     $i=0;
     $urlSecondPart="";
     $contents = explode('>', $_GET[getLgFileText("CONTENT")]);
-    foreach ($contents as &$value)
+    foreach($contents as &$value)
     {
       $x = str_replace("-"," ", $value);
 
       if($i==1)
       {
         $x2 = explode(' ', $x);
-        $res = $x2[0]." ".$x2[1]." - ".$x2[2];
+        if(count($x2) > 2)
+        {
+          $res = $x2[0]." ".$x2[1]." - ".$x2[2];
+        }
+        else if (count($x2) > 1)
+        {
+          $res = $x2[0]." ".$x2[1];
+        }
+        else
+        {
+          $res = $x2[0];
+        }
         $key = array_keys($lang_array,$res);
         $urlSecondPart .= ">";
         $urlSecondPart .= getLgFileTextForUrl($key[0],$lg);
@@ -533,22 +547,33 @@
     // Get language file
     $lang_array = parse_ini_file(LINK_LANG);
     
-    if ($pos === false)
+    if($pos === false)
     {
-      $title = printLgFileText("SITE_NAME");
+      $title = getLgFileText("SITE_NAME");
     }
     else
     {
       $contents = explode('>', $_GET[getLgFileText("CONTENT")]);
       $i=0;
-      $title = printLgFileText("SITE_NAME2")." - ";
-      foreach ($contents as &$value)
+      $title = getLgFileText("SITE_NAME2")." - ";
+      foreach($contents as &$value)
       {
         $x = str_replace("-"," ", $value);
         if($i==1)
         {
           $x2 = explode(' ', $x);
-          $res = $x2[0]." ".$x2[1]." - ".$x2[2];
+          if(count($x2) > 2)
+          {
+            $res = $x2[0]." ".$x2[1]." - ".$x2[2];
+          }
+          else if (count($x2) > 1)
+          {
+            $res = $x2[0]." ".$x2[1];
+          }
+          else
+          {
+            $res = $x2[0];
+          }
           $key = array_keys($lang_array,$res);
           $title .= " > ";
           $title .= getLgFileText($key[0]);
@@ -563,9 +588,12 @@
     }
     return $title;
   }
-  
+
+
   /**
+   * Print content
    * 
+   * @param $filename
    */
   function printContent($filename)
   {
@@ -575,25 +603,25 @@
     $explodedContent = explode('<!--', $contents);
 
     // Get localized language corresponding to current language
-    if (getLanguage() == LG_FR)
+    if(getLanguage() == LG_FR)
     {
-      if ($explodedContent[1] != "")
+      if($explodedContent[1] != "")
       {
         $cnt_fr = explode('-->',$explodedContent[1]);
         print($cnt_fr[1]);        
       }
     }
-    else if (getLanguage() == LG_EN)
+    else if(getLanguage() == LG_EN)
     {
-      if ($explodedContent[2] != "")
+      if($explodedContent[2] != "")
       {
         $cnt_en = explode('-->',$explodedContent[2]);
         print($cnt_en[1]);        
       }
     }
-    else if (getLanguage() == LG_ES)
+    else if(getLanguage() == LG_ES)
     {
-      if ($explodedContent[3] != "")
+      if($explodedContent[3] != "")
       {
         $cnt_es = explode('-->',$explodedContent[3]);
         print($cnt_es[1]);
@@ -601,7 +629,7 @@
     }
 
     // Module content
-    if ($explodedContent[4] != "")
+    if($explodedContent[4] != "")
     {
       $cnt_mods = explode('-->',$explodedContent[4]);
       $cnt_mod = explode(';',$cnt_mods[1]);

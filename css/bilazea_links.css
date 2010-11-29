@@ -172,6 +172,17 @@ a:hover.externalLink
   background:url('../img/externalLink_h.gif') center right no-repeat;
 }
 
+
+/* CONTACT LINK **************************************************************/
+.aContact{
+  background: url("../img/mail.gif") no-repeat scroll right 2px transparent;
+  padding-right:18px;
+}
+.aContact:hover{
+  background: url("../img/mail_h.gif") center right no-repeat;
+}
+
+
 a.closeImg
 {
   width:30px;
