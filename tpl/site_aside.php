@@ -61,14 +61,6 @@
           </a>
         </p>
         <p><?php printLgFileText("COPYRIGHT"); ?></p>
-        <p><?php printLgFileText("MADE_WITH"); ?> 
-          <a class="externalLink external toolTips" 
-             href="<?php echo FOOTER_LINK3_R; ?>" 
-             title="<?php printLgFileText("APTANA"); ?>" 
-             rel="<?php printLgFileText("APTANA_HOME"); ?>">
-            <?php printLgFileText("APTANA"); ?>
-          </a>
-        </p>
         <p><?php printLgFileText("SITE_ASIDE_TEXT"); ?></p>
       </div>
     </div>

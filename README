@@ -1,11 +1,15 @@
-Bilazea template is a PHP/HTML/CSS/AJAX template used in several sites.
+Bilazea template is a PHP/HTML/CSS/AJAX template used in several sites
 - PHP core
 - HTML/CSS/AJAX presentation
 
-It's currently an 'on working' project, a prototype. First official release will be available next year.
+It's currently an 'on working' project, a prototype (version 0.1)
+First official beta release will be available next year, in January 2011, as version 0.2
+First official release will be available in 2011, no precise date for now, as version 1.0
+
 
 Main demonstration can be seen on Bilazea.com, on page http://bilazea.com/Bilazea-template
 
-It is a very simple framework designed to create quickly a website.
+
+It is a very simple framework designed to create quickly a website
 - Main language used is PHP, to create navigation stuff mainly
 - MOOTOOLS (http://github.com/mootools/mootools-core), XHTML and CSS are used to present content

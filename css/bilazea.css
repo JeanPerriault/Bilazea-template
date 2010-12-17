@@ -520,5 +520,7 @@ p.box_title_txt
 /* Cv panel ******************************************************************/
 .cvPanel
 {
+  padding:5px;
   margin-bottom:20px;
+  margin-top:15px;
 }

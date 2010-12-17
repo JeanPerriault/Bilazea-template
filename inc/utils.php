@@ -15,6 +15,7 @@
  */
 ///////////////////////////////////////////////////////////////////////////////
 
+  // LANGAGE //////////////////////////////////////////////////////////////////
   /**
    * Set language
    * 
@@ -132,7 +133,6 @@
     }
   }
 
-
   /**
    * Get language
    */
@@ -148,46 +148,6 @@
       $lg = $_SESSION['lg'];
     }
     return $lg;
-  }
-
-
-  /**
-   * Get documentation link, according to user language
-   */
-  function getDocumentationLink()
-  {
-    if(getLanguage() == LG_FR)
-    {
-      return LINK_INTERNAL_DOC_FR;
-    }
-    else if(getLanguage() == LG_EN)
-    {
-      return LINK_INTERNAL_DOC_EN;
-    }
-    else if(getLanguage() == LG_ES)
-    {
-      return LINK_INTERNAL_DOC_ES;
-    }
-  }
-
-
-  /**
-   * Is the site under maintenance?
-   * 
-   * @param $maintenance
-   */
-  function isMaintenance($maintenance)
-  {
-    $maintenanceTag = $maintenance;
-    if(isset($_GET['maintenance']))
-    {
-      if($_GET['maintenance'] == "true")
-      {
-        $maintenanceTag = true;
-      }
-      else $maintenanceTag = false;
-    }
-    return $maintenanceTag;
   }
 
 
@@ -221,7 +181,6 @@
     }
   }
 
-
   /**
    * Get text, parsing language file, excluding sections of .lng file
    * + Print
@@ -251,7 +210,6 @@
       echo NO_VALUE;
     }
   }
-
 
   /**
    * Get language file text for url
@@ -283,198 +241,6 @@
       return ST_EMPTY;
     }
   }
-
-
-  /**
-   * Build menu
-   * 
-   * @return $menusArray The menus array
-   */
-  function buildMenu()
-  {
-    // Get language file
-    $lang_array = parse_ini_file(LINK_LANG);
-    // Get language array keys
-    $lang_array_keys = array_keys($lang_array);
-
-    // Build menu with file content
-    $firstTime = 0;
-    $nbCat = 0;
-    $nav = '<div id="navigation">';
-    $previousCat = "CAT_1";
-    $previousNavCat = "CAT_1_1";
-    // Loop on number of keys
-    for($j = 0;$j<count($lang_array_keys);$j++)
-    {
-      // Get only categories
-      if(substr($lang_array_keys[$j],0,3) == "CAT")
-      {
-        // Get category, trimed and where spaces are replaced by dashes
-        $lineL = $lang_array_keys[$j];
-
-        // Main menu
-        if(strlen($lineL) == 5)
-        {
-          define("LINK_".$lineL, LINK_INDEX.getLgFileText("CONTENT").'='.
-                  getLgFileTextForUrl($lineL));
-          if($lineL != "CAT_0")
-          {
-            $nav .= '<a id="'.$lineL.'" class="menu" href="'
-                   .constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
-            $nbCat++;
-          }
-        }
-
-        // Sub menu
-        else if(strlen($lineL) == 7)
-        {
-          define("LINK_".$lineL, constant("LINK_".substr($lineL, 0, 5))
-                  .'>'.getLgFileTextForUrl($lineL));
-          $navCat = 'nav'.substr($lineL, 0, 5);
-
-          if($firstTime == 0)
-          {
-            $$navCat = '<div id="nav'.$navCat.'" class="navigationDiv">';
-            $firstTime++;
-          }
-
-          $currentCat = substr($lineL, 0, 5);
-          if($previousCat == $currentCat)
-          {
-            $$navCat .= '<a id="'.$lineL.'" class="menu" href="'
-                        .constant("LINK_".$lineL).'">'
-                        .getLgFileText($lineL).'</a>';
-          }
-          else
-          {
-            $$previousNavCat .= '</div>';
-            $$navCat .= '<div id="nav'.$currentCat.'" class="navigationDiv">';
-            $$navCat .= '<a id="'.$lineL.'" class="menu" href="'
-                        .constant("LINK_".$lineL).'">'
-                        .getLgFileText($lineL).'</a>';
-          }
-          $previousCat = $currentCat;
-          $previousNavCat = $navCat;
-        }
-        $menu[$k] = $lang_array_keys[$j];
-      }
-    }
-    $nav .= '</div>';
-    $$navCat .= '</div>';
-
-    // Set menus array
-    $menusArray[0] = $nav;
-    for($m = 1; $m<$nbCat+1; $m++)
-    {
-      $navCat = "navCAT_$m";
-      $menusArray[$m] = $$navCat;
-    }
-    $nbMenu = count($menu);
-
-    // Return menus array
-    return $menusArray;
-  }
-
-
-  /**
-   * Add errors
-   * 
-   * @param $title
-   * @param $msg
-   */
-  function addErrors($title,$msg)
-  {
-  	if((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
-    {
-      $errorsArray = $_SESSION['error_msg'];
-    }
-    else{
-    	$errorsArray = array();
-    }
-    $error = "$title >> $msg";
-    $mergedArray = array_push($errorsArray,$error);
-  	$_SESSION['error_msg'] = $errorsArray;
-  }
-
-
-  /**
-   * Show errors
-   */
-  function showErrors(){
-  	if((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
-    {
-  	  // Error div
-  	  echo '<div id="error">';
-  	  echo '<p class="error_div_title">Errors:</p>';
-      echo '<ol>';
-      foreach($_SESSION['error_msg'] as $key => $value)
-      {
-        echo '<li><p class="error_message">'.$value.'</p></li>';
-      }
-      echo '</ol></div>';
-
-      // Initialize array
-      $_SESSION['error_msg'] = array();
-    }
-  }
-
-
-  /**
-   * Get either a Gravatar URL or complete image tag for a specified 
-   * email address.
-   *
-   * @param string $email The email address
-   * @param string $s Size in pixels, defaults to 80px [ 1 - 512 ]
-   * @param string $d Default imageset to use 
-   * [ 404 | mm | identicon | monsterid | wavatar]
-   * @param string $r Maximum rating (inclusive) [ g | pg | r | x ]
-   * @param boole $img True to return a complete IMG tag False for just the URL
-   * @param array $atts Optional, additional key/value attributes to include 
-   * in the IMG tag
-   * @return String containing either just a URL or a complete image tag
-   * @source http://gravatar.com/site/implement/images/php/
-   */
-  function getGravatar($email,$s=80,$d='mm',$r='g',$img=false,$atts=array())
-  {
-    $url = 'http://www.gravatar.com/avatar/';
-    $url .= md5(strtolower(trim($email)));
-    $url .= "?s=$s&amp;d=$d&amp;r=$r";
-    if($img)
-    {
-      $url = '<img src="'.$url.'"';
-      foreach($atts as $key=>$val)
-      {
-        $url .= ' '.$key.'="'.$val.'"';
-      }
-      $url .= ' />';
-    }
-    return $url;
-  }
-
-
-  /**
-   * curPageURL
-   */
-  function curPageURL()
-  {
-    $pageURL = 'http';
-    if ($_SERVER["HTTPS"] == "on")
-    {
-      $pageURL .= "s";
-    }
-    $pageURL .= "://";
-    if ($_SERVER["SERVER_PORT"] != "80")
-    {
-      $pageURL .= $_SERVER["SERVER_NAME"].":";
-      $pageURL .= $_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
-    }
-    else
-    {
-      $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-    }
-    return $pageURL;
-  }
-
 
   /**
    * Get page url for language
@@ -535,6 +301,30 @@
   }
 
 
+  // URL //////////////////////////////////////////////////////////////////////
+  /**
+   * curPageURL
+   */
+  function curPageURL()
+  {
+    $pageURL = 'http';
+    if ($_SERVER["HTTPS"] == "on")
+    {
+      $pageURL .= "s";
+    }
+    $pageURL .= "://";
+    if ($_SERVER["SERVER_PORT"] != "80")
+    {
+      $pageURL .= $_SERVER["SERVER_NAME"].":";
+      $pageURL .= $_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+    }
+    else
+    {
+      $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+    }
+    return $pageURL;
+  }
+
   /**
    * Get meta title
    */
@@ -590,6 +380,100 @@
   }
 
 
+  // MENU /////////////////////////////////////////////////////////////////////
+  /**
+   * Build menu
+   * 
+   * @return $menusArray The menus array
+   */
+  function buildMenu()
+  {
+    // Get language file
+    $lang_array = parse_ini_file(LINK_LANG);
+    // Get language array keys
+    $lang_array_keys = array_keys($lang_array);
+
+    // Build menu with file content
+    $firstTime = 0;
+    $nbCat = 0;
+    $nbCat2 = count($lang_array_keys);
+    $nav = '<div id="navigation">';
+    $previousCat = "CAT_1";
+    $previousNavCat = "CAT_1_1";
+    // Loop on number of keys
+    for($j = 0;$j<$nbCat2;$j++)
+    {
+      // Get only categories
+      if(substr($lang_array_keys[$j],0,3) == "CAT")
+      {
+        // Get category, trimed and where spaces are replaced by dashes
+        $lineL = $lang_array_keys[$j];
+
+        // Main menu
+        if(strlen($lineL) == 5)
+        {
+          define("LINK_".$lineL, LINK_INDEX.getLgFileText("CONTENT").'='.
+                  getLgFileTextForUrl($lineL));
+          if($lineL != "CAT_0")
+          {
+            $nav .= '<a id="'.$lineL.'" class="menu" href="'
+                   .constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
+            $nbCat++;
+          }
+        }
+
+        // Sub menu
+        else if(strlen($lineL) == 7)
+        {
+          define("LINK_".$lineL, constant("LINK_".substr($lineL, 0, 5))
+                  .'>'.getLgFileTextForUrl($lineL));
+          $navCat = 'nav'.substr($lineL, 0, 5);
+
+          if($firstTime == 0)
+          {
+            $$navCat = '<div id="nav'.$navCat.'" class="navigationDiv">';
+            $firstTime++;
+          }
+
+          $currentCat = substr($lineL, 0, 5);
+          if($previousCat == $currentCat)
+          {
+            $$navCat .= '<a id="'.$lineL.'" class="menu" href="'
+                        .constant("LINK_".$lineL).'">'
+                        .getLgFileText($lineL).'</a>';
+          }
+          else
+          {
+            $$previousNavCat .= '</div>';
+            $$navCat .= '<div id="nav'.$currentCat.'" class="navigationDiv">';
+            $$navCat .= '<a id="'.$lineL.'" class="menu" href="'
+                        .constant("LINK_".$lineL).'">'
+                        .getLgFileText($lineL).'</a>';
+          }
+          $previousCat = $currentCat;
+          $previousNavCat = $navCat;
+        }
+      }
+    }
+    $nav .= '</div>';
+    $$navCat .= '</div>';
+
+    // Set menus array
+    $menusArray[0] = $nav;
+    for($m = 1; $m<$nbCat+1; $m++)
+    {
+      $navCat = "navCAT_$m";
+      $menusArray[$m] = $$navCat;
+    }
+
+    // Return menus array
+    return $menusArray;
+  }
+
+
+
+
+  // CONTENT //////////////////////////////////////////////////////////////////
   /**
    * Print content
    * 
@@ -597,7 +481,7 @@
    */
   function printContent($filename)
   {
-    // get contents of a category file
+    // Get contents of a category file
     $handle = fopen($filename, "r");
     $contents = fread($handle, filesize($filename));
     $explodedContent = explode('<!--', $contents);
@@ -643,5 +527,126 @@
       }
     }
     fclose($handle);
+  }
+
+
+  // DOCUMENTATION ////////////////////////////////////////////////////////////
+  /**
+   * Get documentation link, according to user language
+   */
+  function getDocumentationLink()
+  {
+    if(getLanguage() == LG_FR)
+    {
+      return LINK_INTERNAL_DOC_FR;
+    }
+    else if(getLanguage() == LG_EN)
+    {
+      return LINK_INTERNAL_DOC_EN;
+    }
+    else if(getLanguage() == LG_ES)
+    {
+      return LINK_INTERNAL_DOC_ES;
+    }
+  }
+
+
+  // MAINTENANCE //////////////////////////////////////////////////////////////
+  /**
+   * Is the site under maintenance?
+   * 
+   * @param $maintenance
+   */
+  function isMaintenance($maintenance)
+  {
+    $maintenanceTag = $maintenance;
+    if(isset($_GET['maintenance']))
+    {
+      if($_GET['maintenance'] == "true")
+      {
+        $maintenanceTag = true;
+      }
+      else $maintenanceTag = false;
+    }
+    return $maintenanceTag;
+  }
+
+
+  // ERRORS MANAGEMENT ////////////////////////////////////////////////////////
+  /**
+   * Add errors
+   * 
+   * @param $title
+   * @param $msg
+   */
+  function addErrors($title,$msg)
+  {
+    if((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
+    {
+      $errorsArray = $_SESSION['error_msg'];
+    }
+    else
+    {
+      $errorsArray = array();
+    }
+    $error = "$title >> $msg";
+    $mergedArray = array_push($errorsArray,$error);
+    $_SESSION['error_msg'] = $errorsArray;
+  }
+
+  /**
+   * Show errors
+   */
+  function showErrors()
+  {
+    if((isset($_SESSION['error_msg'])) && (!empty($_SESSION['error_msg'])))
+    {
+      // Error div
+      echo '<div id="error">';
+      echo '<p class="error_div_title">Errors:</p>';
+      echo '<ol>';
+      foreach($_SESSION['error_msg'] as $key => $value)
+      {
+        echo '<li><p class="error_message">'.$value.'</p></li>';
+      }
+      echo '</ol></div>';
+
+      // Initialize array
+      $_SESSION['error_msg'] = array();
+    }
+  }
+
+
+  // GRAVATAR /////////////////////////////////////////////////////////////////
+  /**
+   * Get either a Gravatar URL or complete image tag for a specified 
+   * email address.
+   *
+   * @param string $email The email address
+   * @param string $s Size in pixels, defaults to 80px [ 1 - 512 ]
+   * @param string $d Default imageset to use 
+   * [ 404 | mm | identicon | monsterid | wavatar]
+   * @param string $r Maximum rating (inclusive) [ g | pg | r | x ]
+   * @param boole $img True to return a complete IMG tag False for just the URL
+   * @param array $atts Optional, additional key/value attributes to include 
+   * in the IMG tag
+   * @return String containing either just a URL or a complete image tag
+   * @source http://gravatar.com/site/implement/images/php/
+   */
+  function getGravatar($email,$s=80,$d='mm',$r='g',$img=false,$atts=array())
+  {
+    $url = 'http://www.gravatar.com/avatar/';
+    $url .= md5(strtolower(trim($email)));
+    $url .= "?s=$s&amp;d=$d&amp;r=$r";
+    if($img)
+    {
+      $url = '<img src="'.$url.'"';
+      foreach($atts as $key=>$val)
+      {
+        $url .= ' '.$key.'="'.$val.'"';
+      }
+      $url .= ' />';
+    }
+    return $url;
   }
 ?>

@@ -2,20 +2,76 @@
 Release-notes
 -------------
 
-Version 0.1:
-- First version, lots of bugs and security holes
+Also available on github host: 
+https://github.com/JeanPerriault/Bilazea-template/wiki/Roadmap
 
-Version 0.2:
-- Second version, lots of bugs and security holes
 
-Version 1.0:
-- Third version, lots of bugs and security holes
+TODO:
 
-Version 1.1:
-- Fourth version, lots of bugs and security holes
+    * Add correct dates!
+    * Try to pass CSS validation
+          o Problems due to:
+                + '-moz-border-radius' css attribute not valid
+                + 'opacity' trick for ie not valid
+    * Try to pass Accessibility validation
+    * Feed validation: http://feedvalidator.org/
 
-Version 1.2:
-- Fifth version, lots of bugs and security holes
 
-Version 2.0:
-- Sixth version, lots of bugs and security holes
+
+Version 0.1 (Alpha)
+--------------------
+Date: November 2010
+
+    * It's currently implementing:
+          o A simple website framework
+                + PHP core
+                + HTML / CSS / Javascript presentation
+          o Multinlingual (french, english, spanish), language files
+          o Two levels automatically build menu
+          o Utils php functions
+          o Customized error pages
+          o Embedding simpletest test framework (http://www.simpletest.org/), not used for now.
+          o Embedding draft documentation
+          o XHTML validation: Valid XHTML 1.0 Strict
+
+Version 0.2 (Beta)
+-------------------
+Date: January 2011
+
+    * It will implement:
+          o Error pages localized
+          o Tests of utlis functions, with simpletest framework
+          o Documentation completed
+          o Include a simple web-based WYSIWYG editor, written in MooTools:
+                + http://cheeaun.github.com/mooeditable/
+                + On github: https://github.com/cheeaun/mooeditable
+
+Version 1.0
+------------
+    * It will implement:
+          o Centralized configuration
+                + Avoid editing almost three files to configure template
+          o Refactor php utils functions
+          o Secured forms to post comments online?
+
+Version 1.1
+------------
+    * It will implement:
+          o Replace all php functions using javascript and mootools (client and server side)
+          o TODO
+          o TODO
+
+Version 1.2
+------------
+    * It will implement:
+          o TODO
+          o TODO
+          o TODO
+
+Version 2.0
+------------
+    * It will implement:
+          o TODO
+          o TODO
+          o TODO
+

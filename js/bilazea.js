@@ -295,7 +295,10 @@ window.addEvent('domready',function()
   {
     e.stop();
     verticalFooter.slideIn();
-    verticalFooterHidden.slideOut();
+    verticalFooterHidden.slideOut().chain(function (){
+      var winScroller = new Fx.Scroll(window);
+      winScroller.toBottom();
+    });
     cookies.set('aside', 'opened');
   });
   verticalFooterLinkSlideOut.addEvent('click', function(e)
