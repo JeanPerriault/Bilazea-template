@@ -102,15 +102,20 @@
   define(LINK_CNT_CAT_4_1,  LINK_DIRECTORY_CNT.'category_4/category_4_1.html');
 
   // EXTERNAL LINKS ///////////////////////////////////////////////////////////
-  define(FOOTER_LINK1_L,    'http://bilazea.com');
-  define(FOOTER_LINK2_L,    'http://example_link1.com');
-  define(FOOTER_LINK3_L,    'http://example_link2.com');
-  define(FOOTER_LINK4_L,    'http://example_link3.com');
-  define(FOOTER_LINK5_L,    'http://example_link4.com');
+  define(FOOTER_LINK1,      'http://bilazea.com');
+  define(FOOTER_LINK2,      'http://example_link2.com');
+  define(FOOTER_LINK3,      'http://example_link3.com');
+  define(FOOTER_LINK4,      'http://example_link4.com');
+  define(FOOTER_LINK5,      'http://example_link5.com');
 
-  define(FOOTER_LINK1_R,    'http://mootools.net');
-  define(FOOTER_LINK2_R,    'http://www.digitalia.be/software/reflectionjs-for-mootools');
-  define(FOOTER_LINK3_R,    'http://www.aptana.com/');
+  define(FOOTER_LINK6,      'http://mootools.net');
+  define(FOOTER_LINK7,      'http://www.digitalia.be/software/reflectionjs-for-mootools');
+  define(FOOTER_LINK8,      'http://www.aptana.com/');
+
+  define(FOOTER_LINK9,      'http://www.viadeo.com/profile/002eby7dzdsncl1/');
+  define(FOOTER_LINK10,     'http://www.linkedin.com/profile/view?id=39176760');
+  define(FOOTER_LINK11,     'https://github.com/JeanPerriault');
+  define(FOOTER_LINK12,     'http://twitter.com/#!/jeanperriault');
 
   define(LINK_WIKI_DOC,     'https://github.com/JeanPerriault/Bilazea-template/wiki');
 

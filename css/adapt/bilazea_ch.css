@@ -12,4 +12,56 @@
  * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
  */
 
-/* General *******************************************************************/
+/* Last/Most *****************************************************************/
+.titleLastMost
+{
+  -webkit-border-radius:5px;
+}
+
+
+/* Site **********************************************************************/
+#header
+{
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+
+/* Aside *********************************************************************/
+#underAside
+{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+
+/* DIV download template *****************************************************/
+.box
+{
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+.box_title
+{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+.box_video
+{
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+
+/* Accordion *****************************************************************/
+h2.accordionTitle1
+{
+  -webkit-border-radius: 5px;
+}
+
+h4.accordionTitle1_1,
+h4.accordionTitle1_2,
+h4.accordionTitle1_3
+{
+  -webkit-border-radius: 5px;
+}

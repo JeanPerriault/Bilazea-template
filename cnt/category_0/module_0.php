@@ -4,11 +4,11 @@
 </div>
 
 <!-- DIV Box -->
+<div class="box">
+  <br />
 
 <?php if (getLanguage() == LG_FR) { ?>
 <!-- French content ////////////////////////////////////////////////////////-->
-<div class="box">
-  <br />
   <p class="box_txt">Le template utilisé pour créer ce site est un projet 
   opensource:</p>
   <ul class="box_ul">
@@ -20,23 +20,10 @@
         http://github.com/JeanPerriault/Bilazea-template</a>
     </li>
   </ul>
-  <br />
-  <br />
-  <br />
-  <!-- Gravatar (get avatar) -->
-  <div id="gravatar">
-    <b>GrAvatar</b><br />
-    <a href="http://fr.gravatar.com/jeanperriault">
-      <img src="<?php echo getGravatar("jean.perriault@gmail.com"); ?>" alt="Gravatar avatar" />
-    </a>
-  </div>
-</div>
 
 
 <?php } else if (getLanguage() == LG_EN) { ?>
 <!-- English content ///////////////////////////////////////////////////////-->
-<div class="box">
-  <br />
   <p class="box_txt">The template used to create this site is an open source 
   project:</p>
   <ul class="box_ul">
@@ -48,22 +35,10 @@
         http://github.com/JeanPerriault/Bilazea-template</a>
     </li>
   </ul>
-  <br />
-  <br />
-  <br />
-  <div id="gravatar">
-    <b>GrAvatar</b><br />
-    <a href="http://fr.gravatar.com/jeanperriault">
-      <img src="<?php echo getGravatar("jean.perriault@gmail.com"); ?>" alt="Gravatar avatar" />
-    </a>
-  </div>
-</div>
 
 
 <?php } else if (getLanguage() == LG_ES) { ?>
 <!-- Spanich content ///////////////////////////////////////////////////////-->
-<div class="box">
-  <br />
   <p class="box_txt">Le template utilizada para crear este sitio es un proyecto 
   open source:</p>
   <ul class="box_ul">
@@ -75,6 +50,9 @@
         http://github.com/JeanPerriault/Bilazea-template</a>
     </li>
   </ul>
+
+
+<?php } ?>
   <br />
   <br />
   <br />
@@ -86,6 +64,3 @@
     </a>
   </div>
 </div>
-
-
-<?php } ?>

@@ -35,42 +35,42 @@
           <ul class="footerLinksUl">
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK1_L; ?>" 
-                 title="<?php printLgFileText("SITE_FOOTER_LINK1_L"); ?>" 
-                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK1_L"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK1_L"); ?>
+                 href="<?php echo FOOTER_LINK1; ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK1"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK1"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK1"); ?>
               </a>
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK2_L; ?>" 
-                 title="<?php printLgFileText("SITE_FOOTER_LINK2_L"); ?>" 
-                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK2_L"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK2_L"); ?>
+                 href="<?php echo FOOTER_LINK2; ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK2"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK2"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK2"); ?>
               </a>
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                  href="<?php echo FOOTER_LINK3_L; ?>" 
-                  title="<?php printLgFileText("SITE_FOOTER_LINK3_L"); ?>" 
-                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK3_L"); ?>">
-                  <?php printLgFileText("SITE_FOOTER_LINK3_L"); ?>
+                  href="<?php echo FOOTER_LINK3; ?>" 
+                  title="<?php printLgFileText("SITE_FOOTER_LINK3"); ?>" 
+                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK3"); ?>">
+                  <?php printLgFileText("SITE_FOOTER_LINK3"); ?>
               </a>
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK4_L; ?>" 
-                 title="<?php printLgFileText("SITE_FOOTER_LINK4_L"); ?>" 
-                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK4_L"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK4_L"); ?>
+                 href="<?php echo FOOTER_LINK4; ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK4"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK4"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK4"); ?>
               </a>
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK5_L; ?>"
-                 title="<?php printLgFileText("SITE_FOOTER_LINK5_L"); ?>" 
-                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK5_L"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK5_L"); ?>
+                 href="<?php echo FOOTER_LINK5; ?>"
+                 title="<?php printLgFileText("SITE_FOOTER_LINK5"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK5"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK5"); ?>
               </a>
             </li>
           </ul>
@@ -82,30 +82,70 @@
           <ul class="footerLinksUl">
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK1_R; ?>"
-                 title="<?php echo getLgFileText("SITE_FOOTER_LINK1_R"); ?>"
-                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK1_R"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK1_R"); ?>
+                 href="<?php echo FOOTER_LINK6; ?>"
+                 title="<?php echo getLgFileText("SITE_FOOTER_LINK6"); ?>"
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK6"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK6"); ?>
               </a>
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK2_R; ?>"
-                 title="<?php printLgFileText("SITE_FOOTER_LINK2_R"); ?>" 
-                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK2_R"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK2_R"); ?>
+                 href="<?php echo FOOTER_LINK7; ?>"
+                 title="<?php printLgFileText("SITE_FOOTER_LINK7"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK7"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK7"); ?>
               </a>
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK3_R; ?>" 
-                 title="<?php printLgFileText("SITE_FOOTER_LINK3_R"); ?>" 
-                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK3_R"); ?>">
-                <?php printLgFileText("SITE_FOOTER_LINK3_R"); ?>
+                 href="<?php echo FOOTER_LINK8; ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK8"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK8"); ?>">
+                <?php printLgFileText("SITE_FOOTER_LINK8"); ?>
               </a>
             </li>
           </ul>
         </div>
+
+        <!-- DIV Link bottom 3 -->
+        <div id="footerLinksDiv3">
+          <p class="titleLastMost"><?php printLgFileText("SOCIAL"); ?></p>
+          <ul class="footerLinksUl">
+            <li>
+              <a class="externalLink external toolTips" 
+                 href="<?php echo FOOTER_LINK9; ?>" 
+                 title="<?php echo getLgFileText("SITE_FOOTER_LINK9"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK9"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK9"); ?>
+              </a>
+            </li>
+            <li>
+              <a class="externalLink external toolTips" 
+                 href="<?php echo FOOTER_LINK10; ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK10"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK10"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK10"); ?>
+              </a>
+            </li>
+            <li>
+              <a class="externalLink external toolTips" 
+                 href="<?php echo FOOTER_LINK11; ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK11"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK11"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK11"); ?>
+              </a>
+            </li>
+            <li>
+              <a class="externalLink external toolTips" 
+                 href="<?php echo FOOTER_LINK12; ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK12"); ?>" 
+                 rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK12"); ?>">
+                 <?php printLgFileText("SITE_FOOTER_LINK12"); ?>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
       </div>
     </div>
 

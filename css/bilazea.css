@@ -36,28 +36,9 @@ h2
   margin:0;
 }
 
-h2.cvTitle1
-{
-  cursor:pointer;
-  color:#CCC;
-  margin:0;
-  padding-left:5px;
-  padding-top:2px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-
 h3
 {
   text-align:center;
-}
-
-h4.cvTitleAcc
-{
-  cursor:pointer;
-  padding:5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
 
 p
@@ -88,9 +69,6 @@ hr
 }
 
 
-
-
-
 /* Last/Most *****************************************************************/
 #lastMost
 {
@@ -105,15 +83,12 @@ hr
   height:25px;
   background:#DDD;
   opacity:0.4;
-  filter:alpha(opacity=40);
 }
 
 .titleLastMost
 {
   color:#EEE;
   background-color:#4C4C4C;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
   padding-left:5px;
   padding-right:2px;
   padding-top:2px;
@@ -133,12 +108,6 @@ hr
 }
 
 
-
-
-
-
-
-
 /* Site **********************************************************************/
 #site
 {
@@ -149,11 +118,6 @@ hr
 {
   background-color:#000;
   opacity:0.7;
-  filter:alpha(opacity=70);
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
 }
 
 #title
@@ -183,7 +147,6 @@ hr
 {
   clear:both;
   opacity:0.8;
-  filter:alpha(opacity=80);
   margin: 0px auto;
   width:800px;
   border-top:5px solid #646464;
@@ -203,15 +166,9 @@ hr
 {
   clear:both;
   opacity:0.7;
-  filter:alpha(opacity=70);
 }
-
 #underAside
 {
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
   margin-left: auto;
   margin-right: auto;
   text-align:center;
@@ -294,18 +251,21 @@ a.iconGoToTopRcl:hover
   float:left;
   margin-left:10px;
   height:134px;
-  width:45%;
+  width:40%;
 }
 #footerLinksDiv2
 {
   float:left;
   height:134px;
-  width:45%;
+  width:25%;
   margin-left:20px;
 }
-.footerLinksUl
+#footerLinksDiv3
 {
-  
+  float:left;
+  height:134px;
+  width:25%;
+  margin-left:20px;
 }
 .footerLinksP
 {
@@ -322,9 +282,7 @@ a.iconGoToTopRcl:hover
 #most
 {
   float:left;
-
 }
-
 
 
 /* class tool-tip ************************************************************/
@@ -335,7 +293,6 @@ a.iconGoToTopRcl:hover
 .tip
 {
   opacity:0.7;
-  filter:alpha(opacity=70);
   background:url('../img/bulle.gif') top left no-repeat;
 }
 .tip-title
@@ -360,7 +317,6 @@ a.iconGoToTopRcl:hover
   margin:0;
   padding:8px 0px 8px 0px;
   opacity:0.7;
-  filter:alpha(opacity=70);
   background:url('../img/bulle.gif') bottom right no-repeat;
 }
 
@@ -371,7 +327,6 @@ a.iconGoToTopRcl:hover
   border: 4px solid #FFF;
   background-color:red;
   opacity:0.5;
-  filter:alpha(opacity=50);
 }
 
 #error ol
@@ -396,10 +351,6 @@ a.iconGoToTopRcl:hover
 .box
 {
   background-color: #DDD;
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
   margin-bottom:20px;
   padding:0 5px 0 5px;
 }
@@ -444,10 +395,6 @@ a:hover.box_link
 .box_title
 {
   margin-top:40px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
   background-color:#333;
   color:#EEE;
   font-size:26px;
@@ -463,10 +410,6 @@ p.box_title_txt
 {
   text-align:center;
   background-color: #DDD;
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
   margin-bottom:20px;
 }
 
@@ -477,19 +420,12 @@ p.box_title_txt
   list-style-type:none;
 }
 
-#navigation li
-{
-  
-}
-
 
 /* Mask & Spinner ************************************************************/
 .mask
 {
   position: absolute;
   opacity: 0.9;
-  filter: alpha(opacity=90);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   z-index: 999;
   background: #fff;
 }
@@ -498,8 +434,6 @@ p.box_title_txt
 {
   position: absolute;
   opacity: 0.9;
-  filter: alpha(opacity=90);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   z-index: 999;
   background: #fff;
 }
@@ -510,15 +444,36 @@ p.box_title_txt
 }
 .spinner-img
 {
-  background: url("../img/spinner.gif") no-repeat;
   width: 24px;
   height: 24px;
   margin: 0 auto;
 }
 
 
-/* Cv panel ******************************************************************/
-.cvPanel
+/* Accordion *****************************************************************/
+h2.accordionTitle1
+{
+  cursor:pointer;
+  color:#CCC;
+  padding-left:5px;
+  padding-top:2px;
+  margin-top: 15px;
+}
+.accordionPanel1
+{
+  padding:5px;
+}
+
+h4.accordionTitle1_1,
+h4.accordionTitle1_2,
+h4.accordionTitle1_3
+{
+  cursor:pointer;
+  padding:5px;
+}
+.accordionPanel1_1,
+.accordionPanel1_2,
+.accordionPanel1_3
 {
   padding:5px;
   margin-bottom:20px;

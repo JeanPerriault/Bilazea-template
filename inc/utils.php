@@ -150,6 +150,25 @@
     return $lg;
   }
 
+  /**
+   * Get language file
+   * 
+   * @param $lg
+   */
+  function getLanguageFile($lg="")
+  {
+    if($lg != "")
+    {
+      if($lg == LG_FR) $lg_array = parse_ini_file('./inc/lang/fr.lng');
+      if($lg == LG_EN) $lg_array = parse_ini_file('./inc/lang/en.lng');
+      if($lg == LG_ES) $lg_array = parse_ini_file('./inc/lang/es.lng');
+    }
+    else
+    {
+      $lg_array = parse_ini_file(LINK_LANG);
+    }
+    return $lg_array;
+  }
 
   /**
    * Get language file text, parsing language file, 
@@ -160,16 +179,7 @@
    */
   function getLgFileText($key,$lg = "")
   {
-    if($lg != "")
-    {
-      if($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
-      if($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
-      if($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
-    }
-    else
-    {
-      $lang_array = parse_ini_file(LINK_LANG);
-    }
+    $lang_array = getLanguageFile($lg);
     if(array_key_exists($key, $lang_array))
     {
       return $lang_array[$key];
@@ -190,16 +200,7 @@
    */
   function printLgFileText($key,$lg = "")
   {
-    if($lg != "")
-    {
-      if ($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
-      if ($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
-      if ($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
-    }
-    else
-    {
-      $lang_array = parse_ini_file(LINK_LANG);      
-    }
+    $lang_array = getLanguageFile($lg);
     if (array_key_exists($key, $lang_array))
     {
       echo $lang_array[$key];
@@ -219,17 +220,7 @@
    */
   function getLgFileTextForUrl($key,$lg = "")
   {
-    if($lg != "")
-    {
-      if($lg == LG_FR) $lang_array = parse_ini_file('./inc/lang/fr.lng');
-      if($lg == LG_EN) $lang_array = parse_ini_file('./inc/lang/en.lng');
-      if($lg == LG_ES) $lang_array = parse_ini_file('./inc/lang/es.lng');
-    }
-    else
-    {
-      $lang_array = parse_ini_file(LINK_LANG);
-    }
-
+    $lang_array = getLanguageFile($lg);
     if (array_key_exists($key, $lang_array))
     {
       $a = str_replace(' ', '-', $lang_array[$key]);

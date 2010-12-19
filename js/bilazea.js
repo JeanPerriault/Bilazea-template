@@ -122,7 +122,7 @@ window.addEvent('domready',function()
 
 
   /* Accordion ***************************************************************/
-  var myAccordion = new Fx.Accordion($$('h2.cvTitle1'), $$('div.cvPanel'),{
+  var myAccordion = new Fx.Accordion($$('h2.accordionTitle1'), $$('div.accordionPanel1'),{
     opacity: false,
     onActive: function(toggler, element){
       var myTog = new Fx.Tween(toggler);
@@ -144,7 +144,7 @@ window.addEvent('domready',function()
     }
   });
 
-  var myAccordionPart = new Fx.Accordion($$('h4.cvTitleAcc'), $$('div.element'),{
+  var myAccordionPart = new Fx.Accordion($$('h4.accordionTitle1_1'), $$('div.accordionPanel1_1'),{
     opacity: false,
     onActive: function(toggler, element){
       var myTog = new Fx.Tween(toggler);
@@ -348,3 +348,5 @@ window.addEvent('domready',function()
     cookies.set('settings', 'closed');
   });
 });
+
+
