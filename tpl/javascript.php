@@ -14,8 +14,9 @@
  * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////
-?><script type="text/javascript" src='<?php echo LINK_MT_CORE ?>'></script>
-  <script type="text/javascript" src='<?php echo LINK_MT_MORE ?>'></script>
-  <script type="text/javascript" src='<?php echo LINK_MT_BILAZEA ?>'></script>
-  <script type="text/javascript" src='<?php echo LINK_GOOGLE ?>'></script>
-  <script type="text/javascript" src='<?php echo LINK_REFLECTION ?>'></script>
+?><script type="text/javascript" language="JavaScript" src='<?php echo LINK_MT_CORE ?>'></script>
+  <script type="text/javascript" language="JavaScript" src='<?php echo LINK_MT_MORE ?>'></script>
+  <script type="text/javascript" language="JavaScript" src='<?php echo LINK_MT_BILAZEA ?>'></script>
+  <script type="text/javascript" language="JavaScript" src='<?php echo LINK_GOOGLE ?>'></script>
+  <script type="text/javascript" language="JavaScript" src='<?php echo LINK_REFLECTION ?>'></script>
+  <script type="text/javascript" language="JavaScript" src='<?php echo LINK_CAROUSEL ?>'></script>

@@ -11,6 +11,11 @@
       <guid isPermaLink="true">http://bilazea.com</guid>
       <description>Le site http://bilazea.com vous propose de télécharger Bilzea-template.</description>
       <pubDate>Jeu., 16 Dec 2010 19:30:00 GMT</pubDate>
+	    <image>
+	      <url>http://bilazea.com/Bilazea-template/cnt/img/bilazea_logo.jpg</url>
+	      <title>Bilazea template logo</title>
+	      <link>http://bilazea.com</link>
+	    </image>
     </item>
 
     <item>

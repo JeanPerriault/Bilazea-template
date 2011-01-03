@@ -16,6 +16,8 @@
  */
 ///////////////////////////////////////////////////////////////////////////////
 ?>
+    <!-- LINK BILA -->
+    <a href="../" id="backBila">Back to Drupal directory</a>
 
     <!-- LEFT TITLE -->
     <a id="titleLink" 

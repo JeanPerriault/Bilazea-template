@@ -110,61 +110,74 @@ window.addEvent('domready',function()
   new Asset.images(imagesToPreload);
 
 
+
   /* Left title link *********************************************************/
-  $('titleLink').addEvents({
-    'mouseover': function(){
-      $('titleLink').fade(0.6);
-    },
-    'mouseout': function(){
-      $('titleLink').fade(1);
-    }
-  });
+  if($('titleLink'))
+  {
+    $('titleLink').addEvents({
+      'mouseover': function()
+      {
+        $('titleLink').fade(0.6);
+      },
+      'mouseout': function()
+      {
+        $('titleLink').fade(1);
+      }
+    });
+  }
+
 
 
   /* Accordion ***************************************************************/
-  var myAccordion = new Fx.Accordion($$('h2.accordionTitle1'), $$('div.accordionPanel1'),{
-    opacity: false,
-    onActive: function(toggler, element){
-      var myTog = new Fx.Tween(toggler);
-      var myEl = new Fx.Tween(element);
-      myTog.set('color', '#FFF');
-      myTog.set('background-color', '#4C4C4C');
-      myTog.set('background-image', 'url("./img/opened.png")');
-      myTog.set('background-position', 'right center');
-      myTog.set('background-repeat', 'no-repeat');
-    },
-    onBackground: function(toggler, element){
-      var myTog = new Fx.Tween(toggler);
-      var myEl = new Fx.Tween(element);
-      myTog.set('color', '#EEE');
-      myTog.set('background-color', '#61615F');
-      myTog.set('background-image', 'url("./img/closed.png")');
-      myTog.set('background-position', 'right center');
-      myTog.set('background-repeat', 'no-repeat');
-    }
-  });
+  if($$('h2.accordionTitle1'))
+  {
+	  var myAccordion = new Fx.Accordion($$('h2.accordionTitle1'), $$('div.accordionPanel1'),{
+	    opacity: false,
+	    onActive: function(toggler, element){
+	      var myTog = new Fx.Tween(toggler);
+	      var myEl = new Fx.Tween(element);
+	      myTog.set('color', '#FFF');
+	      myTog.set('background-color', '#4C4C4C');
+	      myTog.set('background-image', 'url("./img/opened.png")');
+	      myTog.set('background-position', 'right center');
+	      myTog.set('background-repeat', 'no-repeat');
+	    },
+	    onBackground: function(toggler, element){
+	      var myTog = new Fx.Tween(toggler);
+	      var myEl = new Fx.Tween(element);
+	      myTog.set('color', '#EEE');
+	      myTog.set('background-color', '#61615F');
+	      myTog.set('background-image', 'url("./img/closed.png")');
+	      myTog.set('background-position', 'right center');
+	      myTog.set('background-repeat', 'no-repeat');
+	    }
+	  });
+  }
 
-  var myAccordionPart = new Fx.Accordion($$('h4.accordionTitle1_1'), $$('div.accordionPanel1_1'),{
-    opacity: false,
-    onActive: function(toggler, element){
-      var myTog = new Fx.Tween(toggler);
-      var myEl = new Fx.Tween(element);
-      myTog.set('color', '#FFF');
-      myTog.set('background-color', '#4C4C4C');
-      myTog.set('background-image', 'url("./img/opened.png")');
-      myTog.set('background-position', 'right center');
-      myTog.set('background-repeat', 'no-repeat');
-    },
-    onBackground: function(toggler, element){
-      var myTog = new Fx.Tween(toggler);
-      var myEl = new Fx.Tween(element);
-      myTog.set('color', '#EEE');
-      myTog.set('background-color', '#61615F');
-      myTog.set('background-image', 'url("./img/closed.png")');
-      myTog.set('background-position', 'right center');
-      myTog.set('background-repeat', 'no-repeat');
-    }
-  });
+  if($$('h4.accordionTitle1_1'))
+  {
+	  var myAccordionPart = new Fx.Accordion($$('h4.accordionTitle1_1'), $$('div.accordionPanel1_1'),{
+	    opacity: false,
+	    onActive: function(toggler, element){
+	      var myTog = new Fx.Tween(toggler);
+	      var myEl = new Fx.Tween(element);
+	      myTog.set('color', '#FFF');
+	      myTog.set('background-color', '#4C4C4C');
+	      myTog.set('background-image', 'url("./img/opened.png")');
+	      myTog.set('background-position', 'right center');
+	      myTog.set('background-repeat', 'no-repeat');
+	    },
+	    onBackground: function(toggler, element){
+	      var myTog = new Fx.Tween(toggler);
+	      var myEl = new Fx.Tween(element);
+	      myTog.set('color', '#EEE');
+	      myTog.set('background-color', '#61615F');
+	      myTog.set('background-image', 'url("./img/closed.png")');
+	      myTog.set('background-position', 'right center');
+	      myTog.set('background-repeat', 'no-repeat');
+	    }
+	  });
+  }
 
 
   /* Tips ********************************************************************/
@@ -268,85 +281,92 @@ window.addEvent('domready',function()
   }
 
   // Footer
-  var verticalFooter = new Fx.Slide('footer') || null;
-  var verticalFooterHidden = new Fx.Slide('footerHidden') || null;
-  var verticalFooterLinkSlideIn = $('footerLinkSlideIn') || null;
-  var verticalFooterLinkSlideOut = $('footerLinkSlideOut') || null;
-  if (cookAside)
+  if ($('footer'))
   {
-    if (cookAside == 'opened')
+    var verticalFooter = new Fx.Slide('footer') || null;
+    var verticalFooterHidden = new Fx.Slide('footerHidden') || null;
+    var verticalFooterLinkSlideIn = $('footerLinkSlideIn') || null;
+    var verticalFooterLinkSlideOut = $('footerLinkSlideOut') || null;
+    if (cookAside)
+    {
+      if (cookAside == 'opened')
+      {
+        verticalFooter.show();
+        verticalFooterHidden.hide();
+      }
+      else
+      {
+        verticalFooter.hide();
+        verticalFooterHidden.show();
+      }
+    }
+    else
     {
       verticalFooter.show();
       verticalFooterHidden.hide();
     }
-    else
+    // Footer slides
+    verticalFooterLinkSlideIn.addEvent('click', function(e)
     {
-      verticalFooter.hide();
-      verticalFooterHidden.show();
-    }
-  }
-  else
-  {
-    verticalFooter.show();
-    verticalFooterHidden.hide();
-  }
-  // Footer slides
-  verticalFooterLinkSlideIn.addEvent('click', function(e)
-  {
-    e.stop();
-    verticalFooter.slideIn();
-    verticalFooterHidden.slideOut().chain(function (){
-      var winScroller = new Fx.Scroll(window);
-      winScroller.toBottom();
+      e.stop();
+      verticalFooter.slideIn();
+      verticalFooterHidden.slideOut().chain(function ()
+      {
+        var winScroller = new Fx.Scroll(window);
+        winScroller.toBottom();
+      });
+      cookies.set('aside', 'opened');
     });
-    cookies.set('aside', 'opened');
-  });
-  verticalFooterLinkSlideOut.addEvent('click', function(e)
-  {
-    e.stop();
-    verticalFooter.slideOut();
-    verticalFooterHidden.slideIn();
-    cookies.set('aside', 'closed');
-  });
+    verticalFooterLinkSlideOut.addEvent('click', function(e)
+    {
+      e.stop();
+      verticalFooter.slideOut();
+      verticalFooterHidden.slideIn();
+      cookies.set('aside', 'closed');
+    });
+  }
+
 
   // Settings
-  var verticalSettings = new Fx.Slide('settings') || null;
-  var verticalSettingsHidden = new Fx.Slide('settingsHidden') || null;
-  var verticalSettingsLinkSlideIn = $('settingsLinkSlideIn') || null;
-  var verticalSettingsLinkSlideOut = $('settingsLinkSlideOut') || null;
-  if (cookSettings)
+  if ($('settings'))
   {
-    if (cookSettings == 'opened')
+    var verticalSettings = new Fx.Slide('settings') || null;
+    var verticalSettingsHidden = new Fx.Slide('settingsHidden') || null;
+    var verticalSettingsLinkSlideIn = $('settingsLinkSlideIn') || null;
+    var verticalSettingsLinkSlideOut = $('settingsLinkSlideOut') || null;
+    if (cookSettings)
     {
-      verticalSettings.show();
-      verticalSettingsHidden.hide();
+      if (cookSettings == 'opened')
+      {
+        verticalSettings.show();
+        verticalSettingsHidden.hide();
+      }
+      else
+      {
+        verticalSettings.hide();
+        verticalSettingsHidden.show();
+      }
     }
     else
     {
       verticalSettings.hide();
       verticalSettingsHidden.show();
     }
+    // Settings slide
+    verticalSettingsLinkSlideIn.addEvent('click', function(e)
+    {
+      e.stop();
+      verticalSettings.slideIn();
+      verticalSettingsHidden.slideOut();
+      cookies.set('settings', 'opened');
+    });
+    verticalSettingsLinkSlideOut.addEvent('click', function(e)
+    {
+      e.stop();
+      verticalSettings.slideOut();
+      verticalSettingsHidden.slideIn();
+      cookies.set('settings', 'closed');
+    });
   }
-  else
-  {
-    verticalSettings.hide();
-    verticalSettingsHidden.show();
-  }
-  // Settings slide
-  verticalSettingsLinkSlideIn.addEvent('click', function(e)
-  {
-    e.stop();
-    verticalSettings.slideIn();
-    verticalSettingsHidden.slideOut();
-    cookies.set('settings', 'opened');
-  });
-  verticalSettingsLinkSlideOut.addEvent('click', function(e)
-  {
-    e.stop();
-    verticalSettings.slideOut();
-    verticalSettingsHidden.slideIn();
-    cookies.set('settings', 'closed');
-  });
+
 });
-
-

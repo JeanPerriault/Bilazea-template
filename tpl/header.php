@@ -50,4 +50,9 @@
   <!-- TEMPLATE CONTENT -->
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_CNT ?>" 
         type="text/css" media="projection, screen, tv" />
+
+  <!-- CAROUSEL -->
+  <link rel="stylesheet" href="<?php echo LINK_CSS_CAROUSEL ?>" 
+        type="text/css" media="projection, screen, tv" />
+
 </head>

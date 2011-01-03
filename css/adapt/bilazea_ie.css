@@ -55,6 +55,11 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
 }
 
+#settingsHidden
+{
+  filter:alpha(opacity=40);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
 
 /* class tool-tip ************************************************************/
 .tip
@@ -88,4 +93,20 @@
 {
   filter: alpha(opacity=90);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+
+
+
+
+
+/* Content *******************************************************************/
+.img-informatique
+{
+  filter:alpha(opacity=90);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+.img-informatique2
+{
+  filter:alpha(opacity=90);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }

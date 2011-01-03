@@ -28,6 +28,7 @@
   define(LINK_DIRECTORY_DOC,       './doc/');
   define(LINK_DIRECTORY_TPL_ERROR, LINK_DIRECTORY_TPL.'err/');
   define(LINK_DIRECTORY_CNT,       './cnt/');
+  define(LINK_DIRECTORY_TOOLS,     './tools/');
 
   // CSS bilazea base and supp
   define(LINK_CSS_BILA_BASE,       LINK_DIRECTORY_CSS.'bilazea_base.css');
@@ -36,6 +37,7 @@
   define(LINK_CSS_BILA_PERS_LINKS, LINK_DIRECTORY_CSS.'bilazea_links.css');
   define(LINK_CSS_BILA_PERS_SETS,  LINK_DIRECTORY_CSS.'bilazea_settings.css');
   define(LINK_CSS_BILA_PERS_CNT,   LINK_DIRECTORY_CSS.'bilazea_cnt.css');
+  define(LINK_CSS_CAROUSEL,        LINK_DIRECTORY_TOOLS.'carousel/ImageCarousel.css');
 
   // JS
   define(LINK_MT_CORE,             LINK_DIRECTORY_JS.'mootools-core.js');
@@ -43,6 +45,7 @@
   define(LINK_MT_BILAZEA,          LINK_DIRECTORY_JS.'bilazea.js');
   define(LINK_REFLECTION,          LINK_DIRECTORY_JS.'reflection.js');
   define(LINK_GOOGLE,              LINK_DIRECTORY_JS.'google.js');
+  define(LINK_CAROUSEL,            LINK_DIRECTORY_TOOLS.'carousel/ImageCarousel.js');
 
   // SITE
   define(LINK_HEADER,          LINK_DIRECTORY_TPL.'header.php');

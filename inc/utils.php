@@ -640,4 +640,24 @@
     }
     return $url;
   }
+  
+  
+
+  function showBlogCategories()
+  {
+    echo '<p class="error_div_title">Errors</p>';
+    echo '<p class="error_div_title">Errors</p>';
+    echo '<p class="error_div_title">Errors</p>';
+    echo '<p class="error_div_title">Errors</p>';
+  }
+  
+  function showWebsiteCategories()
+  {
+    echo '<p class="error_div_title">Errors</p>';
+    echo '<p class="error_div_title">Errors</p>';
+    echo '<p class="error_div_title">Errors</p>';
+    echo '<p class="error_div_title">Errors</p>';
+  }
+  
+  
 ?>
