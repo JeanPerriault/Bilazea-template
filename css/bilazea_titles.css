@@ -1,0 +1,33 @@
+/**
+ * File:
+ * css/bilazea_title.css
+ * 
+ * Description:
+ * This file contains css used in Bilazea template titles
+ * 
+ * Date:
+ * 2011/01/10
+ * 
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
+ */
+
+/* Title *********************************************************************/
+h1
+{
+  color:#000;
+  font-size:2.8em;
+  margin:0;
+  padding-bottom:20px;
+}
+
+h2
+{
+  color:#CCC;
+  margin:0;
+}
+
+h3
+{
+  text-align:center;
+}

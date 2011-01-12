@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<album 
+	showbuttons="yes"
+	showtitles="yes"
+  showrandom="no"
+  randomstart="no"
+  timer="5"
+  aligntitles="bottom"
+  alignbuttons="top"
+  transition="blur"
+  speed="20"
+  >
+	<img src="./cnt/img/carousel/01.jpg" title="Colliers de fleurs" /> 
+	<img src="./cnt/img/carousel/02.jpg" title="Sardargarh" /> 
+	<img src="./cnt/img/carousel/03.jpg" title="Jaisalmer" /> 
+	<img src="./cnt/img/carousel/04.jpg" title="Pushkar" />
+	<img src="./cnt/img/carousel/05.jpg" title="Khajuraho" />
+	<img src="./cnt/img/carousel/06.jpg" title="Jaisalmer" />
+  <img src="./cnt/img/carousel/07.jpg" title="Bilazea pinguin" />
+  <img src="./cnt/img/carousel/08.jpg" title="Ciel" />
+  <img src="./cnt/img/carousel/09.jpg" title="23" />
+</album>

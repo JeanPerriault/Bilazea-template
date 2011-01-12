@@ -1,0 +1,108 @@
+/**
+ * File:
+ * css/bilazea_mootools.css
+ * 
+ * Description:
+ * This file contains css used in Bilazea template for mootools
+ * 
+ * Date:
+ * 2011/01/10
+ * 
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
+ */
+
+/* Tool-tip ******************************************************************/
+.tip-top
+{
+  z-index:13000;
+}
+.tip
+{
+  opacity:0.7;
+  background:url('../img/bulle.gif') top left no-repeat;
+}
+.tip-title
+{
+  width:180px;
+  font-weight:bold;
+  font-size:16px;
+  color:#FFF;
+  margin:0;
+  padding:8px 8px 4px 4px;
+}
+.tip-text
+{
+  width:180px;
+  font-size:14px;
+  color:#EEEEEE;
+  padding-left:5px;
+}
+.tip-bottom
+{
+  width:180px;
+  margin:0;
+  padding:8px 0px 8px 0px;
+  opacity:0.7;
+  background:url('../img/bulle.gif') bottom right no-repeat;
+}
+
+
+/* Mask & Spinner ************************************************************/
+.mask
+{
+  position: absolute;
+  opacity: 0.9;
+  z-index: 999;
+  background: #fff;
+}
+
+.spinner
+{
+  position: absolute;
+  opacity: 0.9;
+  z-index: 999;
+  background: #fff;
+}
+.spinner-msg
+{
+  text-align: center;
+  font-weight: bold;
+}
+.spinner-img
+{
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+
+/* Accordion *****************************************************************/
+h2.accordionTitle1
+{
+  cursor:pointer;
+  color:#CCC;
+  padding-left:5px;
+  padding-top:2px;
+  margin-top: 15px;
+}
+.accordionPanel1
+{
+  padding:5px;
+}
+
+h4.accordionTitle1_1,
+h4.accordionTitle1_2,
+h4.accordionTitle1_3
+{
+  cursor:pointer;
+  padding:5px;
+}
+.accordionPanel1_1,
+.accordionPanel1_2,
+.accordionPanel1_3
+{
+  padding:5px;
+  margin-bottom:20px;
+  margin-top:15px;
+}

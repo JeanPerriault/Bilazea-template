@@ -1,0 +1,54 @@
+/**
+ * File:
+ * cnt/bilazea_blog.css
+ * 
+ * Description:
+ * This file contains css used in Bilazea template article
+ * 
+ * Date:
+ * 2011/01/10
+ * 
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
+ */
+
+/* Blog **********************************************************************/
+.blog
+{
+  background:#DDD;
+  margin-bottom:50px;
+}
+.blog_head
+{
+  padding:5px;
+  background:#222;
+  height:30px;
+  cursor:pointer;
+}
+.blog_title
+{
+  float:left;
+}
+.blog_title p
+{
+  margin:0;
+  color:#EEE;
+  font-size:1.5em;
+  font-weight:bolder;
+}
+.blog_date
+{
+  float:right;
+}
+.blog_date p
+{
+  margin:0;
+  color:#EEE;
+  font-style:italic;
+  font-size:1.4em;
+}
+.blog_content
+{
+  padding:5px;
+  clear:both;
+}
