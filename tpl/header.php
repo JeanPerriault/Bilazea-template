@@ -21,8 +21,8 @@
   <!-- META -->
   <?php echo META_CONTENT."\n" ?>
   <?php echo META_CONTENT_ROBOT."\n" ?>
-  <?php echo META_CONTENT_KEY."\n" ?>
   <?php echo META_CONTENT_DESC."\n" ?>
+  <?php echo META_CONTENT_KEY."\n" ?>
   <?php echo META_LINK_RSS."\n" ?>
   <?php echo META_LINK_ATOM."\n" ?>
 
@@ -32,6 +32,7 @@
   <!-- FAVICON -->
   <link rel="shortcut icon" 
         type="image/x-icon" href="<?php echo LINK_FAVICON ?>" />
+  <link rel="apple-touch-icon" href="<?php echo LINK_APPLE_ICON ?>" />
 
   <!-- BASE CSS -->
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_SUPP ?>" 
@@ -42,17 +43,23 @@
   <!-- TEMPLATE CSS -->
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS ?>" 
         type="text/css" media="projection, screen, tv" />
+  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_BLOG ?>" 
+        type="text/css" media="projection, screen, tv" />
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_LINKS ?>" 
+        type="text/css" media="projection, screen, tv" />
+  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_MOD ?>" 
+        type="text/css" media="projection, screen, tv" />
+  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_MTL ?>" 
         type="text/css" media="projection, screen, tv" />
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_SETS ?>" 
         type="text/css" media="projection, screen, tv" />
-
-  <!-- TEMPLATE CONTENT -->
-  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_CNT ?>" 
+  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_SUPP ?>" 
+        type="text/css" media="projection, screen, tv" />
+  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_TIT ?>" 
         type="text/css" media="projection, screen, tv" />
 
-  <!-- CAROUSEL -->
-  <link rel="stylesheet" href="<?php echo LINK_CSS_CAROUSEL ?>" 
+  <!-- TEMPLATE CONTENT CSS -->
+  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_CNT ?>" 
         type="text/css" media="projection, screen, tv" />
 
 </head>

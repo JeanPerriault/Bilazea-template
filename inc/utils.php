@@ -476,37 +476,38 @@
     $handle = fopen($filename, "r");
     $contents = fread($handle, filesize($filename));
     $explodedContent = explode('<!--', $contents);
+    //print_r($explodedContent);
 
     // Get localized language corresponding to current language
     if(getLanguage() == LG_FR)
     {
-      if($explodedContent[1] != "")
+      if($explodedContent[4] != "")
       {
-        $cnt_fr = explode('-->',$explodedContent[1]);
-        print($cnt_fr[1]);        
+        $cnt_fr = explode('-->',$explodedContent[4]);
+        print($cnt_fr[1]);
       }
     }
     else if(getLanguage() == LG_EN)
     {
-      if($explodedContent[2] != "")
+      if($explodedContent[8] != "")
       {
-        $cnt_en = explode('-->',$explodedContent[2]);
-        print($cnt_en[1]);        
+        $cnt_en = explode('-->',$explodedContent[8]);
+        print($cnt_en[1]);
       }
     }
     else if(getLanguage() == LG_ES)
     {
-      if($explodedContent[3] != "")
+      if($explodedContent[12] != "")
       {
-        $cnt_es = explode('-->',$explodedContent[3]);
+        $cnt_es = explode('-->',$explodedContent[12]);
         print($cnt_es[1]);
       }
     }
 
     // Module content
-    if($explodedContent[4] != "")
+    if($explodedContent[13] != "")
     {
-      $cnt_mods = explode('-->',$explodedContent[4]);
+      $cnt_mods = explode('-->',$explodedContent[13]);
       $cnt_mod = explode(';',$cnt_mods[1]);
       foreach($cnt_mod as &$mod)
       {
@@ -519,6 +520,107 @@
     }
     fclose($handle);
   }
+
+
+  /**
+   * setMetaDescription
+   * 
+   * @param $filename
+   * @param $metaDesc
+   */
+  function setMetaDescription($filename,$metaDesc="")
+  {
+    if($filename != "")
+    {
+      // Get contents of a category file
+      $handle = fopen($filename, "r");
+      $contents = fread($handle, filesize($filename));
+      $explodedContent = explode('<!--', $contents);
+      //print_r($explodedContent);
+
+      // Get localized language corresponding to current language
+      if(getLanguage() == LG_FR)
+      {
+        if($explodedContent[2] != "")
+        {
+          $cnt_fr = explode('-->',$explodedContent[2]);
+          $meta=$cnt_fr[1];
+        }
+      }
+      else if(getLanguage() == LG_EN)
+      {
+        if($explodedContent[6] != "")
+        {
+          $cnt_en = explode('-->',$explodedContent[6]);
+          $meta=$cnt_en[1];
+        }
+      }
+      else if(getLanguage() == LG_ES)
+      {
+        if($explodedContent[10] != "")
+        {
+          $cnt_es = explode('-->',$explodedContent[10]);
+          $meta=$cnt_es[1];
+        }
+      }
+      define(META_CONTENT_DESC, '<meta name="description" content="'.trim($meta).'" />');
+    }
+    else
+    {
+      define(META_CONTENT_DESC, '<meta name="description" content="'.$metaDesc.'" />');
+    }
+  }
+
+
+  /**
+   * setMetaKeywords
+   * 
+   * @param $filename
+   * @param $metaKey
+   */
+  function setMetaKeywords($filename,$metaKey="")
+  {
+    if($filename != "")
+    {
+      // Get contents of a category file
+      $handle = fopen($filename, "r");
+      $contents = fread($handle, filesize($filename));
+      $explodedContent = explode('<!--', $contents);
+      //print_r($explodedContent);
+
+      // Get localized language corresponding to current language
+      if(getLanguage() == LG_FR)
+      {
+        if($explodedContent[3] != "")
+        {
+          $cnt_fr = explode('-->',$explodedContent[3]);
+          $meta=$cnt_fr[1];
+        }
+      }
+      else if(getLanguage() == LG_EN)
+      {
+        if($explodedContent[7] != "")
+        {
+          $cnt_en = explode('-->',$explodedContent[7]);
+          $meta=$cnt_en[1];
+        }
+      }
+      else if(getLanguage() == LG_ES)
+      {
+        if($explodedContent[11] != "")
+        {
+          $cnt_es = explode('-->',$explodedContent[11]);
+          $meta=$cnt_es[1];
+        }
+      }
+      define(META_CONTENT_KEY, '<meta name="keywords" content="'.trim ($meta).'" />');
+    }
+    else
+    {
+      define(META_CONTENT_KEY, '<meta name="keywords" content="'.$metaKey.'" />');
+    }
+  }
+
 
 
   // DOCUMENTATION ////////////////////////////////////////////////////////////
@@ -640,24 +742,15 @@
     }
     return $url;
   }
-  
-  
 
-  function showBlogCategories()
-  {
-    echo '<p class="error_div_title">Errors</p>';
-    echo '<p class="error_div_title">Errors</p>';
-    echo '<p class="error_div_title">Errors</p>';
-    echo '<p class="error_div_title">Errors</p>';
+
+  /**
+   * println
+   * 
+   * @param $string_message
+   */
+  function println ($string_message) {
+    $_SERVER['SERVER_PROTOCOL'] ? print "$string_message<br />" : print "$string_message\n";
   }
-  
-  function showWebsiteCategories()
-  {
-    echo '<p class="error_div_title">Errors</p>';
-    echo '<p class="error_div_title">Errors</p>';
-    echo '<p class="error_div_title">Errors</p>';
-    echo '<p class="error_div_title">Errors</p>';
-  }
-  
-  
+
 ?>

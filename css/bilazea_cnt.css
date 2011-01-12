@@ -6,13 +6,13 @@
  * This file contains css used in Bilazea template article
  * 
  * Date:
- * 2010/10/10
+ * 2011/01/10
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 
-/* CSS of articles ***********************************************************/
+/* Images ********************************************************************/
 .img-accueil
 {
   float:right;
@@ -41,15 +41,12 @@
 }
 
 
-
-
 /* Gravatar *******************************************************************/
 #gravatar
 {
   float:right;
   margin-top:-120px;
 }
-
 
 
 /* Pre ***********************************************************************/
@@ -73,9 +70,6 @@ pre, code, tt
 {
   font-family:monospace,"Courier New";
 }
-
-
-
 
 
 /* Article *******************************************************************/
@@ -111,9 +105,3 @@ table.tableArticle td
 {
   border:none;
 }
-
-
-
-
-
-

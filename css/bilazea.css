@@ -6,13 +6,13 @@
  * This file contains css used in Bilazea template
  * 
  * Date:
- * 2010/10/10
+ * 2011/01/10
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 
-/* General *******************************************************************/
+/* Body **********************************************************************/
 body
 {
   background:#FFF;
@@ -21,25 +21,6 @@ body
   margin:0;
   font-size:1em;
   height:100%;
-}
-
-h1
-{
-  color:#000;
-  font-size:2.8em;
-  margin:0;
-  padding-bottom:20px;
-}
-
-h2
-{
-  color:#CCC;
-  margin:0;
-}
-
-h3
-{
-  text-align:center;
 }
 
 p
@@ -284,42 +265,6 @@ a.iconGoToTopRcl:hover
 }
 
 
-/* class tool-tip ************************************************************/
-.tip-top
-{
-  z-index:13000;
-}
-.tip
-{
-  opacity:0.7;
-  background:url('../img/bulle.gif') top left no-repeat;
-}
-.tip-title
-{
-  width:180px;
-  font-weight:bold;
-  font-size:16px;
-  color:#FFF;
-  margin:0;
-  padding:8px 8px 4px 4px;
-}
-.tip-text
-{
-  width:180px;
-  font-size:14px;
-  color:#EEEEEE;
-  padding-left:5px;
-}
-.tip-bottom
-{
-  width:180px;
-  margin:0;
-  padding:8px 0px 8px 0px;
-  opacity:0.7;
-  background:url('../img/bulle.gif') bottom right no-repeat;
-}
-
-
 /* ERROR stuff ***************************************************************/
 #error
 {
@@ -346,73 +291,6 @@ a.iconGoToTopRcl:hover
 }
 
 
-/* DIV download template *****************************************************/
-.box
-{
-  background-color: #DDD;
-  margin-bottom:20px;
-  padding:0 5px 0 5px;
-}
-a.box
-{
-  color:#EEE;
-}
-a:visited.box
-{
-  color:#EEE;
-}
-a:hover.box
-{
-  color:#FFF;
-}
-p.box_txt
-{
-  margin:0;
-}
-ul.box_ul
-{
-  
-}
-li.box_ul_bigLi
-{
-  font-size:1.2em;
-}
-
-a.box_link
-{
-  color:#EEE!important;
-}
-a:visited.box_link
-{
-  color:#EEE!important;
-}
-a:hover.box_link
-{
-  color:#FFF!important;
-}
-
-.box_title
-{
-  margin-top:40px;
-  background-color:#333;
-  color:#EEE;
-  font-size:26px;
-  font-weight:bold;
-  padding:0 0 0 5px;
-  text-align:left;
-}
-p.box_title_txt
-{
-  margin:0;
-}
-.box_video
-{
-  text-align:center;
-  background-color: #DDD;
-  margin-bottom:20px;
-}
-
-
 /* Navigation ****************************************************************/
 #navigation ul
 {
@@ -420,61 +298,18 @@ p.box_title_txt
 }
 
 
-/* Mask & Spinner ************************************************************/
-.mask
+/* Demos *********************************************************************/
+#mp3Div
 {
-  position: absolute;
-  opacity: 0.9;
-  z-index: 999;
-  background: #fff;
+  padding-left: 40px;
 }
 
-.spinner
+#carouselDiv
 {
-  position: absolute;
-  opacity: 0.9;
-  z-index: 999;
-  background: #fff;
-}
-.spinner-msg
-{
-  text-align: center;
-  font-weight: bold;
-}
-.spinner-img
-{
-  width: 24px;
-  height: 24px;
-  margin: 0 auto;
+  padding-left: 160px;
 }
 
-
-/* Accordion *****************************************************************/
-h2.accordionTitle1
+#videoDiv
 {
-  cursor:pointer;
-  color:#CCC;
-  padding-left:5px;
-  padding-top:2px;
-  margin-top: 15px;
-}
-.accordionPanel1
-{
-  padding:5px;
-}
-
-h4.accordionTitle1_1,
-h4.accordionTitle1_2,
-h4.accordionTitle1_3
-{
-  cursor:pointer;
-  padding:5px;
-}
-.accordionPanel1_1,
-.accordionPanel1_2,
-.accordionPanel1_3
-{
-  padding:5px;
-  margin-bottom:20px;
-  margin-top:15px;
+  padding-left: 160px;
 }

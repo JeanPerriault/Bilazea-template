@@ -7,17 +7,18 @@
  * Description:
  * This file contains code
  * - to set language used in Bilazea template
+ * - documentation links
  * 
  * Date:
- * 2010/10/10
+ * 2011/01/10
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web 
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web 
  */
 ///////////////////////////////////////////////////////////////////////////////
 ?>
     <!-- LINK BILA -->
-    <a href="../" id="backBila">Back to Drupal directory</a>
+    <a href="../" id="backBila">Back to Bilazea home page</a>
 
     <!-- LEFT TITLE -->
     <a id="titleLink" 

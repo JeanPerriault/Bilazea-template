@@ -129,54 +129,83 @@ window.addEvent('domready',function()
 
 
   /* Accordion ***************************************************************/
-  if($$('h2.accordionTitle1'))
+  if ($$('h2.accordionTitle1'))
   {
-	  var myAccordion = new Fx.Accordion($$('h2.accordionTitle1'), $$('div.accordionPanel1'),{
-	    opacity: false,
-	    onActive: function(toggler, element){
-	      var myTog = new Fx.Tween(toggler);
-	      var myEl = new Fx.Tween(element);
-	      myTog.set('color', '#FFF');
-	      myTog.set('background-color', '#4C4C4C');
-	      myTog.set('background-image', 'url("./img/opened.png")');
-	      myTog.set('background-position', 'right center');
-	      myTog.set('background-repeat', 'no-repeat');
-	    },
-	    onBackground: function(toggler, element){
-	      var myTog = new Fx.Tween(toggler);
-	      var myEl = new Fx.Tween(element);
-	      myTog.set('color', '#EEE');
-	      myTog.set('background-color', '#61615F');
-	      myTog.set('background-image', 'url("./img/closed.png")');
-	      myTog.set('background-position', 'right center');
-	      myTog.set('background-repeat', 'no-repeat');
-	    }
-	  });
+    var myAccordion = new Fx.Accordion($$('h2.accordionTitle1'),$$('div.accordionPanel1'),
+    {
+      opacity : false,
+      onActive : function(toggler, element)
+      {
+        var myTog = new Fx.Tween(toggler);
+        var myEl = new Fx.Tween(element);
+        myTog.set('color', '#FFF');
+        myTog.set('background-color','#222222');
+        myTog.set('background-image','url("./img/opened.png")');
+        myTog.set('background-position','right center');
+        myTog.set('background-repeat','no-repeat');
+      },
+      onBackground : function(toggler, element)
+      {
+        var myTog = new Fx.Tween(toggler);
+        var myEl = new Fx.Tween(element);
+        myTog.set('color', '#EEE');
+        myTog.set('background-color', '#61615F');
+        myTog.set('background-image', 'url("./img/closed.png")');
+        myTog.set('background-position', 'right center');
+        myTog.set('background-repeat', 'no-repeat');
+      }
+    });
   }
 
   if($$('h4.accordionTitle1_1'))
   {
-	  var myAccordionPart = new Fx.Accordion($$('h4.accordionTitle1_1'), $$('div.accordionPanel1_1'),{
-	    opacity: false,
-	    onActive: function(toggler, element){
-	      var myTog = new Fx.Tween(toggler);
-	      var myEl = new Fx.Tween(element);
-	      myTog.set('color', '#FFF');
-	      myTog.set('background-color', '#4C4C4C');
-	      myTog.set('background-image', 'url("./img/opened.png")');
-	      myTog.set('background-position', 'right center');
-	      myTog.set('background-repeat', 'no-repeat');
-	    },
-	    onBackground: function(toggler, element){
-	      var myTog = new Fx.Tween(toggler);
-	      var myEl = new Fx.Tween(element);
-	      myTog.set('color', '#EEE');
-	      myTog.set('background-color', '#61615F');
-	      myTog.set('background-image', 'url("./img/closed.png")');
-	      myTog.set('background-position', 'right center');
-	      myTog.set('background-repeat', 'no-repeat');
-	    }
-	  });
+    var myAccordionPart = new Fx.Accordion($$('h4.accordionTitle1_1'), $$('div.accordionPanel1_1'),
+    {
+      opacity: false,
+      onActive: function(toggler, element)
+      {
+        var myTog = new Fx.Tween(toggler);
+        var myEl = new Fx.Tween(element);
+        myTog.set('color', '#FFF');
+        myTog.set('background-color', '#333333');
+        myTog.set('background-image', 'url("./img/opened.png")');
+        myTog.set('background-position', 'right center');
+        myTog.set('background-repeat', 'no-repeat');
+      },
+      onBackground: function(toggler, element)
+      {
+        var myTog = new Fx.Tween(toggler);
+        var myEl = new Fx.Tween(element);
+        myTog.set('color', '#EEE');
+        myTog.set('background-color', '#61615F');
+        myTog.set('background-image', 'url("./img/closed.png")');
+        myTog.set('background-position', 'right center');
+        myTog.set('background-repeat', 'no-repeat');
+      }
+    });
+  }
+
+  /* Blog ********************************************************************/
+  if ($$('div.blog_head'))
+  {
+    var myAccordionBlog = new Fx.Accordion($$('div.blog_head'),$$('div.blog_content'),
+    {
+      opacity : false,
+      onActive : function(toggler, element)
+      {
+        var myTog = new Fx.Tween(toggler);
+        var myEl = new Fx.Tween(element);
+        myTog.set('color', '#FFF');
+        myTog.set('background-color','#222222');
+      },
+      onBackground : function(toggler, element)
+      {
+        var myTog = new Fx.Tween(toggler);
+        var myEl = new Fx.Tween(element);
+        myTog.set('color', '#EEE');
+        myTog.set('background-color', '#61615F');
+      }
+    });
   }
 
 
@@ -302,8 +331,8 @@ window.addEvent('domready',function()
     }
     else
     {
-      verticalFooter.show();
-      verticalFooterHidden.hide();
+      verticalFooter.hide();
+      verticalFooterHidden.show();
     }
     // Footer slides
     verticalFooterLinkSlideIn.addEvent('click', function(e)

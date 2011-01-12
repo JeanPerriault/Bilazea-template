@@ -44,7 +44,7 @@
 
   // Navigation 4 /////////////////////////////////////////////////////////////
   if ($_GET[getLgFileText("CONTENT")] == getLgFileText("CAT_4") 
-      || $contents[0] == getLgFileText("CAT_4")){
+      || $contents[0] == getLgFileTextForUrl("CAT_4")){
     echo $menuArray[4];
   }
 

@@ -32,18 +32,18 @@
         <div id="last">
           <p class="titleLastMost"><?php echo printLgFileText("LAST_NEWS"); ?></p>
           <ul>
-            <li><a href="<?php echo LINK_CAT_1 ?>"><?php echo printLgFileText("CAT_1"); ?></a></li>
-            <li><a href="<?php echo LINK_CAT_3 ?>"><?php echo printLgFileText("CAT_3"); ?></a></li>
-            <li><a href="<?php echo LINK_CAT_2_3 ?>"><?php echo printLgFileText("CAT_2_3"); ?></a></li>
+            <li><a href="<?php echo LINK_CAT_1_4 ?>"><?php echo printLgFileText("CAT_1_4"); ?></a></li>
+            <li><a href="<?php echo LINK_CAT_1_3 ?>"><?php echo printLgFileText("CAT_1_3"); ?></a></li>
+            <li><a href="<?php echo LINK_CAT_1_2 ?>"><?php echo printLgFileText("CAT_1_2"); ?></a></li>
           </ul>
         </div>
 
         <div id="most">
           <p class="titleLastMost"><?php printLgFileText("MOST_READ"); ?></p>
           <ul>
-            <li><a href="<?php echo LINK_CAT_4_1 ?>"><?php printLgFileText("CAT_4_1"); ?></a></li>
+            <li><a href="<?php echo LINK_CAT_1 ?>"><?php printLgFileText("CAT_1"); ?></a></li>
+            <li><a href="<?php echo LINK_CAT_1_1 ?>"><?php printLgFileText("CAT_1_1"); ?></a></li>
             <li><a href="<?php echo LINK_CAT_4 ?>"><?php printLgFileText("CAT_4"); ?></a></li>
-            <li><a href="<?php echo LINK_CAT_2 ?>"><?php printLgFileText("CAT_2"); ?></a></li>
           </ul>
         </div>
 

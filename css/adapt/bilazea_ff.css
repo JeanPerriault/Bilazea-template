@@ -36,17 +36,17 @@
 
 
 /* DIV download template *****************************************************/
-.box
+.module
 {
   -moz-border-radius-bottomleft: 5px;
   -moz-border-radius-bottomright: 5px;
 }
-.box_title
+.module_title
 {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
 }
-.box_video
+.module_video
 {
   -moz-border-radius-bottomleft: 5px;
   -moz-border-radius-bottomright: 5px;
@@ -64,4 +64,18 @@ h4.accordionTitle1_2,
 h4.accordionTitle1_3
 {
   -moz-border-radius: 5px;
+}
+
+/* Blog **********************************************************************/
+.blog
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 5px;
+}
+.blog_head
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 0px;
 }

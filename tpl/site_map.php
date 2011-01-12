@@ -47,9 +47,5 @@
     </ul>
   </li>
 
-  <li><a href="<?php echo LINK_CAT_4; ?>"><?php printLgFileText("CAT_4"); ?></a>
-    <ul>
-      <li><a href="<?php echo LINK_CAT_4_1; ?>"><?php printLgFileText("CAT_4_1"); ?></a></li>
-    </ul>
-  </li>
+  <li><a href="<?php echo LINK_CAT_4; ?>"><?php printLgFileText("CAT_4"); ?></a></li>
 </ul>

@@ -12,7 +12,7 @@
  * 2010/10/10
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -97,9 +97,15 @@
   {
     printContent(LINK_CNT_CAT_4);
   }
+  /*
   if ($content == $cat4.">".getLgFileTextForUrl("CAT_4_1"))
   {
     printContent(LINK_CNT_CAT_4_1);
   }
+  if ($content == $cat4.">".getLgFileTextForUrl("CAT_4_2"))
+  {
+    printContent(LINK_CNT_CAT_4_1);
+  }
+  */
   /////////////////////////////////////////////////////////////////////////////
 ?>

@@ -12,7 +12,7 @@
  * 2010/10/10
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web 
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web 
  */
 ///////////////////////////////////////////////////////////////////////////////
 ?>
@@ -71,7 +71,7 @@
           <p><?php printLgFileText("DOCUMENTATION"); ?></p>
           <ul>
             <li>
-              <a class="externalLink external toolTips box_link" 
+              <a class="externalLink external toolTips module_link" 
                  href="<?php echo $linkDoc; ?>" 
                  title="<?php printLgFileText("SITE_NAME2"); ?>" 
                  rel="<?php printLgFileText("GOTO_DOCUMENTATION"); ?>">
@@ -79,7 +79,7 @@
                </a>
             </li>
             <li>
-              <a class="externalLink external toolTips box_link" 
+              <a class="externalLink external toolTips module_link" 
                  href="<?php echo LINK_WIKI_DOC; ?>" 
                  title="<?php printLgFileText("SITE_NAME2"); ?>" 
                  rel="<?php printLgFileText("GOTO_DOCUMENTATION_WIKI"); ?>">
