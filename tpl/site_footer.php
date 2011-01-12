@@ -35,7 +35,7 @@
           <ul class="footerLinksUl">
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK1; ?>" 
+                 href="<?php echo LINK_FOOTER_1; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK1"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK1"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK1"); ?>
@@ -43,7 +43,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK2; ?>" 
+                 href="<?php echo LINK_FOOTER_2; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK2"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK2"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK2"); ?>
@@ -51,7 +51,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                  href="<?php echo FOOTER_LINK3; ?>" 
+                  href="<?php echo LINK_FOOTER_3; ?>" 
                   title="<?php printLgFileText("SITE_FOOTER_LINK3"); ?>" 
                   rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK3"); ?>">
                   <?php printLgFileText("SITE_FOOTER_LINK3"); ?>
@@ -59,7 +59,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK4; ?>" 
+                 href="<?php echo LINK_FOOTER_4; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK4"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK4"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK4"); ?>
@@ -67,7 +67,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK5; ?>"
+                 href="<?php echo LINK_FOOTER_5; ?>"
                  title="<?php printLgFileText("SITE_FOOTER_LINK5"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK5"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK5"); ?>
@@ -82,7 +82,7 @@
           <ul class="footerLinksUl">
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK6; ?>"
+                 href="<?php echo LINK_FOOTER_6; ?>"
                  title="<?php echo getLgFileText("SITE_FOOTER_LINK6"); ?>"
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK6"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK6"); ?>
@@ -90,7 +90,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK7; ?>"
+                 href="<?php echo LINK_FOOTER_7; ?>"
                  title="<?php printLgFileText("SITE_FOOTER_LINK7"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK7"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK7"); ?>
@@ -98,7 +98,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK8; ?>" 
+                 href="<?php echo LINK_FOOTER_8; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK8"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK8"); ?>">
                 <?php printLgFileText("SITE_FOOTER_LINK8"); ?>
@@ -113,7 +113,7 @@
           <ul class="footerLinksUl">
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK9; ?>" 
+                 href="<?php echo LINK_FOOTER_9; ?>" 
                  title="<?php echo getLgFileText("SITE_FOOTER_LINK9"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK9"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK9"); ?>
@@ -121,7 +121,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK10; ?>" 
+                 href="<?php echo LINK_FOOTER_10; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK10"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK10"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK10"); ?>
@@ -129,7 +129,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK11; ?>" 
+                 href="<?php echo LINK_FOOTER_11; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK11"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK11"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK11"); ?>
@@ -137,7 +137,7 @@
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo FOOTER_LINK12; ?>" 
+                 href="<?php echo LINK_FOOTER_12; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK12"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK12"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK12"); ?>
