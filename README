@@ -12,4 +12,32 @@ Main demonstration can be seen on Bilazea.com, on page http://bilazea.com/Bilaze
 
 It is a very simple framework designed to create quickly a website
 - Main language used is PHP, to create navigation stuff mainly
-- MOOTOOLS (http://github.com/mootools/mootools-core), XHTML and CSS are used to present content
+- Javascript, HTML and CSS are used to present content
+
+- Ohter external tools used:
+ - Javascript
+  - Mootools
+   - http://mootools.net/
+   - on Github: http://github.com/mootools/mootools-core
+  - Reflexion
+   - http://www.digitalia.be/software/reflectionjs-for-mootools
+  - Google
+   - https://www.google.com/analytics/
+ - MP3 player
+  - Dewplayer
+   - http://www.alsacreations.fr/dewplayer.html
+ - Images slider
+  - Dewslider
+   - http://www.alsacreations.fr/dewslider.html
+ - Video player
+  - Dewtube
+   - http://www.alsacreations.fr/dewtube.html
+ - IE css hack
+  - http://code.google.com/p/curvycorners/
+  - http://davidwalsh.name/rounded-corners-ie
+ - Online editor
+  - CKeditor
+   - http://ckeditor.com/
+ - Online explorer
+  - ckfinder
+   - http://ckfinder.com/

@@ -26,7 +26,7 @@ if(Browser.ie6)
 {
   css = new Asset.css(cssPath+'bilazea_ie6.css');
 }
-else(Browser.ie)
+else if(Browser.ie)
 {
   css = new Asset.css(cssPath+'bilazea_ie.css');
 }
