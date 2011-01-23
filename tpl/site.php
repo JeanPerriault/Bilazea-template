@@ -9,6 +9,7 @@
  * 
  * Date:
  * 2010/10/10
+ * M1- 2011/01/23
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -16,11 +17,18 @@
 ///////////////////////////////////////////////////////////////////////////////
 ?>
 
-<!-- PROLOG -->
-
-
-<?php 
-  echo PROLOG_DOCTYPE."\n";
+<?php
+  // Prolog stuff
+  $using_ie6 = (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 6.') !== FALSE);
+  if ($using_ie6)
+  {
+    echo PROLOG_DOCTYPE_IE6."\n";
+  }
+  else
+  {
+    echo PROLOG_XML."\n";
+    echo PROLOG_DOCTYPE."\n";
+  }
   echo PROLOG_HTML;
 
   // Header

@@ -79,3 +79,35 @@ h4.accordionTitle1_3
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 0px;
 }
+
+/* DIV language **************************************************************/
+#language
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#language p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#language input
+{
+  -moz-border-radius:5px;
+}
+#language input:hover
+{
+
+}
+
+/* DIV documentation *********************************************************/
+#documentation
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#documentation p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}

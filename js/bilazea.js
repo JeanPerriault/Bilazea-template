@@ -8,30 +8,25 @@
  * It's using mootools framework
  * 
  * Date:
- * 2010/10/10
+ * 10/10/2010
+ * M1. 23/01/2011
  * 
- * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
+ * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////
 
 
 // INITIALIZATION ////////////////////////////////////////////////////////////
-//Browser.Features.xpath - (boolean) True if the browser supports DOM queries 
-//using XPath.
-//Browser.Features.air - (boolean) True if the browser supports AIR.
-//Browser.Features.query - (boolean) True if the browser supports 
-//querySelectorAll.
-//Browser.Features.json - (boolean) True if the browser has a native 
-//JSON object.
-//Browser.Features.xhr - (boolean) True if the browser supports native 
-//XMLHTTP object.
-//Request: Browser.Request - (object) The XMLHTTP object or equivalent.
 
 // Get browser name and set corresponding css file
 var cssPath = "./css/adapt/"
 var css = "", os = "", flash="";
-if(Browser.ie)
+if(Browser.ie6)
+{
+  css = new Asset.css(cssPath+'bilazea_ie6.css');
+}
+else(Browser.ie)
 {
   css = new Asset.css(cssPath+'bilazea_ie.css');
 }
@@ -93,11 +88,6 @@ if(Browser.Plugins.Flash)
 // WHEN DOM IS READY //////////////////////////////////////////////////////////
 window.addEvent('domready',function()
 {
-
-  /* Get language *************************************************************/
-  var lg = MooTools.lang.getCurrentLanguage();
-  MooTools.lang.set('FR', 'cascade', ['FR', 'gbENG', 'ESP']);
-  MooTools.lang.set('FR', 'Home', 'Accueil');
 
   /* Images preload **********************************************************/
   var imagesToPreload = [
