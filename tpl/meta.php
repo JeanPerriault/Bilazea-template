@@ -11,7 +11,7 @@
  * Date:
  * 2011/01/10
  * 
- * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
+ * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////

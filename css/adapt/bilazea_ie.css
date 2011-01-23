@@ -8,16 +8,69 @@
  * Date:
  * 2010/11/10
  * 
- * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
+ * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
+body
+{
+  text-align:center;
+}
 
 /* Last/Most *****************************************************************/
 #lastMostHidden
 {
   filter:alpha(opacity=40);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  text-align:center;
 }
+
+/* FIXED TITLE ***************************************************************/
+a.fixedTitleLeft
+{
+  position:absolute;
+  top:0px;
+  /*top:expression(eval(document.body.scrollTop));*/
+  padding-top:0px; 
+  left:0px;
+}
+
+/* Back to bilazea home page *************************************************/
+a#backBila
+{
+  height: 80px;
+  position: absolute;
+  text-decoration: none;
+  text-indent: -999em;
+  top: 0;
+  width: 80px;
+  z-index: 3;
+  padding-top:0px; 
+}
+
+#page
+{
+  text-align:left;
+}
+#underAside
+{
+  text-align:center;
+}
+#footerIn
+{
+  text-align:center;
+}
+#footerHiddenIn
+{
+  text-align:center;
+}
+
+a.openImg
+{
+  text-align:center;
+}
+
+
+
 
 
 /* Site **********************************************************************/
@@ -39,6 +92,7 @@
 {
   filter:alpha(opacity=70);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+
 }
 
 
@@ -109,4 +163,89 @@
 {
   filter:alpha(opacity=90);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Last/Most *****************************************************************/
+.titleLastMost
+{
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+
+/* Site **********************************************************************/
+#header
+{
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+
+/* Aside *********************************************************************/
+#underAside
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+
+
+/* DIV download template *****************************************************/
+.module
+{
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+}
+.module_title
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+.module_video
+{
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+}
+
+
+/* Accordion *****************************************************************/
+h2.accordionTitle1
+{
+  -moz-border-radius: 5px;
+}
+
+h4.accordionTitle1_1,
+h4.accordionTitle1_2,
+h4.accordionTitle1_3
+{
+  -moz-border-radius: 5px;
+}
+
+/* Blog **********************************************************************/
+.blog
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 5px;
+}
+.blog_head
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 0px;
 }

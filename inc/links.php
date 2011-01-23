@@ -12,7 +12,7 @@
  * Date:
  * 2010/10/10
  * 
- * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
+ * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////
@@ -50,6 +50,7 @@
   define(LINK_MT_BILAZEA,          LINK_DIRECTORY_JS.'bilazea.js');
   define(LINK_REFLECTION,          LINK_DIRECTORY_TOOLS.'reflection/reflection.js');
   define(LINK_GOOGLE,              LINK_DIRECTORY_TOOLS.'google/google.js');
+  define(LINK_IECSSHACK,           LINK_DIRECTORY_TOOLS.'iecsshack/curvycorners.js');
 
   // SITE
   define(LINK_META,            LINK_DIRECTORY_TPL.'meta.php');
