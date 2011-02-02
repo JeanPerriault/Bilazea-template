@@ -17,8 +17,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 
-// INITIALIZATION ////////////////////////////////////////////////////////////
 
+// INITIALIZATION ////////////////////////////////////////////////////////////
 // Get browser name and set corresponding css file
 var cssPath = "./css/adapt/"
 var css = "", os = "", flash="";
@@ -83,6 +83,7 @@ if(Browser.Plugins.Flash)
 {
   flash = true;
 }
+
 
 
 // WHEN DOM IS READY //////////////////////////////////////////////////////////
@@ -387,5 +388,37 @@ window.addEvent('domready',function()
       cookies.set('settings', 'closed');
     });
   }
+});
 
+
+
+// WHEN DOM IS LOADED /////////////////////////////////////////////////////////
+window.addEvent("load",function()
+{
+  // Set path
+  ZeroClipboard.setMoviePath('./tools/zeroclipboard/ZeroClipboard.swf');
+
+  // Create client
+  var clip = new ZeroClipboard.Client();
+
+  // Event
+  clip.addEventListener('mousedown',function()
+  {
+    var doc1 = document.getElementById('code_content');
+    var doc2 = doc1.textContent;
+    alert(doc2);
+    clip.setText(doc2);
+  });
+  clip.addEventListener('complete',function(client,text)
+  {
+    $('copy').set('text', 'Text copied');
+  });
+  clip.addEventListener( 'mouseOut', function(client)
+  {
+	$('copy').set('text', 'Copy');
+  });
+
+  // Glue it to the button
+  clip.glue('copy');
+  $('copy').set('text', 'Copy');
 });

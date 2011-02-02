@@ -17,10 +17,6 @@ body
 {
   text-align:center;
 }
-/*
-#header{text-algin:left;}
-#title{text-algin:left;margin-left:-900px;padding:0;}
-*/
 
 /* Last/Most *****************************************************************/
 #lastMostHidden
@@ -30,29 +26,8 @@ body
   text-align:center;
 }
 
-/* FIXED TITLE ***************************************************************/
-/*a.fixedTitleLeft
-{
-  position:absolute;
-  top:0px;
-  top:expression(eval(document.body.scrollTop));
-  padding-top:0px; 
-  left:0px;
-}*/
 
 /* Back to bilazea home page *************************************************/
-/*a#backBila
-{
-  height: 80px;
-  position: absolute;
-  text-decoration: none;
-  text-indent: -999em;
-  top: 0;
-  width: 80px;
-  z-index: 3;
-  padding-top:0px; 
-}*/
-
 #page
 {
   text-align:left;
@@ -76,7 +51,6 @@ a.openImg
 }
 
 hr{color:#111;}
-
 
 
 /* Site **********************************************************************/
@@ -156,9 +130,6 @@ hr{color:#111;}
 }
 
 
-
-
-
 /* Content *******************************************************************/
 .img-informatique
 {
@@ -185,11 +156,21 @@ hr{color:#111;}
 
 
 
+
+
+
 /* Last/Most *****************************************************************/
 .titleLastMost
 {
   -moz-border-radius:5px;
-  -webkit-border-radius:5px;
+}
+
+
+/* Site **********************************************************************/
+#header
+{
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
 }
 
 
@@ -202,20 +183,15 @@ hr{color:#111;}
 
 
 /* DIV download template *****************************************************/
-.module
+.module,.moduleCode,.module_video
 {
   -moz-border-radius-bottomleft: 5px;
   -moz-border-radius-bottomright: 5px;
 }
-.module_title
+.module_title,.moduleCodeTitle
 {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
-}
-.module_video
-{
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
 }
 
 
@@ -246,24 +222,34 @@ h4.accordionTitle1_3
   -moz-border-radius-topright: 0px;
 }
 
+/* DIV language **************************************************************/
+#language
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#language p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#language input
+{
+  -moz-border-radius:5px;
+}
+#language input:hover
+{
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* DIV documentation *********************************************************/
+#documentation
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#documentation p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}

@@ -49,27 +49,69 @@
 }
 
 
-/* Pre ***********************************************************************/
+/* Pre / Code ****************************************************************/
 pre
 {
+  font-size:1em;
   overflow-x:auto;
-}
-
-pre
-{
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-right-radius: 5px;
-  background-color:#F9F9F9;
-  border:1px dashed #94D564;
-  color:black;
-  line-height:1.1em;
-  padding:1em;
-}
-
-pre, code, tt
-{
+  padding: 1em 0 1em 0;
+  background-color: #1A1A1A;
+  color: #EEEEEE;
+  line-height: 1.1em;
+  margin: 0 1em 0 1em;
   font-family:monospace,"Courier New";
+  cursor:text;
 }
+.cod_kw
+{
+  font-weight:bolder;
+}
+.cod_comment
+{
+  color:grey;
+  font-style:italic;
+}
+.cod_php
+{
+  color:brown;
+}
+.cod_var_php
+{
+  color:purple;
+  font-weight:bold;
+}
+.cod_kw_php
+{
+  color:lightsteelblue;
+  font-style:italic;
+}
+.cod_str_php
+{
+  color:yellowgreen ;
+}
+.cod_cst_php
+{
+  color:lightslategray;
+}
+#copyCode
+{
+  float:right;
+  margin-top:-37px;
+  padding-right:10px;
+  position:relative;
+}
+#copyCodeInput
+{
+  margin-top: -10px;
+  display: none;
+}
+.copy_code
+{
+  color:#EEE !important;
+  text-decoration:underline !important;
+  display: block;
+}
+
 
 
 /* Article *******************************************************************/
@@ -105,3 +147,6 @@ table.tableArticle td
 {
   border:none;
 }
+
+
+

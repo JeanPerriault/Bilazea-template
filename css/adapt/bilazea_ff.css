@@ -36,20 +36,15 @@
 
 
 /* DIV download template *****************************************************/
-.module
+.module,.moduleCode,.module_video
 {
   -moz-border-radius-bottomleft: 5px;
   -moz-border-radius-bottomright: 5px;
 }
-.module_title
+.module_title,.moduleCodeTitle
 {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
-}
-.module_video
-{
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
 }
 
 

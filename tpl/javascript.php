@@ -16,6 +16,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 ?><script type="text/javascript" language="JavaScript" src='<?php echo LINK_MT_CORE ?>'></script>
   <script type="text/javascript" language="JavaScript" src='<?php echo LINK_MT_MORE ?>'></script>
+  <script type="text/javascript" language="JavaScript" src='<?php echo LINK_ZEROCPBOARD ?>'></script>
   <script type="text/javascript" language="JavaScript" src='<?php echo LINK_MT_BILAZEA ?>'></script>
   <script type="text/javascript" language="JavaScript" src='<?php echo LINK_REFLECTION ?>'></script>
   <script type="text/javascript" language="JavaScript" src='<?php echo LINK_GOOGLE ?>'></script>

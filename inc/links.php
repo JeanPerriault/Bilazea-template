@@ -51,6 +51,7 @@
   define(LINK_REFLECTION,          LINK_DIRECTORY_TOOLS.'reflection/reflection.js');
   define(LINK_GOOGLE,              LINK_DIRECTORY_TOOLS.'google/google.js');
   define(LINK_IECSSHACK,           LINK_DIRECTORY_TOOLS.'iecsshack/curvycorners.js');
+  define(LINK_ZEROCPBOARD,         LINK_DIRECTORY_TOOLS.'zeroclipboard/ZeroClipboard.js');
 
   // SITE
   define(LINK_META,            LINK_DIRECTORY_TPL.'meta.php');
@@ -91,6 +92,7 @@
   define(LINK_CNT_CAT_0,       LINK_DIRECTORY_CNT.'0_home/home.html');
   define(LINK_CNT_CAT_0_MOD_0, LINK_DIRECTORY_CNT.'0_home/module_0.php');
   define(LINK_CNT_CAT_0_MOD_1, LINK_DIRECTORY_CNT.'0_home/module_1.php');
+  define(LINK_CNT_CAT_0_MOD_2, LINK_DIRECTORY_CNT.'0_home/module_2.php');
 
   define(LINK_CNT_CAT_1,    LINK_DIRECTORY_CNT.'1_demo/demo.html');
   define(LINK_CNT_CAT_1_1,  LINK_DIRECTORY_CNT.'1_demo/accordeon.html');

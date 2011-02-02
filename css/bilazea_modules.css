@@ -77,3 +77,33 @@ p.module_title_txt
   background-color: #DDD;
   margin-bottom:20px;
 }
+
+
+
+
+
+.moduleCode
+{
+  background:#1A1A1A;
+  /*float: right;*/
+  /*width: 400px;*/
+  margin-bottom:50px;
+}
+
+.moduleCodeTitle
+{
+  margin-top:40px;
+  background-color:#333;
+  color:#EEE;
+  text-align:left;
+  /*float: right;*/
+  /*width: 400px;*/
+}
+
+.moduleCodeTitleTxt
+{
+  font-size:26px;
+  font-weight:bold;
+  margin:0;
+  padding:0 0 0 5px;
+}

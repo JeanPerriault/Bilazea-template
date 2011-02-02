@@ -128,7 +128,7 @@ hr
 #page
 {
   clear:both;
-  opacity:0.8;
+  /*opacity:0.8;*/
   margin: 0px auto;
   width:800px;
   border-top:5px solid #646464;

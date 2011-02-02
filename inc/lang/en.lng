@@ -128,6 +128,9 @@ TYPE_ERR_500 = "500"
 CAT_0 = "Home"
 DOWNLOAD = "DOWNLOAD"
 DAILY_VIDEO = "VIDEO OF THE DAY"
+CODE = "CODE"
+COPY = "Copy"
+COPY_CLIPBOARD = "Copy to clipboard"
 
 [Categories]
 CAT_1 = "Demo"

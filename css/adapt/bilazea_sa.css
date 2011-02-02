@@ -36,20 +36,15 @@
 
 
 /* DIV download template *****************************************************/
-.module
+.module,.moduleCode,.module_video
 {
   -webkit-border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
 }
-.module_title
+.module_title,.moduleCodeTitle
 {
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
-}
-.module_video
-{
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
 }
 
 
@@ -79,4 +74,33 @@ h4.accordionTitle1_3
 {
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 0px;
+}
+
+/* DIV language **************************************************************/
+#language
+{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+#language p
+{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+#language input
+{
+  -webkit-border-radius:5px;
+}
+
+
+/* DIV documentation *********************************************************/
+#documentation
+{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+#documentation p
+{
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
 }

@@ -512,7 +512,10 @@
       foreach($cnt_mod as &$mod)
       {
         $modTrimed = trim($mod);
-        if($modTrimed != "")
+        $findme   = '#';
+        $pos = strpos($modTrimed, $findme);
+
+        if($modTrimed != "" && $pos === false)
         {
           include(constant($modTrimed));
         }
