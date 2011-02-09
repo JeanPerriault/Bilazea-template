@@ -46,37 +46,37 @@
   <span class="cod_kw">include</span>(<span class="cod_str_php">'./inc/utils.php'</span>);
 
   <span class="cod_comment">// LANGUAGES</span>
-  setLanguage();
+  <span class="cod_fct_php">setLanguage</span>();
 
   <span class="cod_comment">// DEFINE STUFF /////////////////////////////////////////////////////////////</span>
   <span class="cod_kw">define</span>(<span class="cod_cst_php">ST_EMPTY</span>,<span class="cod_str_php">""</span>);
 
   <span class="cod_comment">// DOCTYPE</span>
-  <span class="cod_kw">define</span>(<span class="cod_cst_php">PROLOG_XML</span>,         '&lt;?xml version="1.0"?&gt;');
+  <span class="cod_kw">define</span>(<span class="cod_cst_php">PROLOG_XML</span>, <span class="cod_str_php">'&lt;?xml version="1.0"?&gt;'</span>);
   <span class="cod_comment">//define(PROLOG_DOCTYPE5,  '&lt;!DOCTYPE html&gt;');</span>
-  <span class="cod_kw">define</span>(<span class="cod_cst_php">PROLOG_DOCTYPE</span>,     '&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
-                             .' Strict//EN"' "http://www.w3.org/TR/xhtml1/DTD
-                             . '/xhtml1-strict.dtd"&gt;');
-  <span class="cod_kw">define</span>(<span class="cod_cst_php">PROLOG_DOCTYPE_IE6</span>, '&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 
-                             .' Transitional//EN"' "http://www.w3.org/TR/
-                             .' xhtml1/DTD/xhtml1-transitional.dtd"&gt;');
+  <span class="cod_kw">define</span>(<span class="cod_cst_php">PROLOG_DOCTYPE</span>, <span class="cod_str_php">'&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 '</span>
+                             .<span class="cod_str_php">'Strict//EN"' "http://www.w3.org/TR/xhtml1/DTD '</span>
+                             .<span class="cod_str_php">'/xhtml1-strict.dtd"&gt;'</span>);
+  <span class="cod_kw">define</span>(<span class="cod_cst_php">PROLOG_DOCTYPE_IE6</span>, <span class="cod_str_php">'&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 '</span>
+                             .<span class="cod_str_php">'Transitional//EN"' "http://www.w3.org/TR/ '</span>
+                             .<span class="cod_str_php">'xhtml1/DTD/xhtml1-transitional.dtd"&gt;'</span>);
 
   <span class="cod_comment">// INCLUDE LINKS</span>
-  <span class="cod_kw">include</span>('./inc/links.php');
+  <span class="cod_kw">include</span>(<span class="cod_str_php">'./inc/links.php'</span>);
 
   <span class="cod_comment">// META</span>
-  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_CONTENT</span>,       '&lt;meta http-equiv="Content-Type" '
-                             .'content="text/html; charset=utf-8;" /&gt;');
-  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_CONTENT_ROBOT</span>, '&lt;meta content="index, follow" name="robots" /&gt;');
+  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_CONTENT</span>,       <span class="cod_str_php">'&lt;meta http-equiv="Content-Type" '</span>
+                             .<span class="cod_str_php">'content="text/html; charset=utf-8;" /&gt;'</span>);
+  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_CONTENT_ROBOT</span>, <span class="cod_str_php">'&lt;meta content="index, follow" name="robots" /&gt;'</span>);
   <span class="cod_kw">include</span>(<span class="cod_cst_php">LINK_META</span>);
-  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_LINK_RSS</span>,      '&lt;link title="RSS 2.0" 
-                             .'type="application/rss+xml" '
-                             .'rel="alternate" href="index.php?'
-                             .getLgFileText("CONTENT").'=rss" /&gt;');
-  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_LINK_ATOM</span>,     '&lt;link title="Atom 1.0" 
-                             .'type="application/atom+xml" '
-                             .'rel="alternate" href="/index.php?'
-                             .getLgFileText("CONTENT").'=atom" /&gt;');
+  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_LINK_RSS</span>,      <span class="cod_str_php">'&lt;link title="RSS 2.0" '</span>
+                             .<span class="cod_str_php">'type="application/rss+xml" '</span>
+                             .<span class="cod_str_php">'rel="alternate" href="index.php?'</span>
+                             .<span class="cod_fct_php">getLgFileText</span>(<span class="cod_str2_php">"CONTENT"</span>).<span class="cod_str_php">'=rss" /&gt;'</span>);
+  <span class="cod_kw">define</span>(<span class="cod_cst_php">META_LINK_ATOM</span>,     <span class="cod_str_php">'&lt;link title="Atom 1.0" '</span>
+                             .<span class="cod_str_php">'type="application/atom+xml" '</span>
+                             .<span class="cod_str_php">'rel="alternate" href="/index.php?'</span>
+                             .<span class="cod_fct_php">getLgFileText</span>(<span class="cod_str2_php">"CONTENT"</span>).<span class="cod_str_php">'=atom" /&gt;'</span>);
 
   <span class="cod_comment">/////////////////////////////////////////////////////////////////////////////
   // LAUNCH SITE</span>

@@ -111,8 +111,14 @@ pre
   text-decoration:underline !important;
   display: block;
 }
-
-
+.cod_fct_php
+{
+  color: PowderBlue;
+}
+.cod_str2_php
+{
+  color: OliveDrab;
+}
 
 /* Article *******************************************************************/
 #article{

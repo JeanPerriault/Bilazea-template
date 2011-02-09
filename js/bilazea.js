@@ -406,7 +406,7 @@ window.addEvent("load",function()
   {
     var doc1 = document.getElementById('code_content');
     var doc2 = doc1.textContent;
-    alert(doc2);
+    //alert(doc2);
     clip.setText(doc2);
   });
   clip.addEventListener('complete',function(client,text)
