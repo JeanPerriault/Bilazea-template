@@ -99,7 +99,9 @@
   define(LINK_CNT_CAT_1_2,  LINK_DIRECTORY_CNT.'1_demo/mp3.html');
   define(LINK_CNT_CAT_1_3,  LINK_DIRECTORY_CNT.'1_demo/carousel.html');
   define(LINK_CNT_CAT_1_4,  LINK_DIRECTORY_CNT.'1_demo/video.html');
+  define(LINK_CNT_CAT_1_5,  LINK_DIRECTORY_CNT.'1_demo/code.html');
   define(LINK_CNT_CAT_1_MOD_0, LINK_DIRECTORY_CNT.'1_demo/module_0.php');
+  define(LINK_CNT_CAT_1_MOD_1, LINK_DIRECTORY_CNT.'1_demo/module_1.php');
 
   define(LINK_CNT_CAT_2,    LINK_DIRECTORY_CNT.'2_category_2/category_2.html');
   define(LINK_CNT_CAT_2_1,  LINK_DIRECTORY_CNT.'2_category_2/category_2_1.html');

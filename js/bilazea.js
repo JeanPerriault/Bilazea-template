@@ -419,6 +419,9 @@ window.addEvent("load",function()
   });
 
   // Glue it to the button
-  clip.glue('copy');
-  $('copy').set('text', 'Copy');
+  if($('copy'))
+  {
+    clip.glue('copy');
+    $('copy').set('text', 'Copy');
+  }
 });

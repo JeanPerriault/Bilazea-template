@@ -66,6 +66,11 @@
     setMetaDescription(LINK_CNT_CAT_1_4);
     setMetaKeywords(LINK_CNT_CAT_1_4);
   }
+  if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_5"))
+  {
+    setMetaDescription(LINK_CNT_CAT_1_5);
+    setMetaKeywords(LINK_CNT_CAT_1_5);
+  }
 
   // Category 2
   if ($content == $cat2)
