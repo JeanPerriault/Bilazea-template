@@ -1,3 +1,19 @@
+# File:
+# RELEASES
+#
+# Description:
+# This file text contains releases notes of Bilazea template
+# 
+# Date:
+# 2010/10/10
+# R1: 2011/01/10
+# R2: 2011/02/27
+# 
+# @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+# @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
+
+
+
 -------------
 Release-notes
 -------------
@@ -36,7 +52,7 @@ Date: November 2010
 
 Version 0.2 (Beta)
 -------------------
-Date: January 2011
+Date: April 2011
 
     * It will implement:
           o Error pages localized

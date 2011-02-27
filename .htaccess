@@ -1,3 +1,19 @@
+# File:
+# .htaccess
+#
+# Description:
+# This file text contains htaccess parameters of Bilazea template
+# 
+# Date:
+# 2010/10/10
+# R1: 2011/01/10
+# R2: 2011/02/27
+# 
+# @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+# @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
+
+
+
 <Files .htaccess>
 order allow,deny
 deny from all
@@ -5,11 +21,11 @@ deny from all
 
 IndexIgnore *
 
-ErrorDocument 400 http://bilazea.com/Bilazea-template/index.php?content=Error400
-ErrorDocument 401 http://bilazea.com/Bilazea-template/index.php?content=Error401
-ErrorDocument 403 http://bilazea.com/Bilazea-template/index.php?content=Error403
-ErrorDocument 404 http://bilazea.com/Bilazea-template/index.php?content=Error404
-ErrorDocument 500 http://bilazea.com/Bilazea-template/index.php?content=Error500
+ErrorDocument 400 http://localhost/Bilazea-template/index.php?content=Error400
+ErrorDocument 401 http://localhost/Bilazea-template/index.php?content=Error401
+ErrorDocument 403 http://localhost/Bilazea-template/index.php?content=Error403
+ErrorDocument 404 http://localhost/Bilazea-template/index.php?content=Error404
+ErrorDocument 500 http://localhost/Bilazea-template/index.php?content=Error500
 
 AddEncoding gzip .gz
 RewriteCond %{HTTP:Accept-encoding} gzip

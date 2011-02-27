@@ -11,6 +11,8 @@
  * 
  * Date:
  * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -36,13 +38,9 @@
 
   define(LINK_CSS_BILA_PERS,       LINK_DIRECTORY_CSS.'bilazea.css');
   define(LINK_CSS_BILA_PERS_CNT,   LINK_DIRECTORY_CSS.'bilazea_cnt.css');
-  define(LINK_CSS_BILA_PERS_BLOG,  LINK_DIRECTORY_CSS.'bilazea_blog.css');
   define(LINK_CSS_BILA_PERS_LINKS, LINK_DIRECTORY_CSS.'bilazea_links.css');
-  define(LINK_CSS_BILA_PERS_MOD,   LINK_DIRECTORY_CSS.'bilazea_modules.css');
   define(LINK_CSS_BILA_PERS_MTL,   LINK_DIRECTORY_CSS.'bilazea_mootools.css');
-  define(LINK_CSS_BILA_PERS_SETS,  LINK_DIRECTORY_CSS.'bilazea_settings.css');
   define(LINK_CSS_BILA_SUPP,       LINK_DIRECTORY_CSS.'bilazea_supp.css');
-  define(LINK_CSS_BILA_PERS_TIT,   LINK_DIRECTORY_CSS.'bilazea_titles.css');
 
   // JS
   define(LINK_MT_CORE,             LINK_DIRECTORY_JS.'mootools-core.js');
@@ -51,7 +49,7 @@
   define(LINK_REFLECTION,          LINK_DIRECTORY_TOOLS.'reflection/reflection.js');
   define(LINK_GOOGLE,              LINK_DIRECTORY_TOOLS.'google/google.js');
   define(LINK_IECSSHACK,           LINK_DIRECTORY_TOOLS.'iecsshack/curvycorners.js');
-  define(LINK_ZEROCPBOARD,         LINK_DIRECTORY_TOOLS.'zeroclipboard/ZeroClipboard.js');
+  define(LINK_ZEROCPBOARD,         LINK_DIRECTORY_TOOLS.'zeroclipboard/zeroclipboard.js');
 
   // SITE
   define(LINK_META,            LINK_DIRECTORY_TPL.'meta.php');

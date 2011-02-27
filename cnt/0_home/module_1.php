@@ -19,9 +19,6 @@
 </div>
 
 
-
-
-
 <?php } else if (getLanguage() == LG_EN) { ?>
 <!-- English content ///////////////////////////////////////////////////////-->
 <div class="module_video">

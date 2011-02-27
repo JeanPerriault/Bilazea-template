@@ -699,11 +699,11 @@
     {
       // Error div
       echo '<div id="error">';
-      echo '<p class="error_div_title">Errors:</p>';
+      echo '<p class="errorDivTitle">Errors:</p>';
       echo '<ol>';
       foreach($_SESSION['error_msg'] as $key => $value)
       {
-        echo '<li><p class="error_message">'.$value.'</p></li>';
+        echo '<li><p class="errorMessage">'.$value.'</p></li>';
       }
       echo '</ol></div>';
 

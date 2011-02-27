@@ -6,10 +6,11 @@
  * This file contains css used in Bilazea template, adapted for ie browser
  * 
  * Date:
- * 10/11/2010
- * M1. 23/01/2010
+ * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/23
  * 
- * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 
@@ -18,18 +19,11 @@ body
 {
   text-align:center;
 }
+
 /*
 #header{text-algin:left;}
 #title{text-algin:left;margin-left:-900px;padding:0;}
 */
-
-/* Last/Most *****************************************************************/
-#lastMostHidden
-{
-  filter:alpha(opacity=40);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  text-align:center;
-}
 
 /* FIXED TITLE ***************************************************************/
 /*a.fixedTitleLeft
@@ -54,6 +48,113 @@ body
   padding-top:0px; 
 }*/
 
+
+/* Last/Most *****************************************************************/
+.titleLastMost
+{
+  -moz-border-radius:5px;
+}
+
+
+/* Site **********************************************************************/
+#header
+{
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+}
+
+
+/* Aside *********************************************************************/
+#underAside
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+
+
+/* DIV download template *****************************************************/
+.module,.moduleCode,.module_video
+{
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomright: 5px;
+}
+.module_title,.moduleCodeTitle
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+
+
+/* Accordion *****************************************************************/
+h2.accordionTitle1
+{
+  -moz-border-radius: 5px;
+}
+
+h4.accordionTitle1_1,
+h4.accordionTitle1_2,
+h4.accordionTitle1_3
+{
+  -moz-border-radius: 5px;
+}
+
+/* Blog **********************************************************************/
+.blog
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 5px;
+}
+.blog_head
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 0px;
+}
+
+/* DIV language **************************************************************/
+#language
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#language p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#language input
+{
+  -moz-border-radius:5px;
+}
+#language input:hover
+{
+
+}
+
+/* DIV documentation *********************************************************/
+#documentation
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+#documentation p
+{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+
+
+/* Last/Most *****************************************************************/
+#lastMostHidden
+{
+  filter:alpha(opacity=40);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  text-align:center;
+}
+
+
+/* Back to bilazea home page *************************************************/
 #page
 {
   text-align:left;
@@ -76,8 +177,10 @@ a.openImg
   text-align:center;
 }
 
-hr{color:#111;}
-
+hr
+{
+  color:#111;
+}
 
 
 /* Site **********************************************************************/
@@ -157,9 +260,6 @@ hr{color:#111;}
 }
 
 
-
-
-
 /* Content *******************************************************************/
 .img-informatique
 {
@@ -171,100 +271,3 @@ hr{color:#111;}
   filter:alpha(opacity=90);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Last/Most *****************************************************************/
-.titleLastMost
-{
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-}
-
-
-/* Aside *********************************************************************/
-#underAside
-{
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-}
-
-
-/* DIV download template *****************************************************/
-.module
-{
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-}
-.module_title
-{
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-}
-.module_video
-{
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-}
-
-
-/* Accordion *****************************************************************/
-h2.accordionTitle1
-{
-  -moz-border-radius: 5px;
-}
-
-h4.accordionTitle1_1,
-h4.accordionTitle1_2,
-h4.accordionTitle1_3
-{
-  -moz-border-radius: 5px;
-}
-
-/* Blog **********************************************************************/
-.blog
-{
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  -moz-border-radius-bottomright: 5px;
-}
-.blog_head
-{
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

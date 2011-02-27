@@ -44,38 +44,38 @@ else if(Browser.chrome)
 }
 else if(Browser.opera)
 {
-  css = new Asset.css(cssPath+'bilazea_op.css');
+  css = new Asset.css(cssPath+'_bilazea_op.css');
 }
 
 // Platform
 if(Browser.Platform.mac)
 {
-  css = new Asset.css(cssPath+'bilazea_mac.css');
+  css = new Asset.css(cssPath+'_bilazea_mac.css');
 }
 if(Browser.Platform.win)
 {
-  css = new Asset.css(cssPath+'bilazea_win.css');
+  css = new Asset.css(cssPath+'_bilazea_win.css');
 }
 if(Browser.Platform.linux){
-  css = new Asset.css(cssPath+'bilazea_lin.css');
+  css = new Asset.css(cssPath+'_bilazea_lin.css');
 }
 
 if(Browser.Platform.ios)
 {
-  css = new Asset.css(cssPath+'bilazea_ios.css');
+  css = new Asset.css(cssPath+'_bilazea_ios.css');
 }
 if(Browser.Platform.android)
 {
-  css = new Asset.css(cssPath+'bilazea_android.css');
+  css = new Asset.css(cssPath+'_bilazea_android.css');
 }
 if(Browser.Platform.webos)
 {
-  css = new Asset.css(cssPath+'bilazea_webos.css');
+  css = new Asset.css(cssPath+'_bilazea_webos.css');
 }
 if(Browser.Platform.other)
 {
   os = Browser.Platform.name;
-  css = new Asset.css(cssPath+'bilazea_others.css');
+  css = new Asset.css(cssPath+'_bilazea_others.css');
 }
 
 // Flash
@@ -101,7 +101,6 @@ window.addEvent('domready',function()
   new Asset.images(imagesToPreload);
 
 
-
   /* Left title link *********************************************************/
   if($('titleLink'))
   {
@@ -116,7 +115,6 @@ window.addEvent('domready',function()
       }
     });
   }
-
 
 
   /* Accordion ***************************************************************/
@@ -255,7 +253,7 @@ window.addEvent('domready',function()
   var cookies = new Hash.Cookie('Bilazea.com Cookies - For design',{duration: 3600});
   var cookTop = cookies.get('top');
   var cookAside = cookies.get('aside');
-  var cookSettings = cookies.get('settings');
+  //var cookSettings = cookies.get('settings');
 
   // Last most
   if ($('lastMost'))
@@ -348,6 +346,7 @@ window.addEvent('domready',function()
 
 
   // Settings
+  /*
   if ($('settings'))
   {
     var verticalSettings = new Fx.Slide('settings') || null;
@@ -388,6 +387,7 @@ window.addEvent('domready',function()
       cookies.set('settings', 'closed');
     });
   }
+  */
 });
 
 
@@ -404,10 +404,9 @@ window.addEvent("load",function()
   // Event
   clip.addEventListener('mousedown',function()
   {
-    var doc1 = document.getElementById('code_content');
-    var doc2 = doc1.textContent;
-    //alert(doc2);
-    clip.setText(doc2);
+    var codeContent = document.getElementById('code_content');
+    var code = codeContent.textContent;
+    clip.setText(code);
   });
   clip.addEventListener('complete',function(client,text)
   {

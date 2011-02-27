@@ -6,7 +6,9 @@
  * This file contains css used in Bilazea template
  * 
  * Date:
- * 2011/01/10
+ * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -48,6 +50,132 @@ hr
   clear:both;
   border:none;
   margin:0;
+}
+
+
+/* Title *********************************************************************/
+h1
+{
+  color:#000;
+  font-size:2.8em;
+  margin:0;
+  padding-bottom:20px;
+}
+
+h2
+{
+  color:#CCC;
+  margin:0;
+}
+
+h3
+{
+  text-align:center;
+}
+
+
+/* DIV settings template *****************************************************/
+#settings
+{
+  text-align:right;
+  background-color:#FFF;
+  padding:5px;
+  border-bottom:5px solid #DDD;
+  height:70px;
+}
+
+#settingsHidden
+{
+  height:16px;
+  background:#000;
+  opacity:0.4;
+  padding-right:5px;
+  padding-top:1px;
+}
+
+ul#navlist
+{
+  padding-top:10px;
+}
+
+#navlist li
+{
+  float:left;
+  display: inline;
+  list-style-type: none;
+  padding-right: 5px;
+}
+form
+{
+  height:20px;
+}
+
+
+/* DIV language **************************************************************/
+#language
+{
+  background:#DDDDDD;
+  float:right;
+  margin-right:10px;
+  text-align:center;
+  width:300px;
+  padding-bottom:5px;
+  height:75px;
+}
+#language p
+{
+  margin:0;
+  background-color:#333;
+  color:#FFF;
+}
+#language_doc
+{
+  text-align:right;
+  color:#333;
+  margin-right:5px;
+}
+#language input
+{
+  cursor:pointer;
+  border:#DDD;
+  background:#222222;
+  color:#EEEEEE;
+  display:block;
+  float:left;
+  height:25px;
+  text-align:center;
+  text-decoration:none;
+  width:80px;
+  font-size:0.8em;
+}
+#language input:hover
+{
+  color:#FFF;
+  font-size:0.9em;
+  background-color:#646464;
+}
+
+
+/* DIV documentation *********************************************************/
+#documentation
+{
+  background:#DDDDDD;
+  float:right;
+  margin-right:10px;
+  text-align:center;
+  width:260px;
+  height:75px;
+}
+#documentation p
+{
+  margin:0;
+  background-color:#333;
+  color:#FFF;
+  border:none;
+}
+#documentation a:hover
+{
+  color:#646464;
 }
 
 
@@ -128,7 +256,6 @@ hr
 #page
 {
   clear:both;
-  /*opacity:0.8;*/
   margin: 0px auto;
   width:800px;
   border-top:5px solid #646464;
@@ -140,6 +267,97 @@ hr
   padding:5px;
   background-color:#FFF;
   margin-bottom:40px;
+}
+
+
+/* DIV modules template *****************************************************/
+.module
+{
+  background-color: #DDD;
+  margin-bottom:20px;
+  padding:0 5px 0 5px;
+}
+a.module
+{
+  color:#EEE;
+}
+a:visited.module
+{
+  color:#EEE;
+}
+a:hover.module
+{
+  color:#FFF;
+}
+p.module_txt
+{
+  margin:0;
+}
+ul.module_ul
+{
+  
+}
+li.module_ul_bigLi
+{
+  font-size:1.2em;
+}
+
+a.module_link
+{
+  color:#EEE!important;
+}
+a:visited.module_link
+{
+  color:#EEE!important;
+}
+a:hover.module_link
+{
+  color:#FFF!important;
+}
+
+
+.module_title
+{
+  margin-top:40px;
+  background-color:#333;
+  color:#EEE;
+  font-size:26px;
+  font-weight:bold;
+  padding:0 0 0 5px;
+  text-align:left;
+}
+p.module_title_txt
+{
+  margin:0;
+}
+.module_video
+{
+  text-align:center;
+  background-color: #DDD;
+  margin-bottom:20px;
+}
+
+
+.moduleCode
+{
+  background:#1A1A1A;
+  margin-bottom:50px;
+}
+
+.moduleCodeTitle
+{
+  margin-top:40px;
+  background-color:#333;
+  color:#EEE;
+  text-align:left;
+}
+
+.moduleCodeTitleTxt
+{
+  font-size:26px;
+  font-weight:bold;
+  margin:0;
+  padding:0 0 0 5px;
 }
 
 
@@ -160,33 +378,6 @@ hr
   padding-top:10px;
   padding-bottom:10px;
   opacity:0.8;
-}
-
-a.iconGoToTopLcl
-{
-  height:60px;
-  width:24px;
-  float:left;
-  background:url('../img/arrow_top.gif') no-repeat scroll 0 0 transparent;
-  height:24px;
-  margin-left:5px;
-}
-a.iconGoToTopLcl:hover
-{
-  background:url('../img/arrow_top_h.gif') no-repeat scroll 0 0 transparent;
-}
-a.iconGoToTopRcl
-{
-  height:60px;
-  width:24px;
-  float:right;
-  background:url('../img/arrow_top.gif') no-repeat scroll right 0 transparent;
-  height:24px;
-  margin-right:5px;
-}
-a.iconGoToTopRcl:hover
-{
-  background:url('../img/arrow_top_h.gif') no-repeat scroll right 0 transparent;
 }
 
 
@@ -255,16 +446,6 @@ a.iconGoToTopRcl:hover
   background:#646464;
 }
 
-#last
-{
-  float:left;
-
-}
-#most
-{
-  float:left;
-}
-
 
 /* ERROR stuff ***************************************************************/
 #error
@@ -279,13 +460,13 @@ a.iconGoToTopRcl:hover
   color:#FFF;
 }
 
-.error_div_title
+.errorDivTitle
 {
   padding-left:3px;
   font-size:26px;
   text-decoration:underline;
 }
-.error_message
+.errorMessage
 {
   color:#FFF;
   font-size:24px;
@@ -296,21 +477,4 @@ a.iconGoToTopRcl:hover
 #navigation ul
 {
   list-style-type:none;
-}
-
-
-/* Demos *********************************************************************/
-#mp3Div
-{
-  padding-left: 40px;
-}
-
-#carouselDiv
-{
-  padding-left: 160px;
-}
-
-#videoDiv
-{
-  padding-left: 160px;
 }

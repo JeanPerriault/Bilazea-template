@@ -39,7 +39,7 @@
 
 <?php } else if (getLanguage() == LG_ES) { ?>
 <!-- Spanich content ///////////////////////////////////////////////////////-->
-  <p class="module_txt">Le template utilizada para crear este sitio es un proyecto 
+  <p class="module_txt">El template utilizada para crear este sitio es un proyecto 
   open source:</p>
   <ul class="module_ul">
     <li>alojado en <a class="externalLink external module_link" 

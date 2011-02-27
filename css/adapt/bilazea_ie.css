@@ -6,9 +6,11 @@
  * This file contains css used in Bilazea template, adapted for ie browser
  * 
  * Date:
- * 2010/11/10
+ * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
- * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 
@@ -17,145 +19,6 @@ body
 {
   text-align:center;
 }
-
-/* Last/Most *****************************************************************/
-#lastMostHidden
-{
-  filter:alpha(opacity=40);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  text-align:center;
-}
-
-
-/* Back to bilazea home page *************************************************/
-#page
-{
-  text-align:left;
-}
-#underAside
-{
-  text-align:center;
-}
-#footerIn
-{
-  text-align:left;
-}
-#footerHiddenIn
-{
-  text-align:center;
-}
-
-a.openImg
-{
-  text-align:center;
-}
-
-hr{color:#111;}
-
-
-/* Site **********************************************************************/
-#header
-{
-  filter:alpha(opacity=70);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-}
-
-#page
-{
-  filter:alpha(opacity=80);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-}
-
-
-/* Aside *********************************************************************/
-#aside
-{
-  filter:alpha(opacity=70);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-
-}
-
-
-/* Footer ********************************************************************/
-#footer
-{
-  filter:alpha(opacity=80);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-}
-
-#footerHidden
-{
-  filter:alpha(opacity=40);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-}
-
-#settingsHidden
-{
-  filter:alpha(opacity=40);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-}
-
-/* class tool-tip ************************************************************/
-.tip
-{
-  filter:alpha(opacity=70);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-}
-.tip-bottom
-{
-  filter:alpha(opacity=70);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-}
-
-
-/* ERROR stuff ***************************************************************/
-#error
-{
-  filter:alpha(opacity=50);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-}
-
-
-/* Mask & Spinner ************************************************************/
-.mask
-{
-  filter: alpha(opacity=90);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-}
-
-.spinner
-{
-  filter: alpha(opacity=90);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-}
-
-
-/* Content *******************************************************************/
-.img-informatique
-{
-  filter:alpha(opacity=90);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-}
-.img-informatique2
-{
-  filter:alpha(opacity=90);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -252,4 +115,132 @@ h4.accordionTitle1_3
 {
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
+}
+
+
+/* Last/Most *****************************************************************/
+#lastMostHidden
+{
+  filter:alpha(opacity=40);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  text-align:center;
+}
+
+
+/* Back to bilazea home page *************************************************/
+#page
+{
+  text-align:left;
+}
+#underAside
+{
+  text-align:center;
+}
+#footerIn
+{
+  text-align:left;
+}
+#footerHiddenIn
+{
+  text-align:center;
+}
+
+a.openImg
+{
+  text-align:center;
+}
+
+hr
+{
+  color:#111;
+}
+
+
+/* Site **********************************************************************/
+#header
+{
+  filter:alpha(opacity=70);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+#page
+{
+  filter:alpha(opacity=80);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+
+/* Aside *********************************************************************/
+#aside
+{
+  filter:alpha(opacity=70);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+
+}
+
+
+/* Footer ********************************************************************/
+#footer
+{
+  filter:alpha(opacity=80);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+#footerHidden
+{
+  filter:alpha(opacity=40);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
+
+#settingsHidden
+{
+  filter:alpha(opacity=40);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
+
+/* class tool-tip ************************************************************/
+.tip
+{
+  filter:alpha(opacity=70);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+.tip-bottom
+{
+  filter:alpha(opacity=70);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+
+/* ERROR stuff ***************************************************************/
+#error
+{
+  filter:alpha(opacity=50);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+
+/* Mask & Spinner ************************************************************/
+.mask
+{
+  filter: alpha(opacity=90);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+
+.spinner
+{
+  filter: alpha(opacity=90);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+
+
+/* Content *******************************************************************/
+.img-informatique
+{
+  filter:alpha(opacity=90);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+}
+.img-informatique2
+{
+  filter:alpha(opacity=90);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }

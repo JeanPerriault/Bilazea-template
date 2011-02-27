@@ -20,7 +20,7 @@
 <h1><?php printLgFileText("MAINTENANCE"); ?></h1>
 
 <div id="error">
-  <p class="error_message"><?php printLgFileText("CONSTRUCT_MSG"); ?></p>
+  <p class="errorMessage"><?php printLgFileText("CONSTRUCT_MSG"); ?></p>
 </div>
 
 <img class="img-accueil reflect" 

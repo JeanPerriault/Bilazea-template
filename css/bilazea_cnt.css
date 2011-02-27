@@ -6,7 +6,9 @@
  * This file contains css used in Bilazea template article
  * 
  * Date:
- * 2011/01/10
+ * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -53,7 +55,6 @@
 pre
 {
   font-size:1em;
-  /*overflow-x:auto;*/
   padding: 1em 0 1em 0;
   background-color: #1A1A1A;
   color: #EEEEEE;
@@ -155,4 +156,60 @@ table.tableArticle td
 }
 
 
+/* Demos *********************************************************************/
+#mp3Div
+{
+  padding-left: 40px;
+}
 
+#carouselDiv
+{
+  padding-left: 160px;
+}
+
+#videoDiv
+{
+  padding-left: 160px;
+}
+
+
+/* Blog **********************************************************************/
+.blog
+{
+  background:#DDD;
+  margin-bottom:50px;
+}
+.blog_head
+{
+  padding:5px;
+  background:#222;
+  height:30px;
+  cursor:pointer;
+}
+.blog_title
+{
+  float:left;
+}
+.blog_title p
+{
+  margin:0;
+  color:#EEE;
+  font-size:1.5em;
+  font-weight:bolder;
+}
+.blog_date
+{
+  float:right;
+}
+.blog_date p
+{
+  margin:0;
+  color:#EEE;
+  font-style:italic;
+  font-size:1.4em;
+}
+.blog_content
+{
+  padding:5px;
+  clear:both;
+}

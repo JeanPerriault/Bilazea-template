@@ -9,7 +9,8 @@
  * 
  * Date:
  * 2010/10/10
- * M1- 2011/01/23
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web

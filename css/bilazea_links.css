@@ -238,3 +238,32 @@ a#backBila {
     width: 80px;
     z-index: 3;
 }
+
+
+/* Aside *********************************************************************/
+a.iconGoToTopLcl
+{
+  height:60px;
+  width:24px;
+  float:left;
+  background:url('../img/arrow_top.gif') no-repeat scroll 0 0 transparent;
+  height:24px;
+  margin-left:5px;
+}
+a.iconGoToTopLcl:hover
+{
+  background:url('../img/arrow_top_h.gif') no-repeat scroll 0 0 transparent;
+}
+a.iconGoToTopRcl
+{
+  height:60px;
+  width:24px;
+  float:right;
+  background:url('../img/arrow_top.gif') no-repeat scroll right 0 transparent;
+  height:24px;
+  margin-right:5px;
+}
+a.iconGoToTopRcl:hover
+{
+  background:url('../img/arrow_top_h.gif') no-repeat scroll right 0 transparent;
+}

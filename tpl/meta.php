@@ -9,9 +9,11 @@
  * - to load meta of the site
  * 
  * Date:
- * 2011/01/10
+ * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
- * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+ * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////

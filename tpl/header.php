@@ -9,6 +9,8 @@
  * 
  * Date:
  * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -43,19 +45,9 @@
   <!-- TEMPLATE CSS -->
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS ?>" 
         type="text/css" media="projection, screen, tv" />
-  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_BLOG ?>" 
-        type="text/css" media="projection, screen, tv" />
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_LINKS ?>" 
         type="text/css" media="projection, screen, tv" />
-  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_MOD ?>" 
-        type="text/css" media="projection, screen, tv" />
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_MTL ?>" 
-        type="text/css" media="projection, screen, tv" />
-  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_SETS ?>" 
-        type="text/css" media="projection, screen, tv" />
-  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_SUPP ?>" 
-        type="text/css" media="projection, screen, tv" />
-  <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_TIT ?>" 
         type="text/css" media="projection, screen, tv" />
 
   <!-- TEMPLATE CONTENT CSS -->
