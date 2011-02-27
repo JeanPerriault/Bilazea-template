@@ -10,180 +10,282 @@
  * 
  * Date:
  * 2010/10/10
+ * R1: 2011/01/10
+ * R2: 2011/02/27
  * 
- * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
- * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web 
+ * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////
 
 require_once('./simpletest/autorun.php');
 require_once('../inc/utils.php');
 
-class TestOfUnits extends UnitTestCase {
 
+// Test of setLanguage
+class TestSetLanguage extends UnitTestCase
+{
   /**
    * TEST Set language
    */
-  function testSetLanguage($lg="")
+  function testSetLanguage_00($lg="")
   {
     $this->assertEqual(0, 0);
   }
 
+  function testSetLanguage_01($lg="")
+  {
+    $this->assertEqual(1, 1);
+  }
+}
+
+
+// Test of getLanguage
+class TestGetLanguage extends UnitTestCase
+{
   /**
    * TEST Get language
    */
-  function testGetLanguage()
+  function testGetLanguage_00()
   {
     $this->assertEqual(0, 0);
   }
 
+  function testGetLanguage_01()
+  {
+    $this->assertEqual(1, 1);
+  }
+}
+
+
+// Test of getLanguageFile
+class testGetLanguageFile extends UnitTestCase
+{
   /**
    * Get language file
    */
-  function testGetLanguageFile($lg="")
+  function testGetLanguageFile_00($lg="")
   {
     $this->assertEqual(0, 0);
   }
 
+  function testGetLanguageFile_01($lg="")
+  {
+    $this->assertEqual(0, 0);
+  }
+}
+
+
+// Test of getLgFileText
+class TestGetLgFileText extends UnitTestCase
+{
   /**
    * 
    */
-  function testGetLgFileText()
+  function testGetLgFileText_00()
   {
     $key = "";
     $lg = "";
     $this->assertEqual(0, 0);
   }
 
+  function testGetLgFileText_01()
+  {
+    $key = "";
+    $lg = "";
+    $this->assertEqual(0, 0);
+  }
+}
+
+
+// Test of printLgFileText
+class TestPrintLgFileText extends UnitTestCase
+{
   /**
    *
    */
-  function testPrintLgFileText()
+  function testPrintLgFileText_00()
   {
     $key = "";
     $lg = "";
     $this->assertEqual(0, 0);
   }
+}
 
+
+// Test of getLgFileTextForUrl
+class TestGetLgFileTextForUrl extends UnitTestCase
+{
   /**
    * Get language file text for url
    */
-  function testGetLgFileTextForUrl()
+  function testGetLgFileTextForUrl_00()
   {
     $key = "";
     $lg = "";
     $this->assertEqual(0, 0);
   }
+}
 
+
+// Test of getPageUrlForLanguage
+class TestGetPageUrlForLanguage extends UnitTestCase
+{
   /**
    * testGetPageUrlForLanguage
    */
-  function testGetPageUrlForLanguage()
+  function testGetPageUrlForLanguage_00()
   {
     $this->assertEqual(0, 0);
   }
+}
 
-  // URL //////////////////////////////////////////////////////////////////////
+
+// Test of curPageURL
+class TestCurPageURL extends UnitTestCase
+{
   /**
    * curPageURL
    */
-  function testCurPageURL()
+  function testCurPageURL_00()
   {
     $this->assertEqual(0, 0);
   }
+}
 
+
+// Test of getMetaTitle
+class TestGetMetaTitle extends UnitTestCase
+{
   /**
    * Get meta title
    */
-  function testGetMetaTitle()
+  function testGetMetaTitle_00()
   {
     $this->assertEqual(0, 0);
   }
+}
 
 
-  // MENU /////////////////////////////////////////////////////////////////////
+// Test of buildMenu
+class TestBuildMenu extends UnitTestCase
+{
   /**
    * TEST Build menu
    */
-  function testBuildMenu()
+  function testBuildMenu_00()
   {
     $this->assertEqual(0, 0);
   }
+}
 
-  // CONTENT //////////////////////////////////////////////////////////////////
+
+// Test of printContent
+class TestPrintContent extends UnitTestCase
+{
   /**
    * Print content
    */
-  function testPrintContent()
+  function testPrintContent_00()
   {
     $filename = "";
     $this->assertEqual(0, 0);
   }
+}
 
+
+// Test of setMetaDescription
+class TestSetMetaDescription extends UnitTestCase
+{
   /**
    * setMetaDescription
    */
-  function testSetMetaDescription()
+  function testSetMetaDescription_00()
   {
     $filename = "";
     $metaDesc = "";
     $this->assertEqual(0, 0);
   }
+}
 
+
+// Test of setMetaKeywords
+class TestSetMetaKeywords extends UnitTestCase {
 
   /**
    * setMetaKeywords
    */
-  function testSetMetaKeywords()
+  function testSetMetaKeywords_00()
   {
     $filename = "";
     $metaKey = "";
     $this->assertEqual(0, 0);
   }
+}
 
 
-
-  // DOCUMENTATION ////////////////////////////////////////////////////////////
+// Test of getDocumentationLink
+class TestGetDocumentationLink extends UnitTestCase {
   /**
    * Get documentation link, according to user language
    */
-  function testGetDocumentationLink()
+  function testGetDocumentationLink_00()
   {
     $this->assertEqual(0, 0);
   }
+}
 
 
-  // MAINTENANCE //////////////////////////////////////////////////////////////
+// Test of IsMaintenance
+class TestIsMaintenance extends UnitTestCase
+{
   /**
    * TEST Is the site under maintenance?
    */
-  function testIsMaintenance()
+  function testIsMaintenance_00()
   {
     $maintenance = "";
     $this->assertEqual(0, 0);
   }
+}
 
 
-  // ERRORS MANAGEMENT ////////////////////////////////////////////////////////
+// Test of addErrors
+class TestAddErrors extends UnitTestCase
+{
   /**
    * TEST Add errors
    */
-  function testAddErrors()
+  function testAddErrors_00()
   {
     $title = "";
     $msg = "";
     $this->assertEqual(0, 0);
   }
+}
 
+
+// Test of showErrors
+class TestShowErrors extends UnitTestCase
+{
   /**
    * TEST Show errors
    */
-  function testShowErrors()
+  function testShowErrors_00()
   {
     $this->assertEqual(0, 0);
   }
 
+  function testShowErrors_01()
+  {
+    $this->assertEqual(0, 0);
+  }
+}
 
+
+// Test of getGravatar
+class TestGetGravatar extends UnitTestCase
+{
   // GRAVATAR /////////////////////////////////////////////////////////////////
   /**
    * TEST
@@ -201,7 +303,7 @@ class TestOfUnits extends UnitTestCase {
    * @return String containing either just a URL or a complete image tag
    * @source http://gravatar.com/site/implement/images/php/
    */
-  function testGetGravatar()
+  function testGetGravatar_00()
   {
     $email = "";
     $s = 80;
@@ -212,10 +314,32 @@ class TestOfUnits extends UnitTestCase {
     $this->assertEqual(0, 0);
   }
 
+  function testGetGravatar_01()
+  {
+    $email = "";
+    $s = 80;
+    $d = 'mm';
+    $r = 'g';
+    $img = false;
+    $atts = array();
+    $this->assertEqual(0, 0);
+  }
+}
+
+
+// Test of println
+class TestPrintln extends UnitTestCase
+{
   /**
    * TEST println
    */
-  function testPrintln()
+  function testPrintln_00()
+  {
+    $string_message = "";
+    $this->assertEqual(0, 0);
+  }
+
+  function testPrintln_01()
   {
     $string_message = "";
     $this->assertEqual(0, 0);

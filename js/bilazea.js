@@ -8,12 +8,12 @@
  * It's using mootools framework
  * 
  * Date:
- * 10/10/2010
- * M1. 23/01/2011
+ * 2010/10/10
+ * R1: 2011/01/23
+ * R2: 2011/02/27
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
- * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
- */
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web */
 ///////////////////////////////////////////////////////////////////////////////
 
 
@@ -346,13 +346,13 @@ window.addEvent('domready',function()
 
 
   // Settings
-  /*
   if ($('settings'))
   {
     var verticalSettings = new Fx.Slide('settings') || null;
     var verticalSettingsHidden = new Fx.Slide('settingsHidden') || null;
     var verticalSettingsLinkSlideIn = $('settingsLinkSlideIn') || null;
     var verticalSettingsLinkSlideOut = $('settingsLinkSlideOut') || null;
+    /*
     if (cookSettings)
     {
       if (cookSettings == 'opened')
@@ -371,6 +371,10 @@ window.addEvent('domready',function()
       verticalSettings.hide();
       verticalSettingsHidden.show();
     }
+    */
+    verticalSettings.hide();
+    verticalSettingsHidden.show();
+
     // Settings slide
     verticalSettingsLinkSlideIn.addEvent('click', function(e)
     {
@@ -387,7 +391,6 @@ window.addEvent('domready',function()
       cookies.set('settings', 'closed');
     });
   }
-  */
 });
 
 

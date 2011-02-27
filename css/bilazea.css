@@ -80,7 +80,7 @@ h3
   text-align:right;
   background-color:#FFF;
   padding:5px;
-  border-bottom:5px solid #DDD;
+  border-bottom:5px solid #BBB;
   height:70px;
 }
 
@@ -114,13 +114,13 @@ form
 /* DIV language **************************************************************/
 #language
 {
-  background:#DDDDDD;
+  background:#BBB;
   float:right;
   margin-right:10px;
   text-align:center;
   width:300px;
   padding-bottom:5px;
-  height:75px;
+  height:70px;
 }
 #language p
 {
@@ -159,7 +159,7 @@ form
 /* DIV documentation *********************************************************/
 #documentation
 {
-  background:#DDDDDD;
+  background:#BBB;
   float:right;
   margin-right:10px;
   text-align:center;
