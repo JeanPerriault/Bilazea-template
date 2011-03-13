@@ -51,7 +51,7 @@
   define(META_CONTENT,       '<meta http-equiv="Content-Type" '
                              .'content="text/html; charset=utf-8;" />');
   define(META_CONTENT_ROBOT, '<meta content="index, follow" name="robots" />');
-  include(LINK_META);
+  setMetaDescAndKwords();
   define(META_LINK_RSS,      '<link title="RSS 2.0" type="application/rss+xml" '
                              .'rel="alternate" href="index.php?'
                              .getLgFileText("CONTENT").'=rss" />');

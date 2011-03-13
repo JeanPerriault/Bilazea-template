@@ -34,13 +34,13 @@
   define(LINK_DIRECTORY_TOOLS,     './tools/');
 
   // CSS bilazea base and supp
-  define(LINK_CSS_BILA_BASE,       LINK_DIRECTORY_CSS.'bilazea_base.css');
+  define(LINK_CSS_BILA_BASE,       LINK_DIRECTORY_CSS.'base/bilazea_base.css');
+  define(LINK_CSS_BILA_SUPP,       LINK_DIRECTORY_CSS.'base/bilazea_supp.css');
 
   define(LINK_CSS_BILA_PERS,       LINK_DIRECTORY_CSS.'bilazea.css');
   define(LINK_CSS_BILA_PERS_CNT,   LINK_DIRECTORY_CSS.'bilazea_cnt.css');
   define(LINK_CSS_BILA_PERS_LINKS, LINK_DIRECTORY_CSS.'bilazea_links.css');
   define(LINK_CSS_BILA_PERS_MTL,   LINK_DIRECTORY_CSS.'bilazea_mootools.css');
-  define(LINK_CSS_BILA_SUPP,       LINK_DIRECTORY_CSS.'bilazea_supp.css');
 
   // JS
   define(LINK_MT_CORE,             LINK_DIRECTORY_JS.'mootools-core.js');
@@ -52,14 +52,12 @@
   define(LINK_ZEROCPBOARD,         LINK_DIRECTORY_TOOLS.'zeroclipboard/zeroclipboard.js');
 
   // SITE
-  define(LINK_META,            LINK_DIRECTORY_TPL.'meta.php');
   define(LINK_HEADER,          LINK_DIRECTORY_TPL.'header.php');
   define(LINK_TPL_SITE,        LINK_DIRECTORY_TPL.'site.php');
   define(LINK_HEAD,            LINK_DIRECTORY_TPL.'site_head.php');
   define(LINK_SETTINGS,        LINK_DIRECTORY_TPL.'site_settings.php');
   define(LINK_NAVIGATION,      LINK_DIRECTORY_TPL.'site_navigation.php');
   define(LINK_LASTMOST,        LINK_DIRECTORY_TPL.'site_lastmost.php');
-  define(LINK_CONTENT,         LINK_DIRECTORY_TPL.'site_content.php');
   define(LINK_ASIDE,           LINK_DIRECTORY_TPL.'site_aside.php');
   define(LINK_FOOTER,          LINK_DIRECTORY_TPL.'site_footer.php');
   define(LINK_MAP,             LINK_DIRECTORY_TPL.'site_map.php');
@@ -133,5 +131,5 @@
   define(LINK_WIKI_DOC,  'https://github.com/JeanPerriault/Bilazea-template/wiki');
 
   // MAIL TO //////////////////////////////////////////////////////////////////
-  define(MAILTO_ADMIN,   'mailto:bilazea@aol.fr');
+  define(MAILTO_ADMIN,   'mailto:admin@bilazea.com');
 ?>

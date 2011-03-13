@@ -47,8 +47,12 @@
       </div>
 
       <!-- Menu -->
-      <?php if (!isMaintenance($maintenance)){
-        include(LINK_NAVIGATION);
-      }?>
+      <?php
+        if (!isMaintenance($maintenance))
+        {
+          // Build menu
+          buildMenu();
+        }
+      ?>
       <hr />
     </div>

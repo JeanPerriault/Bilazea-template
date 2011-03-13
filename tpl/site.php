@@ -96,7 +96,8 @@
             }
             else
             {
-              include(LINK_CONTENT);
+              // Set content
+              setContent();
             }
           ?>
         </div>

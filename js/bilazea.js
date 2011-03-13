@@ -186,6 +186,8 @@ window.addEvent('domready',function()
         var myEl = new Fx.Tween(element);
         myTog.set('color', '#FFF');
         myTog.set('background-color','#222222');
+        myTog.set('background-position', 'center center');
+        myTog.set('background-repeat', 'no-repeat');
       },
       onBackground : function(toggler, element)
       {
@@ -193,6 +195,8 @@ window.addEvent('domready',function()
         var myEl = new Fx.Tween(element);
         myTog.set('color', '#EEE');
         myTog.set('background-color', '#61615F');
+        myTog.set('background-position', 'center center');
+        myTog.set('background-repeat', 'no-repeat');
       }
     });
   }
