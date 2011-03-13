@@ -49,6 +49,9 @@
   define(LINK_REFLECTION,          LINK_DIRECTORY_TOOLS.'reflection/reflection.js');
   define(LINK_GOOGLE,              LINK_DIRECTORY_TOOLS.'google/google.js');
   define(LINK_IECSSHACK,           LINK_DIRECTORY_TOOLS.'iecsshack/curvycorners.js');
+  define(LINK_SLIMBOX_CSS,         LINK_DIRECTORY_TOOLS.'slimbox/css/slimbox.css');
+  define(LINK_SLIMBOX,             LINK_DIRECTORY_TOOLS.'slimbox/js/slimbox.js');
+  define(LINK_SLIMBOX,             LINK_DIRECTORY_TOOLS.'slimbox/js/slimbox.js');
   define(LINK_ZEROCPBOARD,         LINK_DIRECTORY_TOOLS.'zeroclipboard/zeroclipboard.js');
 
   // SITE
@@ -93,9 +96,10 @@
   define(LINK_CNT_CAT_1,    LINK_DIRECTORY_CNT.'1_demo/demo.html');
   define(LINK_CNT_CAT_1_1,  LINK_DIRECTORY_CNT.'1_demo/accordeon.html');
   define(LINK_CNT_CAT_1_2,  LINK_DIRECTORY_CNT.'1_demo/mp3.html');
-  define(LINK_CNT_CAT_1_3,  LINK_DIRECTORY_CNT.'1_demo/carousel.html');
-  define(LINK_CNT_CAT_1_4,  LINK_DIRECTORY_CNT.'1_demo/video.html');
-  define(LINK_CNT_CAT_1_5,  LINK_DIRECTORY_CNT.'1_demo/code.html');
+  define(LINK_CNT_CAT_1_3,  LINK_DIRECTORY_CNT.'1_demo/image.html');
+  define(LINK_CNT_CAT_1_4,  LINK_DIRECTORY_CNT.'1_demo/carousel.html');
+  define(LINK_CNT_CAT_1_5,  LINK_DIRECTORY_CNT.'1_demo/video.html');
+  define(LINK_CNT_CAT_1_6,  LINK_DIRECTORY_CNT.'1_demo/code.html');
   define(LINK_CNT_CAT_1_MOD_0, LINK_DIRECTORY_CNT.'1_demo/module_0.php');
   define(LINK_CNT_CAT_1_MOD_1, LINK_DIRECTORY_CNT.'1_demo/module_1.php');
 

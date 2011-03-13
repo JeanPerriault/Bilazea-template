@@ -713,7 +713,12 @@
       setMetaDescription(LINK_CNT_CAT_1_5);
       setMetaKeywords(LINK_CNT_CAT_1_5);
     }
-  
+    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_6"))
+    {
+      setMetaDescription(LINK_CNT_CAT_1_6);
+      setMetaKeywords(LINK_CNT_CAT_1_6);
+    }
+
     // Category 2
     if ($content == $cat2)
     {
@@ -831,6 +836,10 @@
     if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_5"))
     {
       printContent(LINK_CNT_CAT_1_5);
+    }
+    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_6"))
+    {
+      printContent(LINK_CNT_CAT_1_6);
     }
   
     // Category 2

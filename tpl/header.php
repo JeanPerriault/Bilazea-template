@@ -49,6 +49,8 @@
         type="text/css" media="projection, screen, tv" />
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_MTL ?>" 
         type="text/css" media="projection, screen, tv" />
+  <link rel="stylesheet" href="<?php echo LINK_SLIMBOX_CSS ?>" 
+        type="text/css" media="projection, screen, tv" />
 
   <!-- TEMPLATE CONTENT CSS -->
   <link rel="stylesheet" href="<?php echo LINK_CSS_BILA_PERS_CNT ?>" 
