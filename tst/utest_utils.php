@@ -167,8 +167,8 @@ class TestGetMetaTitle extends UnitTestCase
 }
 
 
-// Test of buildMenu
-class TestBuildMenu extends UnitTestCase
+// Test of buildAndPrintMenu
+class TestBuildAndPrintMenu extends UnitTestCase
 {
   /**
    * TEST Build menu

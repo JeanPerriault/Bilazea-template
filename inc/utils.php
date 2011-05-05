@@ -373,11 +373,9 @@
 
   // MENU /////////////////////////////////////////////////////////////////////
   /**
-   * Build menu
-   * 
-   * @return $menusArray The menus array
+   * Build and print menu
    */
-  function buildMenu()
+  function buildAndPrintMenu()
   {
     // Get language file
     $lang_array = parse_ini_file(LINK_LANG);
@@ -448,43 +446,19 @@
     }
     $nav .= '</div>';
     $$navCat .= '</div>';
+    $contents = explode('>', $_GET[getLgFileText("CONTENT")]);
 
-    // Set menus array
-    $menuArray[0] = $nav;
+    // Print navigation menu first line
+    echo $nav;
+
+    // Print navigation menu second line
     for($m = 1; $m<$nbCat+1; $m++)
     {
       $navCat = "navCAT_$m";
-      $menuArray[$m] = $$navCat;
-    }
-
-    // Return menu array
-    //return $menuArray;
-    // Navigation ///////////////////////////////////////////////////////////////
-    echo $menuArray[0];
-    $contents = explode('>', $_GET[getLgFileText("CONTENT")]);
-  
-    // Navigation 1 /////////////////////////////////////////////////////////////
-    if ($_GET[getLgFileText("CONTENT")] == getLgFileTextForUrl("CAT_1") 
-        || $contents[0] == getLgFileTextForUrl("CAT_1")){
-      echo $menuArray[1];
-    }
-  
-    // Navigation 2 /////////////////////////////////////////////////////////////
-    if ($_GET[getLgFileText("CONTENT")] == getLgFileTextForUrl("CAT_2") 
-        || $contents[0] == getLgFileTextForUrl("CAT_2")){
-      echo $menuArray[2];
-    }
-  
-    // Navigation 3 /////////////////////////////////////////////////////////////
-    if ($_GET[getLgFileText("CONTENT")] == getLgFileTextForUrl("CAT_3") 
-        || $contents[0] == getLgFileTextForUrl("CAT_3")){
-      echo $menuArray[3];
-    }
-  
-    // Navigation 4 /////////////////////////////////////////////////////////////
-    if ($_GET[getLgFileText("CONTENT")] == getLgFileText("CAT_4") 
-        || $contents[0] == getLgFileTextForUrl("CAT_4")){
-      echo $menuArray[4];
+      if ($_GET[getLgFileText("CONTENT")] == getLgFileTextForUrl("CAT_$m") 
+          || $contents[0] == getLgFileTextForUrl("CAT_$m")){
+        echo $$navCat;
+      }
     }
   }
 
@@ -651,13 +625,13 @@
     }
   }
 
-  
-  
+
   /**
    * Set meta
    */
   function setMetaDescAndKwords()
   {
+
     // Get content //////////////////////////////////////////////////////////////
     if (!isset($_GET[getLgFileText("CONTENT")]))
     {
@@ -667,116 +641,48 @@
     else
     {
       $content = $_GET[getLgFileText("CONTENT")];
-    }
-    $cat0 = getLgFileTextForUrl("CAT_0");
-    $cat1 = getLgFileTextForUrl("CAT_1");
-    $cat2 = getLgFileTextForUrl("CAT_2");
-    $cat3 = getLgFileTextForUrl("CAT_3");
-    $cat4 = getLgFileTextForUrl("CAT_4");
 
-    // Categories ///////////////////////////////////////////////////////////////
-    // Category 0 - Home
-    if ($content == $cat0)
-    {
-      setMetaDescription(LINK_CNT_CAT_0);
-      setMetaKeywords(LINK_CNT_CAT_0);
-    }
-  
-    // Category 1
-    if ($content == $cat1)
-    {
-      setMetaDescription(LINK_CNT_CAT_1);
-      setMetaKeywords(LINK_CNT_CAT_1);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_1"))
-    {
-      setMetaDescription(LINK_CNT_CAT_1_1);
-      setMetaKeywords(LINK_CNT_CAT_1_1);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_2"))
-    {
-      setMetaDescription(LINK_CNT_CAT_1_2);
-      setMetaKeywords(LINK_CNT_CAT_1_2);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_3"))
-    {
-      setMetaDescription(LINK_CNT_CAT_1_3);
-      setMetaKeywords(LINK_CNT_CAT_1_3);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_4"))
-    {
-      setMetaDescription(LINK_CNT_CAT_1_4);
-      setMetaKeywords(LINK_CNT_CAT_1_4);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_5"))
-    {
-      setMetaDescription(LINK_CNT_CAT_1_5);
-      setMetaKeywords(LINK_CNT_CAT_1_5);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_6"))
-    {
-      setMetaDescription(LINK_CNT_CAT_1_6);
-      setMetaKeywords(LINK_CNT_CAT_1_6);
+      // Get language file
+      $lang_array = parse_ini_file(LINK_LANG);
+      // Get language array keys
+      $lang_array_keys = array_keys($lang_array);
+
+
+      $nbCat2 = count($lang_array_keys);
+
+      // Loop on number of keys
+      for($j = 0;$j<$nbCat2;$j++)
+      {
+        // Get only categories
+        if(substr($lang_array_keys[$j],0,3) == "CAT")
+        {
+          // Get category, trimed and where spaces are replaced by dashes
+          $lineL = $lang_array_keys[$j];
+
+          // Main categories
+          if(strlen($lineL) == 5)
+          {
+            if ($content == getLgFileTextForUrl($lineL))
+            {
+              setMetaDescription(constant("LINK_CNT_".$lineL));
+              setMetaKeywords(constant("LINK_CNT_".$lineL));
+            }
+            $cat = $lineL;
+          }
+
+          // Sub menu
+          else if(strlen($lineL) == 7)
+          {
+            if ($content == getLgFileTextForUrl($cat).">".getLgFileTextForUrl($lineL))
+            {
+              setMetaDescription(constant("LINK_CNT_".$lineL));
+              setMetaKeywords(constant("LINK_CNT_".$lineL));
+            }
+          }
+        }
+      }
     }
 
-    // Category 2
-    if ($content == $cat2)
-    {
-      setMetaDescription(LINK_CNT_CAT_2);
-      setMetaKeywords(LINK_CNT_CAT_2);
-    }
-    if ($content == $cat2.">".getLgFileTextForUrl("CAT_2_1"))
-    {
-      setMetaDescription(LINK_CNT_CAT_2_1);
-      setMetaKeywords(LINK_CNT_CAT_2_1);
-    }
-    if ($content == $cat2.">".getLgFileTextForUrl("CAT_2_2"))
-    {
-      setMetaDescription(LINK_CNT_CAT_2_2);
-      setMetaKeywords(LINK_CNT_CAT_2_2);
-    }
-    if ($content == $cat2.">".getLgFileTextForUrl("CAT_2_3"))
-    {
-      setMetaDescription(LINK_CNT_CAT_2_3);
-      setMetaKeywords(LINK_CNT_CAT_2_3);
-    }
-  
-    // Category 3
-    if ($content == $cat3)
-    {
-      setMetaDescription(LINK_CNT_CAT_3);
-      setMetaKeywords(LINK_CNT_CAT_3);
-    }
-    if ($content == $cat3.">".getLgFileTextForUrl("CAT_3_1"))
-    {
-      setMetaDescription(LINK_CNT_CAT_3_1);
-      setMetaKeywords(LINK_CNT_CAT_3_1);
-    }
-    if ($content == $cat3.">".getLgFileTextForUrl("CAT_3_2"))
-    {
-      setMetaDescription(LINK_CNT_CAT_3_2);
-      setMetaKeywords(LINK_CNT_CAT_3_2);
-    }
-  
-    // Category 4
-    if ($content == $cat4)
-    {
-      setMetaDescription(LINK_CNT_CAT_4);
-      setMetaKeywords(LINK_CNT_CAT_4);
-    }
-    /*
-    if ($content == $cat4.">".getLgFileTextForUrl("CAT_4_1"))
-    {
-      setMetaDescription(LINK_CNT_CAT_4_1);
-      setMetaKeywords(LINK_CNT_CAT_4_1);
-    }
-    if ($content == $cat4.">".getLgFileTextForUrl("CAT_4_2"))
-    {
-      setMetaDescription(LINK_CNT_CAT_4_2);
-      setMetaKeywords(LINK_CNT_CAT_4_2);
-    }
-    */
-  
     if ($content == getLgFileText("MAP"))
     {
       setMetaDescription('','Bilazea.com template, '.getLgFileText("MAP"));
@@ -790,7 +696,8 @@
    */
   function setContent()
   {
-      // Get content //////////////////////////////////////////////////////////////
+
+    // Get content //////////////////////////////////////////////////////////////
     if (!isset($_GET[getLgFileText("CONTENT")]))
     {
       printContent(LINK_CNT_CAT_0);
@@ -798,100 +705,46 @@
     else
     {
       $content = $_GET[getLgFileText("CONTENT")];
+
+      // Get language file
+      $lang_array = parse_ini_file(LINK_LANG);
+      // Get language array keys
+      $lang_array_keys = array_keys($lang_array);
+
+
+      $nbCat2 = count($lang_array_keys);
+
+      // Loop on number of keys
+      for($j = 0;$j<$nbCat2;$j++)
+      {
+        // Get only categories
+        if(substr($lang_array_keys[$j],0,3) == "CAT")
+        {
+          // Get category, trimed and where spaces are replaced by dashes
+          $lineL = $lang_array_keys[$j];
+
+          // Main categories
+          if(strlen($lineL) == 5)
+          {
+            if ($content == getLgFileTextForUrl($lineL))
+            {
+              printContent(constant("LINK_CNT_".$lineL));
+            }
+            $cat = $lineL;
+          }
+
+          // Sub menu
+          else if(strlen($lineL) == 7)
+          {
+            if ($content == getLgFileTextForUrl($cat).">".getLgFileTextForUrl($lineL))
+            {
+              printContent(constant("LINK_CNT_".$lineL));
+            }
+          }
+        }
+      }
     }
-    $cat0 = getLgFileTextForUrl("CAT_0");
-    $cat1 = getLgFileTextForUrl("CAT_1");
-    $cat2 = getLgFileTextForUrl("CAT_2");
-    $cat3 = getLgFileTextForUrl("CAT_3");
-    $cat4 = getLgFileTextForUrl("CAT_4");
-  
-    // Categories ///////////////////////////////////////////////////////////////
-    // Category 0 - Home
-    if ($content == $cat0)
-    {
-      printContent(LINK_CNT_CAT_0);
-    }
-  
-    // Category 1
-    if ($content == $cat1)
-    {
-      printContent(LINK_CNT_CAT_1);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_1"))
-    {
-      printContent(LINK_CNT_CAT_1_1);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_2"))
-    {
-      printContent(LINK_CNT_CAT_1_2);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_3"))
-    {
-      printContent(LINK_CNT_CAT_1_3);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_4"))
-    {
-      printContent(LINK_CNT_CAT_1_4);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_5"))
-    {
-      printContent(LINK_CNT_CAT_1_5);
-    }
-    if ($content == $cat1.">".getLgFileTextForUrl("CAT_1_6"))
-    {
-      printContent(LINK_CNT_CAT_1_6);
-    }
-  
-    // Category 2
-    if ($content == $cat2)
-    {
-      printContent(LINK_CNT_CAT_2);
-    }
-    if ($content == $cat2.">".getLgFileTextForUrl("CAT_2_1"))
-    {
-      printContent(LINK_CNT_CAT_2_1);
-    }
-    if ($content == $cat2.">".getLgFileTextForUrl("CAT_2_2"))
-    {
-      printContent(LINK_CNT_CAT_2_2);
-    }
-    if ($content == $cat2.">".getLgFileTextForUrl("CAT_2_3"))
-    {
-      printContent(LINK_CNT_CAT_2_3);
-    }
-  
-    // Category 3
-    if ($content == $cat3)
-    {
-      printContent(LINK_CNT_CAT_3);
-    }
-    if ($content == $cat3.">".getLgFileTextForUrl("CAT_3_1"))
-    {
-      printContent(LINK_CNT_CAT_3_1);
-    }
-    if ($content == $cat3.">".getLgFileTextForUrl("CAT_3_2"))
-    {
-      printContent(LINK_CNT_CAT_3_2);
-    }
-  
-    // Category 4
-    if ($content == $cat4)
-    {
-      printContent(LINK_CNT_CAT_4);
-    }
-    /*
-    if ($content == $cat4.">".getLgFileTextForUrl("CAT_4_1"))
-    {
-      printContent(LINK_CNT_CAT_4_1);
-    }
-    if ($content == $cat4.">".getLgFileTextForUrl("CAT_4_2"))
-    {
-      printContent(LINK_CNT_CAT_4_1);
-    }
-    */
   }
-
-
 
 
 

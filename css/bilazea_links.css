@@ -225,21 +225,6 @@ a:hover.iconHideLan
 }
 
 
-/* Back to bilazea home page *************************************************/
-a#backBila {
-    background: url("../img/back_bila.gif") no-repeat scroll left top transparent;
-    display: block;
-    height: 80px;
-    left: 0;
-    position: fixed;
-    text-decoration: none;
-    text-indent: -999em;
-    top: 0;
-    width: 80px;
-    z-index: 3;
-}
-
-
 /* Aside *********************************************************************/
 a.iconGoToTopLcl
 {

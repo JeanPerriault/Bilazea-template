@@ -19,8 +19,6 @@
  */
 ///////////////////////////////////////////////////////////////////////////////
 ?>
-    <!-- LINK BILA -->
-    <a href="../" id="backBila">Back to Bilazea home page</a>
 
     <!-- LEFT TITLE -->
     <a id="titleLink" 
@@ -51,7 +49,7 @@
         if (!isMaintenance($maintenance))
         {
           // Build menu
-          buildMenu();
+          buildAndPrintMenu();
         }
       ?>
       <hr />
