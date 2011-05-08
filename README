@@ -2,9 +2,15 @@ Bilazea template is a PHP/HTML/CSS/AJAX template used in several sites
 - PHP core
 - HTML/CSS/AJAX presentation
 
-It's currently an 'on working' project, a prototype (You may download 'Version 0.1 branch' of project)
-First official beta release is available since May 2011, as version 0.1
-First official release will be available in June 2011, as version 1.0
+It's currently an 'on working' project, a prototype (You may download 'Version 0.1 tag' of project)
+First official beta release is available since May 2011, as version 0.1, this is the commun code trunk, with the stable version, the 'master' branch.
+First official release will be available in June 2011, as version 1.0. It is currently developped in 'version_1_0_release' branch.
+A third branch called 'bugfixes_v_0_1_beta' has been created for urgent/security fixes.
+
+
+******************************************************************************************************
+!! You are currently working on the 'v_1_0_release' branch, unstable version in current developpement.
+******************************************************************************************************
 
 
 Main demonstration can be seen on Bilazea.com, on page http://bilazea.com/Bilazea-template
