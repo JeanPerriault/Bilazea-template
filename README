@@ -2,9 +2,9 @@ Bilazea template is a PHP/HTML/CSS/AJAX template used in several sites
 - PHP core
 - HTML/CSS/AJAX presentation
 
-It's currently an 'on working' project, a prototype (You're are using 'Master branch' of project)
-First official beta release will be available next year, in January 2011, as version 0.2
-First official release will be available in 2011, no precise date for now, as version 1.0
+It's currently an 'on working' project, a prototype (You may download 'Version 0.1 branch' of project)
+First official beta release is available since May 2011, as version 0.1
+First official release will be available in June 2011, as version 1.0
 
 
 Main demonstration can be seen on Bilazea.com, on page http://bilazea.com/Bilazea-template
@@ -39,10 +39,10 @@ It is a very simple framework designed to create quickly a website
   - CKeditor
    - http://ckeditor.com/
  - Online explorer
-  - ckfinder
+  - CKfinder
    - http://ckfinder.com/
  - Copy to clipboard
-  - zeroclipboard
+  - Zeroclipboard
    - http://code.google.com/p/zeroclipboard/
  - Slimbox
   - http://www.digitalia.be/software/slimbox

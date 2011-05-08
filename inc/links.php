@@ -21,7 +21,7 @@
 
   /////////////////////////////////////////////////////////////////////////////
   // GENERAL LINKS
-  define(LINK_WEBSITE,            'http://localhost/Bilazea-template/');
+  define(LINK_WEBSITE,             $link_website);
   define(LINK_FAVICON,             LINK_WEBSITE.'favicon.ico');
   define(LINK_APPLE_ICON,          LINK_WEBSITE.'apple_icon.png');
   define(LINK_DIRECTORY_CSS,       LINK_WEBSITE.'css/');

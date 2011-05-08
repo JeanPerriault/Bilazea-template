@@ -8,6 +8,7 @@
 # 2010/10/10
 # R1: 2011/01/10
 # R2: 2011/02/27
+# R3: 2011/05/08
 # 
 # @author Bilazea.com - Jean Perriault <admin@bilazea.com>
 # @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -24,7 +25,6 @@ https://github.com/JeanPerriault/Bilazea-template/wiki/Roadmap
 
 TODO:
 
-    * Add correct dates!
     * Try to pass CSS validation
           o Problems due to:
                 + '-moz-border-radius' css attribute not valid
@@ -34,9 +34,9 @@ TODO:
 
 
 
-Version 0.1 (Alpha)
+Version 0.1 (Beta)
 --------------------
-Date: November 2010
+Date: May 2011
 
     * It's currently implementing:
           o A simple website framework
@@ -45,30 +45,57 @@ Date: November 2010
           o Multinlingual (french, english, spanish), language files
           o Two levels automatically build menu
           o Utils php functions
-          o Customized error pages
           o Embedding simpletest test framework (http://www.simpletest.org/), not used for now.
           o Embedding draft documentation
           o XHTML validation: Valid XHTML 1.0 Strict
+          o Centralized configuration
+                + Avoid editing almost three files to configure template
+          o Include lots of different opensource projects:
+                + Javascript
+                      + Mootools
+                            + http://mootools.net/
+                            + on Github: http://github.com/mootools/mootools-core
+                      + Reflexion
+                            + http://www.digitalia.be/software/reflectionjs-for-mootools
+                      + Google
+                            + https://www.google.com/analytics/
+                + MP3 player
+                      + Dewplayer
+                            + http://www.alsacreations.fr/dewplayer.html
+                + Images slider
+                      + Dewslider
+                            + http://www.alsacreations.fr/dewslider.html
+                + Video player
+                      + Dewtube
+                            + http://www.alsacreations.fr/dewtube.html
+                + IE css hack
+                      + http://code.google.com/p/curvycorners/
+                      + http://davidwalsh.name/rounded-corners-ie
+                + Online editor
+                      + CKeditor
+                            + http://ckeditor.com/
+                + Online explorer
+                      + CKfinder
+                            + http://ckfinder.com/
+                + Copy to clipboard
+                      + Zeroclipboard
+                            + http://code.google.com/p/zeroclipboard/
+                + Slimbox
+                      + http://www.digitalia.be/software/slimbox
+          o Customized error pages
 
-Version 0.2 (Beta)
--------------------
-Date: April 2011
 
-    * It will implement:
-          o Error pages localized
-          o Tests of utlis functions, with simpletest framework
-          o Documentation completed
-          o Include a simple web-based WYSIWYG editor, written in MooTools:
-                + http://cheeaun.github.com/mooeditable/
-                + On github: https://github.com/cheeaun/mooeditable
 
 Version 1.0
 ------------
     * It will implement:
-          o Centralized configuration
-                + Avoid editing almost three files to configure template
+          o Error pages localized
+          o Tests of utlis functions, with simpletest framework
+          o Documentation completed
           o Refactor php utils functions
           o Secured forms to post comments online?
+
+
 
 Version 1.1
 ------------
@@ -77,6 +104,8 @@ Version 1.1
           o TODO
           o TODO
 
+
+
 Version 1.2
 ------------
     * It will implement:
@@ -84,10 +113,11 @@ Version 1.2
           o TODO
           o TODO
 
+
+
 Version 2.0
 ------------
     * It will implement:
           o TODO
           o TODO
           o TODO
-
