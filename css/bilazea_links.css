@@ -201,7 +201,7 @@ a.openImg
   background:#DDD;
   width:800px;
   display:block;
-  margin: 0px auto;
+  float:right;
   width:30px;
   height:25px;
   background:url('../img/panel.gif') 0 0 no-repeat;

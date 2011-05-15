@@ -13,6 +13,7 @@
  * 2010/10/10
  * R1: 2011/01/10
  * R2: 2011/02/27
+ * R3: 2011/05/15
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -55,36 +56,36 @@
   define(LINK_ZEROCPBOARD,         LINK_DIRECTORY_TOOLS.'zeroclipboard/zeroclipboard.js');
 
   // SITE
-  define(LINK_HEADER,          LINK_DIRECTORY_TPL.'header.php');
-  define(LINK_TPL_SITE,        LINK_DIRECTORY_TPL.'site.php');
-  define(LINK_HEAD,            LINK_DIRECTORY_TPL.'site_head.php');
-  define(LINK_SETTINGS,        LINK_DIRECTORY_TPL.'site_settings.php');
-  define(LINK_NAVIGATION,      LINK_DIRECTORY_TPL.'site_navigation.php');
-  define(LINK_LASTMOST,        LINK_DIRECTORY_TPL.'site_lastmost.php');
-  define(LINK_ASIDE,           LINK_DIRECTORY_TPL.'site_aside.php');
-  define(LINK_FOOTER,          LINK_DIRECTORY_TPL.'site_footer.php');
-  define(LINK_MAP,             LINK_DIRECTORY_TPL.'site_map.php');
-  define(LINK_JAVASCRIPT,      LINK_DIRECTORY_TPL.'javascript.php');
+  define(LINK_HEADER,              LINK_DIRECTORY_TPL.'header.php');
+  define(LINK_TPL_SITE,            LINK_DIRECTORY_TPL.'site.php');
+  define(LINK_HEAD,                LINK_DIRECTORY_TPL.'site_head.php');
+  define(LINK_SETTINGS,            LINK_DIRECTORY_TPL.'site_settings.php');
+  define(LINK_NAVIGATION,          LINK_DIRECTORY_TPL.'site_navigation.php');
+  define(LINK_LASTMOST,            LINK_DIRECTORY_TPL.'site_lastmost.php');
+  define(LINK_FOOTER,              LINK_DIRECTORY_TPL.'site_footer.php');
+  define(LINK_FOOTER_L,            LINK_DIRECTORY_TPL.'site_footer_links.php');
+  define(LINK_MAP,                 LINK_DIRECTORY_TPL.'site_map.php');
+  define(LINK_JAVASCRIPT,          LINK_DIRECTORY_TPL.'javascript.php');
 
   // MAINTENANCE
-  define(LINK_MAINTENANCE,     LINK_DIRECTORY_TPL.'site_maintenance.php');
+  define(LINK_MAINTENANCE,         LINK_DIRECTORY_TPL.'site_maintenance.php');
 
   // ERROR PAGES
-  define(LINK_PAGE_ERR_400,    LINK_DIRECTORY_TPL_ERROR.'400.html');
-  define(LINK_PAGE_ERR_401,    LINK_DIRECTORY_TPL_ERROR.'401.html');
-  define(LINK_PAGE_ERR_403,    LINK_DIRECTORY_TPL_ERROR.'403.html');
-  define(LINK_PAGE_ERR_404,    LINK_DIRECTORY_TPL_ERROR.'404.html');
-  define(LINK_PAGE_ERR_500,    LINK_DIRECTORY_TPL_ERROR.'500.html');
+  define(LINK_PAGE_ERR_400,        LINK_DIRECTORY_TPL_ERROR.'400.html');
+  define(LINK_PAGE_ERR_401,        LINK_DIRECTORY_TPL_ERROR.'401.html');
+  define(LINK_PAGE_ERR_403,        LINK_DIRECTORY_TPL_ERROR.'403.html');
+  define(LINK_PAGE_ERR_404,        LINK_DIRECTORY_TPL_ERROR.'404.html');
+  define(LINK_PAGE_ERR_500,        LINK_DIRECTORY_TPL_ERROR.'500.html');
 
   // DOCUMENTATION
-  define(LINK_INTERNAL_DOC_FR, LINK_DIRECTORY_DOC.'index_fr.html');
-  define(LINK_INTERNAL_DOC_EN, LINK_DIRECTORY_DOC.'index_en.html');
-  define(LINK_INTERNAL_DOC_ES, LINK_DIRECTORY_DOC.'index_es.html');
+  define(LINK_INTERNAL_DOC_FR,     LINK_DIRECTORY_DOC.'index_fr.html');
+  define(LINK_INTERNAL_DOC_EN,     LINK_DIRECTORY_DOC.'index_en.html');
+  define(LINK_INTERNAL_DOC_ES,     LINK_DIRECTORY_DOC.'index_es.html');
 
   // IMG
-  define(LINK_IMG_MAINTENANCE, LINK_WEBSITE.'img/maintenance.jpg');
+  define(LINK_IMG_MAINTENANCE,     LINK_WEBSITE.'img/maintenance.jpg');
 
   // NAVIGATION ///////////////////////////////////////////////////////////////
-  define(LINK_INDEX,           LINK_WEBSITE.'index.php?');
+  define(LINK_INDEX,               LINK_WEBSITE.'index.php?');
   include("links_cnt.php");
 ?>

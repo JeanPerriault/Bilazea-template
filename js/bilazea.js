@@ -11,6 +11,7 @@
  * 2010/10/10
  * R1: 2011/01/23
  * R2: 2011/02/27
+ * R2: 2011/05/15
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web */
@@ -303,10 +304,10 @@ window.addEvent('domready',function()
   }
 
   // Footer
-  if ($('footer'))
+  if ($('footerL'))
   {
-    var verticalFooter = new Fx.Slide('footer') || null;
-    var verticalFooterHidden = new Fx.Slide('footerHidden') || null;
+    var verticalFooter = new Fx.Slide('footerL') || null;
+    var verticalFooterHidden = new Fx.Slide('footerLHidden') || null;
     var verticalFooterLinkSlideIn = $('footerLinkSlideIn') || null;
     var verticalFooterLinkSlideOut = $('footerLinkSlideOut') || null;
     if (cookAside)

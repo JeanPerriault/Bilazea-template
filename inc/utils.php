@@ -747,6 +747,98 @@
   }
 
 
+  /**
+   * Build and print map
+   */
+  function buildAndPrintMap()
+  {
+    $mapCnt = "<ul>";
+
+    // Get language file
+    $lang_array = parse_ini_file(LINK_LANG);
+    // Get language array keys
+    $lang_array_keys = array_keys($lang_array);
+    // Number of categories
+    $nbCat2 = count($lang_array_keys);
+    $cat = "";
+    $cat2 = "default";
+
+    // Loop on number of keys
+    for($j = 0;$j<$nbCat2;$j++)
+    {
+      // Get only categories
+      if(substr($lang_array_keys[$j],0,3) == "CAT")
+      {
+        // Get category, trimed and where spaces are replaced by dashes
+        $lineL = $lang_array_keys[$j];
+
+        // Main categories
+        if(strlen($lineL) == 5)
+        {
+          if ($cat !== $lineL)
+          {
+            if ($cat2 == "")
+            {
+              $mapCnt .= '</ul>';
+            }
+            $mapCnt .= '</li>';
+          }
+          $mapCnt .= '<li><a href="'.constant("LINK_$lineL").'">'.getLgFileText($lineL).'</a>';
+          $cat = $lineL;
+          $cat2 = $lineL;
+        }
+
+        // Sub menu
+        else if(strlen($lineL) == 7)
+        {
+          if (substr($lineL,0,5) == $cat2)
+          {
+            $mapCnt .= '<ul>';
+            $cat2 = "";
+          }
+
+          $mapCnt .= '<li><a href="'.constant("LINK_$lineL").'">'.getLgFileText($lineL).'</a></li>';
+        }
+      }
+    }
+    $mapCnt .= "</ul>";
+    echo $mapCnt;
+  }
+
+/*
+<ul>
+  <li><a href="<?php echo LINK_CAT_0; ?>"><?php printLgFileText("CAT_0"); ?></a></li>
+
+  <li><a href="<?php echo LINK_CAT_1; ?>"><?php printLgFileText("CAT_1"); ?></a>
+    <ul>
+      <li><a href="<?php echo LINK_CAT_1_1; ?>"><?php printLgFileText("CAT_1_1"); ?></a></li>
+      <li><a href="<?php echo LINK_CAT_1_2; ?>"><?php printLgFileText("CAT_1_2"); ?></a></li>
+      <li><a href="<?php echo LINK_CAT_1_3; ?>"><?php printLgFileText("CAT_1_3"); ?></a></li>
+      <li><a href="<?php echo LINK_CAT_1_4; ?>"><?php printLgFileText("CAT_1_4"); ?></a></li>  
+    </ul>
+  </li>
+
+  <li><a href="<?php echo LINK_CAT_2; ?>"><?php printLgFileText("CAT_2"); ?></a>
+    <ul>
+      <li><a href="<?php echo LINK_CAT_2_1; ?>"><?php printLgFileText("CAT_2_1"); ?></a></li>
+      <li><a href="<?php echo LINK_CAT_2_2; ?>"><?php printLgFileText("CAT_2_2"); ?></a></li>
+      <li><a href="<?php echo LINK_CAT_2_3; ?>"><?php printLgFileText("CAT_2_3"); ?></a></li>
+    </ul>
+  </li>
+
+  <li><a href="<?php echo LINK_CAT_3; ?>"><?php printLgFileText("CAT_3"); ?></a>
+    <ul>
+      <li><a href="<?php echo LINK_CAT_3_1; ?>"><?php printLgFileText("CAT_3_1"); ?></a></li>
+      <li><a href="<?php echo LINK_CAT_3_2; ?>"><?php printLgFileText("CAT_3_2"); ?></a></li>
+    </ul>
+  </li>
+
+  <li><a href="<?php echo LINK_CAT_4; ?>"><?php printLgFileText("CAT_4"); ?></a></li>
+</ul>
+*/
+
+
+
 
   // DOCUMENTATION ////////////////////////////////////////////////////////////
   /**
