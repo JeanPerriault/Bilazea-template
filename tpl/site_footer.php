@@ -6,7 +6,7 @@
  * 
  * Description:
  * This file contains code
- * - aside stuff
+ * - to set aside/footer links
  * 
  * Date:
  * 2010/10/10

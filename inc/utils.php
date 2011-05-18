@@ -540,7 +540,6 @@
       $handle = fopen($filename, "r");
       $contents = fread($handle, filesize($filename));
       $explodedContent = explode('<!--', $contents);
-      //print_r($explodedContent);
 
       // Get localized language corresponding to current language
       if(getLanguage() == LG_FR)
@@ -571,7 +570,7 @@
     }
     else
     {
-      define(META_CONTENT_DESC, '<meta name="description" content="'.$metaDesc.'" />');
+      define(META_CONTENT_DESC, '<meta name="description" content="'.getLgFileText("ERROR_META").'" />');
     }
   }
 
@@ -621,7 +620,7 @@
     }
     else
     {
-      define(META_CONTENT_KEY, '<meta name="keywords" content="'.$metaKey.'" />');
+      define(META_CONTENT_KEY, '<meta name="keywords" content="'.getLgFileText("ERROR_META").'" />');
     }
   }
 
@@ -641,6 +640,7 @@
     else
     {
       $content = $_GET[getLgFileText("CONTENT")];
+      //echo "CNT: ".$content;
 
       // Get language file
       $lang_array = parse_ini_file(LINK_LANG);
@@ -649,6 +649,7 @@
 
 
       $nbCat2 = count($lang_array_keys);
+      $done = false;
 
       // Loop on number of keys
       for($j = 0;$j<$nbCat2;$j++)
@@ -666,6 +667,7 @@
             {
               setMetaDescription(constant("LINK_CNT_".$lineL));
               setMetaKeywords(constant("LINK_CNT_".$lineL));
+              $done = true;
             }
             $cat = $lineL;
           }
@@ -677,9 +679,15 @@
             {
               setMetaDescription(constant("LINK_CNT_".$lineL));
               setMetaKeywords(constant("LINK_CNT_".$lineL));
+              $done = true;
             }
           }
         }
+      }
+      if (!$done)
+      {
+         setMetaDescription("");
+         setMetaKeywords("");
       }
     }
 
@@ -804,40 +812,6 @@
     $mapCnt .= "</ul>";
     echo $mapCnt;
   }
-
-/*
-<ul>
-  <li><a href="<?php echo LINK_CAT_0; ?>"><?php printLgFileText("CAT_0"); ?></a></li>
-
-  <li><a href="<?php echo LINK_CAT_1; ?>"><?php printLgFileText("CAT_1"); ?></a>
-    <ul>
-      <li><a href="<?php echo LINK_CAT_1_1; ?>"><?php printLgFileText("CAT_1_1"); ?></a></li>
-      <li><a href="<?php echo LINK_CAT_1_2; ?>"><?php printLgFileText("CAT_1_2"); ?></a></li>
-      <li><a href="<?php echo LINK_CAT_1_3; ?>"><?php printLgFileText("CAT_1_3"); ?></a></li>
-      <li><a href="<?php echo LINK_CAT_1_4; ?>"><?php printLgFileText("CAT_1_4"); ?></a></li>  
-    </ul>
-  </li>
-
-  <li><a href="<?php echo LINK_CAT_2; ?>"><?php printLgFileText("CAT_2"); ?></a>
-    <ul>
-      <li><a href="<?php echo LINK_CAT_2_1; ?>"><?php printLgFileText("CAT_2_1"); ?></a></li>
-      <li><a href="<?php echo LINK_CAT_2_2; ?>"><?php printLgFileText("CAT_2_2"); ?></a></li>
-      <li><a href="<?php echo LINK_CAT_2_3; ?>"><?php printLgFileText("CAT_2_3"); ?></a></li>
-    </ul>
-  </li>
-
-  <li><a href="<?php echo LINK_CAT_3; ?>"><?php printLgFileText("CAT_3"); ?></a>
-    <ul>
-      <li><a href="<?php echo LINK_CAT_3_1; ?>"><?php printLgFileText("CAT_3_1"); ?></a></li>
-      <li><a href="<?php echo LINK_CAT_3_2; ?>"><?php printLgFileText("CAT_3_2"); ?></a></li>
-    </ul>
-  </li>
-
-  <li><a href="<?php echo LINK_CAT_4; ?>"><?php printLgFileText("CAT_4"); ?></a></li>
-</ul>
-*/
-
-
 
 
   // DOCUMENTATION ////////////////////////////////////////////////////////////
