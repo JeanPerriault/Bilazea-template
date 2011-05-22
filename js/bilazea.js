@@ -124,6 +124,7 @@ window.addEvent('domready',function()
     var myAccordion = new Fx.Accordion($$('h2.accordionTitle1'),$$('div.accordionPanel1'),
     {
       opacity : false,
+      alwaysHide: true,
       onActive : function(toggler, element)
       {
         var myTog = new Fx.Tween(toggler);
@@ -152,6 +153,7 @@ window.addEvent('domready',function()
     var myAccordionPart = new Fx.Accordion($$('h4.accordionTitle1_1'), $$('div.accordionPanel1_1'),
     {
       opacity: false,
+      alwaysHide: true,
       onActive: function(toggler, element)
       {
         var myTog = new Fx.Tween(toggler);
@@ -181,6 +183,7 @@ window.addEvent('domready',function()
     var myAccordionBlog = new Fx.Accordion($$('div.blog_head'),$$('div.blog_content'),
     {
       opacity : false,
+      alwaysHide: true,
       onActive : function(toggler, element)
       {
         var myTog = new Fx.Tween(toggler);
@@ -226,16 +229,24 @@ window.addEvent('domready',function()
   /* Check active menu ********************************************************/
   function checkActive(){
     var a =$$('a.menu');
-    if (window.location.href.substr(location.href.length - 1, 1) == '/'){
+    if (window.location.href.substr(location.href.length - 1, 1) == '/')
+    {
       var loc = window.location.href + 'index.php'; 
     }
-    else{
+    else
+    {
       var loc = window.location.href;
     }
-    for(var i=0; i < a.length; i++) {
-      if (a[i].href == loc) {
+    for(var i=0; i < a.length; i++)
+    {
+      if (a[i].href == loc)
+      {
+        if (a[i].getAttribute("id").length === 7)
+        {
+       	  var aParent = a[i].getAttribute("id").substring(0,5);
+          $(aParent).setAttribute("class", "menu activeMenu");
+        }
         a[i].setAttribute("class", "menu activeMenu");
-        //alert(a[i].class);
       }
     }
   }
