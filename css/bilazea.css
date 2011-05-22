@@ -38,7 +38,8 @@ ul
 
 li
 {
-  
+  color: #666666;
+  list-style-type: square;
 }
 
 table

@@ -164,7 +164,7 @@ table.tableArticle td
 
 #carouselDiv
 {
-  padding-left: 160px;
+  text-align:center;
 }
 
 #videoDiv
@@ -177,7 +177,7 @@ table.tableArticle td
 .blog
 {
   background:#DDD;
-  margin-bottom:50px;
+  margin-bottom:20px;
 }
 .blog_head
 {
