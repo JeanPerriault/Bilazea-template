@@ -8,12 +8,22 @@
  * This file contains php functions used in Bilazea template
  * 
  * Date:
- * 2010/10/10
+ * R1: 2010/10/10
+ * R2: 2011/05/18
+ * R3: 2011/05/22
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////
+
+  // DEBUG mode ///////////////////////////////////////////////////////////////
+  function getDebugMode($debug = false)
+  {
+    return $debug;
+  }
+
+
 
   // LANGAGE //////////////////////////////////////////////////////////////////
   /**
@@ -180,15 +190,33 @@
   function getLgFileText($key,$lg = "")
   {
     $lang_array = getLanguageFile($lg);
+    if(getDebugMode())
+    {
+      echo "<p style='color:orange;'>KEY1: ".$key."</p>";
+      echo "<p style='color:orange;'>GET1: ".$lang_array[$key]."</p>";
+    }
+
     if(array_key_exists($key, $lang_array))
     {
-      return $lang_array[$key];
+      if(getDebugMode())
+      {
+        //echo "<p style='color:green;'>AAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>";
+        //echo "<p style='color:orange;'>KEY1: ".$key."</p>";
+        //echo "<p style='color:orange;'>GET1: ".$lang_array[$key]."</p>";
+      }
     }
     else
     {
-      addErrors("<u>getLgFileText</u>", "No value for <b>'".$key."'</b>");
-      return ST_EMPTY;
+      //echo "<p style='color:red;'>CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</p>";
+      if(getDebugMode())
+      {
+        echo "<p style='color:orange;'>GET1: Erreur</p>";
+        addErrors("<u>getLgFileText</u>", "No value for <b>'".$key."'</b>");
+        echo "<p style='color:red;'>DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>";
+      }
+      $key = "ERROR";
     }
+    return $lang_array[$key];
   }
 
   /**
@@ -207,7 +235,10 @@
     }
     else
     {
-      addErrors("<u>printLgFileText</u>", "No value for <b>''".$key."'</b>");
+      if(getDebugMode())
+      {
+        addErrors("<u>printLgFileText</u>", "No value for <b>''".$key."'</b>");
+      }
       echo NO_VALUE;
     }
   }
@@ -224,12 +255,20 @@
     if (array_key_exists($key, $lang_array))
     {
       $a = str_replace(' ', '-', $lang_array[$key]);
+      if(getDebugMode())
+      {
+        echo "<p style='color:orange;'>GET2: ".str_replace('---', '-', $a)."</p>";
+      }
       return str_replace('---', '-', $a);
     }
     else
     {
-      addErrors("<u>getTextForUrl</u>", "No value for <b>''".$key."'</b>");
-      return ST_EMPTY;
+      if(getDebugMode())
+      {
+        addErrors("<u>getLgFileTextForUrl</u>", "No value for <b>''".$key."'</b>");
+        echo "<p style='color:orange;'>GET2: Erreur</p>";
+      }
+      return "Erreur";
     }
   }
 
@@ -479,6 +518,10 @@
     $explodedContent = explode('<!--', $contents);
     //print_r($explodedContent);
 
+    //echo "explodedContent: ".$explodedContent;
+
+    //if($explodedContent === "")
+    //{
     // Get localized language corresponding to current language
     if(getLanguage() == LG_FR)
     {
@@ -522,6 +565,13 @@
         }
       }
     }
+      
+    //}
+    //else
+    //{
+      //print("<h1>Erreur</h1>");
+    //}
+
     fclose($handle);
   }
 
@@ -693,8 +743,8 @@
 
     if ($content == getLgFileText("MAP"))
     {
-      setMetaDescription('','Bilazea.com template, '.getLgFileText("MAP"));
-      setMetaKeywords('','Bilazea.com template, '.getLgFileText("MAP"));
+      setMetaDescription('',getLgFileText("SITE_NAME").', '.getLgFileText("MAP"));
+      setMetaKeywords('',getLgFileText("SITE_NAME").', '.getLgFileText("MAP"));
     }
   }
 
