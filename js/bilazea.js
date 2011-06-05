@@ -93,6 +93,7 @@ window.addEvent('domready',function()
 
   /* Images preload **********************************************************/
   var imagesToPreload = [
+    './img/mail_h.gif',
     './img/externalLink_h.gif',
     './img/arrow_top_h.gif',
     './img/panel_h2.gif',
@@ -192,6 +193,11 @@ window.addEvent('domready',function()
         myTog.set('background-color','#222222');
         myTog.set('background-position', 'center center');
         myTog.set('background-repeat', 'no-repeat');
+
+        var myTog2 = $(toggler).getElements('div')[1].getElement('p');
+        var myEl2 = new Fx.Tween(myTog2);
+        myEl2.set('text-decoration','underline');
+        myEl2.set('font-weight','bolder');
       },
       onBackground : function(toggler, element)
       {
@@ -201,6 +207,11 @@ window.addEvent('domready',function()
         myTog.set('background-color', '#61615F');
         myTog.set('background-position', 'center center');
         myTog.set('background-repeat', 'no-repeat');
+
+        var myTog2 = $(toggler).getElements('div')[1].getElement('p');
+        var myEl2 = new Fx.Tween(myTog2);
+        myEl2.set('text-decoration','none');
+        myEl2.set('font-weight','normal');
       }
     });
   }
