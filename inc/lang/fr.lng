@@ -1,3 +1,6 @@
+;
+; BILAZEA.COM WEBSITE
+;
 ; File:
 ; inc/lang/fr.lng
 ; 
@@ -10,7 +13,7 @@
 ; R2: 2011/02/27
 ; 
 ; Author:
-; Bilazea.com - Jean Perriault <bilazea@aol.fr>
+; Bilazea.com - Jean Perriault <admin@bilazea.com>
 ; Copyright:
 ; Copyright (c) 2000-2011, Bilazea.com Agence web
 
@@ -23,8 +26,8 @@ SITE_TITLE_H1 = "TPL Bilazea"
 LEFT_TITLE = "B<br />I<br />L<br />A<br />Z<br />E<br />A"
 RSS = "RSS 2.0"
 RSS_DESC = "Récupérer les dernières news du site avec votre lecteur de flux."
-COPYRIGHT = "©2000-2010, Bilazea.com - Agence web"
-COPYRIGHT2 = "Copyright (c) 2000-2010, Bilazea.com - Agence web"
+COPYRIGHT = "©2000-2011, Bilazea.com - Agence web"
+COPYRIGHT2 = "Copyright (c) 2000-2011, Bilazea.com - Agence web"
 GO_TO_HOME = "Aller à l'accueil du site"
 GO_TO_TOP = "Retourner en haut"
 MADE_WITH = "Site réalisé avec"
@@ -34,14 +37,19 @@ APTANA = "Aptana"
 APTANA_HOME = "Aller sur le site d'Aptana"
 LINKS = "Liens"
 MORE_ON = "Plus d'infos sur la page de"
-OPEN_PANEL = "Ouvrir cette partie"
-CLOSE_PANEL = "Fermer cette partie"
+OPEN_PANEL1 = "Afficher les langues/liens documentation"
+CLOSE_PANEL1 = "Cacher les langues/liens documentation"
+OPEN_PANEL2 = "Afficher les articles +lus / +récent"
+CLOSE_PANEL2 = "Cacher les articles +lus / +récent"
+OPEN_PANEL3 = "Afficher les liens"
+CLOSE_PANEL3 = "Cacher les liens"
 SITE_ASIDE_TEXT = "Sauvez un arbre : mangez un castor !"
 CONTENT = "contenu"
 ARTICLE = "article"
 CONTACTS = "Contacts"
 CONTACTS_DESC = "Contactez Bilazea.com par mail"
 LANGUAGE = "Langues"
+LANGUAGE_MSG = "Afficher le site CC en Français"
 DOCUMENTATION = "Documentation"
 GOTO_DOCUMENTATION = "Aller à la documentation"
 GOTO_DOCUMENTATION_WIKI = "Aller au wiki (Github)"

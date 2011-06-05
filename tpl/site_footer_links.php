@@ -29,7 +29,7 @@
            href="#" 
            class="closeImg toolTips" 
            title="<?php printLgFileText("SITE_NAME2"); ?>" 
-           rel="<?php printLgFileText("CLOSE_PANEL"); ?>">
+           rel="<?php printLgFileText("CLOSE_PANEL3"); ?>">
         </a>
 
         <!-- DIV Link bottom 1 -->
@@ -41,7 +41,7 @@
                  href="<?php echo LINK_FOOTER_1; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK1"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK1"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK1"); ?>
+                <?php printLgFileText("SITE_FOOTER_LINK1"); ?>
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@
                  href="<?php echo LINK_FOOTER_2; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK2"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK2"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK2"); ?>
+                <?php printLgFileText("SITE_FOOTER_LINK2"); ?>
               </a>
             </li>
             <li>
@@ -57,7 +57,7 @@
                   href="<?php echo LINK_FOOTER_3; ?>" 
                   title="<?php printLgFileText("SITE_FOOTER_LINK3"); ?>" 
                   rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK3"); ?>">
-                  <?php printLgFileText("SITE_FOOTER_LINK3"); ?>
+                 <?php printLgFileText("SITE_FOOTER_LINK3"); ?>
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@
                  href="<?php echo LINK_FOOTER_4; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK4"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK4"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK4"); ?>
+                <?php printLgFileText("SITE_FOOTER_LINK4"); ?>
               </a>
             </li>
             <li>
@@ -73,7 +73,7 @@
                  href="<?php echo LINK_FOOTER_5; ?>"
                  title="<?php printLgFileText("SITE_FOOTER_LINK5"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK5"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK5"); ?>
+                <?php printLgFileText("SITE_FOOTER_LINK5"); ?>
               </a>
             </li>
           </ul>
@@ -86,17 +86,17 @@
             <li>
               <a class="externalLink external toolTips" 
                  href="<?php echo LINK_FOOTER_6; ?>"
-                 title="<?php echo getLgFileText("SITE_FOOTER_LINK6"); ?>"
+                 title="<?php printLgFileText("SITE_FOOTER_LINK6"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK6"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK6"); ?>
+                <?php printLgFileText("SITE_FOOTER_LINK6"); ?>
               </a>
             </li>
             <li>
               <a class="externalLink external toolTips" 
-                 href="<?php echo LINK_FOOTER_7; ?>"
+                 href="<?php echo LINK_FOOTER_7; ?>" 
                  title="<?php printLgFileText("SITE_FOOTER_LINK7"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK7"); ?>">
-                 <?php printLgFileText("SITE_FOOTER_LINK7"); ?>
+                <?php printLgFileText("SITE_FOOTER_LINK7"); ?>
               </a>
             </li>
             <li>
@@ -117,7 +117,7 @@
             <li>
               <a class="externalLink external toolTips" 
                  href="<?php echo LINK_FOOTER_9; ?>" 
-                 title="<?php echo getLgFileText("SITE_FOOTER_LINK9"); ?>" 
+                 title="<?php printLgFileText("SITE_FOOTER_LINK9"); ?>" 
                  rel="<?php printLgFileText("SITE_DESC_FOOTER_LINK9"); ?>">
                  <?php printLgFileText("SITE_FOOTER_LINK9"); ?>
               </a>
@@ -159,7 +159,7 @@
          href="#" 
          class="openImg toolTips" 
          title="<?php printLgFileText("SITE_NAME2"); ?>" 
-         rel="<?php printLgFileText("OPEN_PANEL"); ?>">
+         rel="<?php printLgFileText("OPEN_PANEL3"); ?>">
       </a>
       </div>
     </div>

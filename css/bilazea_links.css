@@ -253,3 +253,9 @@ a.iconGoToTopRcl:hover
 {
   background:url('../img/arrow_top_h.gif') no-repeat scroll right 0 transparent;
 }
+
+a.bigLinks
+{
+  font-size:2em;
+  font-weight:bolder;
+}
