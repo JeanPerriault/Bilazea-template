@@ -81,11 +81,11 @@
               </a>
             </li>
             <li>
-              <a href="<?php echo LINK_CAT_5_1 ?>"
+              <a href="<?php echo LINK_CAT_3_1 ?>"
                  class="toolTips" 
                  title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
-                 rel="<?php printLgFileText("CAT_5_1"); ?>">
-                <?php printLgFileText("CAT_5_1"); ?>
+                 rel="<?php printLgFileText("CAT_3_1"); ?>">
+                <?php printLgFileText("CAT_3_1"); ?>
               </a>
             </li>
           </ul>

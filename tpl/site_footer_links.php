@@ -23,6 +23,7 @@
     <!-- footer links -->
     <div id="footerL">
       <div id="footerLIn">
+
         <p class="footerLinkTitle"><?php echo printLgFileText("LINKS"); ?></p>
 
         <a id="footerLinkSlideOut" 
@@ -157,7 +158,7 @@
     <div id="footerLHiddenIn">
       <a id="footerLinkSlideIn" 
          href="#" 
-         class="openImg toolTips" 
+         class="openImg2 toolTips" 
          title="<?php printLgFileText("SITE_NAME2"); ?>" 
          rel="<?php printLgFileText("OPEN_PANEL3"); ?>">
       </a>
