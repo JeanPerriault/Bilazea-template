@@ -452,7 +452,7 @@
             $nav .= '
                     '.'<a id="'.$lineL.'" 
                           class="menu toolTips" 
-                          title="'.getLgFileText("SITE_NAME2").' - '.getLgFileText($lineL).'" 
+                          title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
                           rel="'.getLgFileText($lineL).'" 
                           href="'.constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
             $nbCat++;
@@ -478,7 +478,7 @@
             $$navCat .= '
                         '.'<a id="'.$lineL.'" 
                               class="menu toolTips" 
-                              title="'.getLgFileText("SITE_NAME2").' - '.getLgFileText($lineL).'" 
+                              title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
                               rel="'.getLgFileText($lineL).'" 
                               href="'.constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
           }
@@ -491,7 +491,7 @@
             $$navCat .= '
                         '.'<a id="'.$lineL.'" 
                               class="menu toolTips" 
-                              title="'.getLgFileText("SITE_NAME2").' - '.getLgFileText($lineL).'" 
+                              title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
                               rel="'.getLgFileText($lineL).'" 
                               href="'.constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
           }
@@ -877,7 +877,7 @@
             $mapCnt .= '</li>';
           }
           $mapCnt .= '<li><a class="toolTips" 
-                             title="'.getLgFileText("SITE_NAME2").' - '.getLgFileText($lineL).'" 
+                             title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
                              rel="'.getLgFileText($lineL).'" 
                              href="'.constant("LINK_$lineL").'">'.getLgFileText($lineL).'</a>';
           $cat = $lineL;
@@ -893,7 +893,7 @@
             $cat2 = "";
           }
           $mapCnt .= '<li><a class="toolTips" 
-                   title="'.getLgFileText("SITE_NAME2").' - '.getLgFileText($lineL).'" 
+                   title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
                    rel="'.getLgFileText($lineL).'" 
                    href="'.constant("LINK_$lineL").'">'.getLgFileText($lineL).'</a></li>';
         }
