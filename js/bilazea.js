@@ -109,11 +109,11 @@ window.addEvent('domready',function()
     $('titleLink').addEvents({
       'mouseover': function()
       {
-        $('titleLink').fade(0.6);
+        $('titleLink').fade(1);
       },
       'mouseout': function()
       {
-        $('titleLink').fade(1);
+        $('titleLink').fade(0.7);
       }
     });
   }
