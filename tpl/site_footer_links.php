@@ -158,7 +158,7 @@
     <div id="footerLHiddenIn">
       <a id="footerLinkSlideIn" 
          href="#" 
-         class="openImg2 toolTips" 
+         class="closeImg toolTips" 
          title="<?php printLgFileText("SITE_NAME2"); ?>" 
          rel="<?php printLgFileText("OPEN_PANEL3"); ?>">
       </a>

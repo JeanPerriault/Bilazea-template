@@ -102,6 +102,16 @@
             }
           ?>
         </div>
+
+        <!-- AddThis div (test) -->
+        <div id="addThis">
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style">
+            <a class="addthis_button_google_plusone"></a>
+            <a class="addthis_counter addthis_pill_style"></a>
+          </div>
+          <!-- AddThis Button END -->
+        </div>
       </div>
     </div>
 

@@ -23,7 +23,7 @@
       <div id="lastMostHidden">
         <a id="lastmostLinkSlideIn" 
            href="#" 
-           class="openImg toolTips" 
+           class="closeImg toolTips" 
            title="<?php echo printLgFileText("SITE_NAME2"); ?>"
            rel="<?php printLgFileText("OPEN_PANEL2"); ?>">
         </a>
