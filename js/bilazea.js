@@ -12,6 +12,7 @@
  * R1: 2011/01/23
  * R2: 2011/02/27
  * R2: 2011/05/15
+ * R3: 2011/09/08
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web */
@@ -86,6 +87,25 @@ if(Browser.Plugins.Flash)
 }
 
 
+// Extend string prototype
+// From http://www.somacon.com/p355.php
+String.prototype.trim = function() {
+	return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+	return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+	return this.replace(/\s+$/,"");
+}
+// Test
+//var myString = "hello world";
+//alert("*"+myString.trim()+"*");
+//alert("*"+myString.ltrim()+"*");
+//alert("*"+myString.rtrim()+"*");
+
+
+
 
 // WHEN DOM IS READY //////////////////////////////////////////////////////////
 window.addEvent('domready',function()
@@ -110,10 +130,14 @@ window.addEvent('domready',function()
       'mouseover': function()
       {
         $('titleLink').fade(1);
+        //var myTog = new Fx.Tween($('titleLink'));
+        //myTog.set('color', '#CCC');
       },
       'mouseout': function()
       {
-        $('titleLink').fade(0.7);
+        $('titleLink').fade(0.5);
+        //var myTog = new Fx.Tween($('titleLink'));
+        //myTog.set('color', '#555');
       }
     });
   }
@@ -177,6 +201,7 @@ window.addEvent('domready',function()
       }
     });
   }
+
 
   /* Blog ********************************************************************/
   if ($$('div.blog_head'))
@@ -277,7 +302,11 @@ window.addEvent('domready',function()
 
 
   /* COOKIES STUFF ***********************************************************/
-  var cookies = new Hash.Cookie('Bilazea.com Cookies - For design',{duration: 3600});
+  var siteName = $$('#title a.title').get('text');
+  var siteNameTrimed = siteName[0].trim();
+  var cookieName = siteNameTrimed+' Cookies - For design';
+
+  var cookies = new Hash.Cookie(cookieName,{duration: 3600});
   var cookTop = cookies.get('top');
   var cookAside = cookies.get('aside');
   //var cookSettings = cookies.get('settings');
@@ -418,13 +447,9 @@ window.addEvent('domready',function()
       cookies.set('settings', 'closed');
     });
   }
-});
 
 
-
-// WHEN DOM IS LOADED /////////////////////////////////////////////////////////
-window.addEvent("load",function()
-{
+  // Zero clipboard stuff
   // Set path
   ZeroClipboard.setMoviePath('./tools/zeroclipboard/ZeroClipboard.swf');
 
