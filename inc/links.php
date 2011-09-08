@@ -54,6 +54,7 @@
   define(LINK_SLIMBOX,             LINK_DIRECTORY_TOOLS.'slimbox/js/slimbox.js');
   define(LINK_SLIMBOX,             LINK_DIRECTORY_TOOLS.'slimbox/js/slimbox.js');
   define(LINK_ZEROCPBOARD,         LINK_DIRECTORY_TOOLS.'zeroclipboard/zeroclipboard.js');
+  define(LINK_ADDTHIS,             "http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e4049d62b7f16ca");
 
   // SITE
   define(LINK_HEADER,              LINK_DIRECTORY_TPL.'header.php');
