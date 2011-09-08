@@ -8,12 +8,22 @@
  * This file contains php functions used in Bilazea template
  * 
  * Date:
- * 2010/10/10
+ * R1: 2010/10/10
+ * R2: 2011/05/18
+ * R3: 2011/05/22
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 ///////////////////////////////////////////////////////////////////////////////
+
+  // DEBUG mode ///////////////////////////////////////////////////////////////
+  function getDebugMode($debug = false)
+  {
+    return $debug;
+  }
+
+
 
   // LANGAGE //////////////////////////////////////////////////////////////////
   /**
@@ -180,15 +190,33 @@
   function getLgFileText($key,$lg = "")
   {
     $lang_array = getLanguageFile($lg);
+    if(getDebugMode())
+    {
+      echo "<p style='color:orange;'>KEY1: ".$key."</p>";
+      echo "<p style='color:orange;'>GET1: ".$lang_array[$key]."</p>";
+    }
+
     if(array_key_exists($key, $lang_array))
     {
-      return $lang_array[$key];
+      if(getDebugMode())
+      {
+        //echo "<p style='color:green;'>AAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>";
+        //echo "<p style='color:orange;'>KEY1: ".$key."</p>";
+        //echo "<p style='color:orange;'>GET1: ".$lang_array[$key]."</p>";
+      }
     }
     else
     {
-      addErrors("<u>getLgFileText</u>", "No value for <b>'".$key."'</b>");
-      return ST_EMPTY;
+      //echo "<p style='color:red;'>CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</p>";
+      if(getDebugMode())
+      {
+        echo "<p style='color:orange;'>GET1: Erreur</p>";
+        addErrors("<u>getLgFileText</u>", "No value for <b>'".$key."'</b>");
+        echo "<p style='color:red;'>DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>";
+      }
+      $key = "ERROR";
     }
+    return $lang_array[$key];
   }
 
   /**
@@ -207,7 +235,10 @@
     }
     else
     {
-      addErrors("<u>printLgFileText</u>", "No value for <b>''".$key."'</b>");
+      if(getDebugMode())
+      {
+        addErrors("<u>printLgFileText</u>", "No value for <b>''".$key."'</b>");
+      }
       echo NO_VALUE;
     }
   }
@@ -224,12 +255,20 @@
     if (array_key_exists($key, $lang_array))
     {
       $a = str_replace(' ', '-', $lang_array[$key]);
+      if(getDebugMode())
+      {
+        echo "<p style='color:orange;'>GET2: ".str_replace('---', '-', $a)."</p>";
+      }
       return str_replace('---', '-', $a);
     }
     else
     {
-      addErrors("<u>getTextForUrl</u>", "No value for <b>''".$key."'</b>");
-      return ST_EMPTY;
+      if(getDebugMode())
+      {
+        addErrors("<u>getLgFileTextForUrl</u>", "No value for <b>''".$key."'</b>");
+        echo "<p style='color:orange;'>GET2: Erreur</p>";
+      }
+      return "Erreur";
     }
   }
 
@@ -327,7 +366,7 @@
     $title = "";
     // Get language file
     $lang_array = parse_ini_file(LINK_LANG);
-    
+
     if($pos === false)
     {
       $title = getLgFileText("SITE_NAME");
@@ -340,14 +379,19 @@
       foreach($contents as &$value)
       {
         $x = str_replace("-"," ", $value);
-        if($i==1)
+
+        if($value==="")
+        {
+          $title .= getLgFileText("ERROR");
+        }
+        else if($i===1)
         {
           $x2 = explode(' ', $x);
           if(count($x2) > 2)
           {
             $res = $x2[0]." ".$x2[1]." - ".$x2[2];
           }
-          else if (count($x2) > 1)
+          else if(count($x2) > 1)
           {
             $res = $x2[0]." ".$x2[1];
           }
@@ -405,8 +449,12 @@
                   getLgFileTextForUrl($lineL));
           if($lineL != "CAT_0")
           {
-            $nav .= '<a id="'.$lineL.'" class="menu" href="'
-                   .constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
+            $nav .= '
+                    '.'<a id="'.$lineL.'" 
+                          class="menu toolTips" 
+                          title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
+                          rel="'.getLgFileText($lineL).'" 
+                          href="'.constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
             $nbCat++;
           }
         }
@@ -427,25 +475,36 @@
           $currentCat = substr($lineL, 0, 5);
           if($previousCat == $currentCat)
           {
-            $$navCat .= '<a id="'.$lineL.'" class="menu" href="'
-                        .constant("LINK_".$lineL).'">'
-                        .getLgFileText($lineL).'</a>';
+            $$navCat .= '
+                        '.'<a id="'.$lineL.'" 
+                              class="menu toolTips" 
+                              title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
+                              rel="'.getLgFileText($lineL).'" 
+                              href="'.constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
           }
           else
           {
-            $$previousNavCat .= '</div>';
-            $$navCat .= '<div id="nav'.$currentCat.'" class="navigationDiv">';
-            $$navCat .= '<a id="'.$lineL.'" class="menu" href="'
-                        .constant("LINK_".$lineL).'">'
-                        .getLgFileText($lineL).'</a>';
+            $$previousNavCat .=  '
+                    '.'</div>';
+            $$navCat .=  '
+                    '.'<div id="nav'.$currentCat.'" class="navigationDiv">';
+            $$navCat .= '
+                        '.'<a id="'.$lineL.'" 
+                              class="menu toolTips" 
+                              title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
+                              rel="'.getLgFileText($lineL).'" 
+                              href="'.constant("LINK_".$lineL).'">'.getLgFileText($lineL).'</a>';
           }
           $previousCat = $currentCat;
           $previousNavCat = $navCat;
         }
       }
     }
-    $nav .= '</div>';
-    $$navCat .= '</div>';
+    $nav .= '
+            '.'</div>'.'
+            ';
+    $$navCat .= '
+                '.'</div>';
     $contents = explode('>', $_GET[getLgFileText("CONTENT")]);
 
     // Print navigation menu first line
@@ -479,6 +538,10 @@
     $explodedContent = explode('<!--', $contents);
     //print_r($explodedContent);
 
+    //echo "explodedContent: ".$explodedContent;
+
+    //if($explodedContent === "")
+    //{
     // Get localized language corresponding to current language
     if(getLanguage() == LG_FR)
     {
@@ -522,6 +585,13 @@
         }
       }
     }
+      
+    //}
+    //else
+    //{
+      //print("<h1>Erreur</h1>");
+    //}
+
     fclose($handle);
   }
 
@@ -531,16 +601,20 @@
    * 
    * @param $filename
    * @param $metaDesc
+   * @param $map
    */
-  function setMetaDescription($filename,$metaDesc="")
+  function setMetaDescription($filename,$metaDesc="",$map=false)
   {
-    if($filename != "")
+    if ($map)
+    {
+      define(META_CONTENT_DESC, '<meta name="description" content="'.trim($metaDesc).'" />');
+    }
+    else if($filename != "")
     {
       // Get contents of a category file
       $handle = fopen($filename, "r");
       $contents = fread($handle, filesize($filename));
       $explodedContent = explode('<!--', $contents);
-      //print_r($explodedContent);
 
       // Get localized language corresponding to current language
       if(getLanguage() == LG_FR)
@@ -571,7 +645,7 @@
     }
     else
     {
-      define(META_CONTENT_DESC, '<meta name="description" content="'.$metaDesc.'" />');
+      define(META_CONTENT_DESC, '<meta name="description" content="'.getLgFileText("ERROR_META").'" />');
     }
   }
 
@@ -581,10 +655,15 @@
    * 
    * @param $filename
    * @param $metaKey
+   * @param $map
    */
-  function setMetaKeywords($filename,$metaKey="")
+  function setMetaKeywords($filename,$metaKey="",$map=false)
   {
-    if($filename != "")
+    if ($map)
+    {
+      define(META_CONTENT_KEY, '<meta name="keywords" content="'.trim($metaKey).'" />');
+    }
+    else if($filename != "")
     {
       // Get contents of a category file
       $handle = fopen($filename, "r");
@@ -617,11 +696,11 @@
           $meta=$cnt_es[1];
         }
       }
-      define(META_CONTENT_KEY, '<meta name="keywords" content="'.trim ($meta).'" />');
+      define(META_CONTENT_KEY, '<meta name="keywords" content="'.trim($meta).'" />');
     }
     else
     {
-      define(META_CONTENT_KEY, '<meta name="keywords" content="'.$metaKey.'" />');
+      define(META_CONTENT_KEY, '<meta name="keywords" content="'.getLgFileText("ERROR_META").'" />');
     }
   }
 
@@ -638,9 +717,15 @@
       setMetaDescription(LINK_CNT_CAT_0);
       setMetaKeywords(LINK_CNT_CAT_0);
     }
+    else if ($_GET[getLgFileText("CONTENT")] == getLgFileText("MAP"))
+    {
+      setMetaDescription('',getLgFileText("SITE_NAME").', '.getLgFileText("MAP"),true);
+      setMetaKeywords('',getLgFileText("SITE_NAME").', '.getLgFileText("MAP"),true);
+    }
     else
     {
       $content = $_GET[getLgFileText("CONTENT")];
+      //echo "CNT: ".$content;
 
       // Get language file
       $lang_array = parse_ini_file(LINK_LANG);
@@ -649,6 +734,7 @@
 
 
       $nbCat2 = count($lang_array_keys);
+      $done = false;
 
       // Loop on number of keys
       for($j = 0;$j<$nbCat2;$j++)
@@ -666,6 +752,7 @@
             {
               setMetaDescription(constant("LINK_CNT_".$lineL));
               setMetaKeywords(constant("LINK_CNT_".$lineL));
+              $done = true;
             }
             $cat = $lineL;
           }
@@ -677,16 +764,22 @@
             {
               setMetaDescription(constant("LINK_CNT_".$lineL));
               setMetaKeywords(constant("LINK_CNT_".$lineL));
+              $done = true;
             }
           }
         }
+      }
+      if (!$done)
+      {
+         setMetaDescription("");
+         setMetaKeywords("");
       }
     }
 
     if ($content == getLgFileText("MAP"))
     {
-      setMetaDescription('','Bilazea.com template, '.getLgFileText("MAP"));
-      setMetaKeywords('','Bilazea.com template, '.getLgFileText("MAP"));
+      setMetaDescription('',getLgFileText("SITE_NAME").', '.getLgFileText("MAP"));
+      setMetaKeywords('',getLgFileText("SITE_NAME").', '.getLgFileText("MAP"));
     }
   }
 
@@ -746,6 +839,69 @@
     }
   }
 
+
+  /**
+   * Build and print map
+   */
+  function buildAndPrintMap()
+  {
+    $mapCnt = "<ul>";
+
+    // Get language file
+    $lang_array = parse_ini_file(LINK_LANG);
+    // Get language array keys
+    $lang_array_keys = array_keys($lang_array);
+    // Number of categories
+    $nbCat2 = count($lang_array_keys);
+    $cat = "";
+    $cat2 = "default";
+
+    // Loop on number of keys
+    for($j = 0;$j<$nbCat2;$j++)
+    {
+      // Get only categories
+      if(substr($lang_array_keys[$j],0,3) == "CAT")
+      {
+        // Get category, trimed and where spaces are replaced by dashes
+        $lineL = $lang_array_keys[$j];
+
+        // Main categories
+        if(strlen($lineL) == 5)
+        {
+          if ($cat !== $lineL)
+          {
+            if ($cat2 == "")
+            {
+              $mapCnt .= '</ul>';
+            }
+            $mapCnt .= '</li>';
+          }
+          $mapCnt .= '<li><a class="toolTips" 
+                             title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
+                             rel="'.getLgFileText($lineL).'" 
+                             href="'.constant("LINK_$lineL").'">'.getLgFileText($lineL).'</a>';
+          $cat = $lineL;
+          $cat2 = $lineL;
+        }
+
+        // Sub menu
+        else if(strlen($lineL) == 7)
+        {
+          if (substr($lineL,0,5) == $cat2)
+          {
+            $mapCnt .= '<ul>';
+            $cat2 = "";
+          }
+          $mapCnt .= '<li><a class="toolTips" 
+                   title="'.getLgFileText("SITE_NAME2").'<br />> '.getLgFileText($lineL).'" 
+                   rel="'.getLgFileText($lineL).'" 
+                   href="'.constant("LINK_$lineL").'">'.getLgFileText($lineL).'</a></li>';
+        }
+      }
+    }
+    $mapCnt .= "</ul>";
+    echo $mapCnt;
+  }
 
 
   // DOCUMENTATION ////////////////////////////////////////////////////////////

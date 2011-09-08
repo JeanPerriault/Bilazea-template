@@ -1,3 +1,6 @@
+;
+; BILAZEA.COM WEBSITE
+;
 ; File:
 ; inc/lang/en.lng
 ; 
@@ -10,7 +13,7 @@
 ; R2: 2011/02/27
 ; 
 ; Author:
-; Bilazea.com - Jean Perriault <bilazea@aol.fr>
+; Bilazea.com - Jean Perriault <admin@bilazea.com>
 ; Copyright:
 ; Copyright (c) 2000-2011, Bilazea.com Agence web
 
@@ -23,8 +26,8 @@ SITE_TITLE_H1 = "TPL Bilazea"
 LEFT_TITLE = "B<br />I<br />L<br />A<br />Z<br />E<br />A"
 RSS = "RSS 2.0"
 RSS_DESC = "Get the latest news from the site with your feed reader."
-COPYRIGHT = "©2000-2010, Bilazea.com - Web agency"
-COPYRIGHT2 = "Copyright (c) 2000-2010, Bilazea.com - Web agency"
+COPYRIGHT = "©2000-2011, Bilazea.com - Web agency"
+COPYRIGHT2 = "Copyright (c) 2000-2011, Bilazea.com - Web agency"
 GO_TO_HOME = "Go to homepage"
 GO_TO_TOP = "Go to top"
 MADE_WITH = "Site created with"
@@ -34,21 +37,27 @@ APTANA = "Aptana"
 APTANA_HOME = "Go to Aptana website"
 LINKS = "Links"
 MORE_ON = "More information about the page"
-OPEN_PANEL = "Open this part"
-CLOSE_PANEL = "Close this part"
+OPEN_PANEL1 = "Show languages/documentation links"
+CLOSE_PANEL1 = "Hide languages/documentation links​​"
+OPEN_PANEL2 = "Show recent/most read articles"
+CLOSE_PANEL2 = "Hide recent/most read articles"
+OPEN_PANEL3 = "Show links"
+CLOSE_PANEL3 = "Hide links"
 SITE_ASIDE_TEXT = "Save a tree: Eat a beaver!"
 CONTENT = "content"
 ARTICLE = "article"
 CONTACTS = "Contacts"
 CONTACTS_DESC = "Contact Bilazea.com by mail"
 LANGUAGE = "Languages"
+LANGUAGE_MSG = "View website in English"
 DOCUMENTATION = "Documentation"
 GOTO_DOCUMENTATION = "Go to documentation"
 GOTO_DOCUMENTATION_WIKI = "Go to wiki (Github)"
 LOAD_MSG = "Loading..."
-ERROR = "error"
+ERROR = "Error"
 ERROR_DESC = "Error description"
 ERROR_TYPE_DESC = "The server returns an error"
+ERROR_META = "Error in the meta description"
 DIR_NOT_EXIST_BG = "Error: directory doesn't exist"
 DIR_NOT_EXIST_END = "doesn't exist"
 FILE_NOT_EXIST = "Error: directory doesn't exist"
@@ -139,8 +148,9 @@ CAT_1 = "Demo"
 CAT_1_1 = "Accordion"
 CAT_1_2 = "MP3"
 CAT_1_3 = "Image"
-CAT_1_4 = "Video"
-CAT_1_5 = "Code"
+CAT_1_4 = "Carousel"
+CAT_1_5 = "Video"
+CAT_1_6 = "Code"
 
 CAT_2 = "Category 2"
 CAT_2_1 = "Category 2 - 1"

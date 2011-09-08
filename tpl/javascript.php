@@ -24,3 +24,4 @@
   <script type="text/javascript" language="JavaScript" src='<?php echo LINK_GOOGLE ?>'></script>
   <script type="text/javascript" language="JavaScript" src='<?php echo LINK_SLIMBOX ?>'></script>
   <script type="text/javascript" language="JavaScript" src='<?php echo LINK_IECSSHACK ?>'></script>
+  <script type="text/javascript" language="JavaScript" src='<?php echo LINK_ADDTHIS ?>'></script>

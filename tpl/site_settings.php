@@ -27,7 +27,7 @@
            href="#" 
            class="iconHideLan toolTips" 
            title="<?php echo printLgFileText("SITE_NAME2"); ?>"
-           rel="<?php printLgFileText("OPEN_PANEL"); ?>">
+           rel="<?php printLgFileText("OPEN_PANEL1"); ?>">
         </a>
       </div>
 
@@ -40,7 +40,7 @@
            href="#" 
            class="iconHideLan toolTips" 
            title="<?php printLgFileText("SITE_NAME2"); ?>" 
-           rel="<?php printLgFileText("CLOSE_PANEL"); ?>">
+           rel="<?php printLgFileText("CLOSE_PANEL1"); ?>">
         </a>
 
         <!-- Language -->
@@ -48,17 +48,26 @@
           <p><?php printLgFileText("LANGUAGE"); ?></p>
           <ul id="navlist">
             <li>
-              <form action="<?php echo getPageUrlForLanguage(LG_FR); ?>" method="post">
+              <form class="toolTips" 
+                    title="<?php printLgFileText("SITE_NAME2"); ?>" 
+                    rel="<?php printLgFileText("LANGUAGE_MSG","fr"); ?>" 
+                    action="<?php echo getPageUrlForLanguage(LG_FR); ?>" method="post">
                 <p><input type="submit" name="lg" value="<?php echo LANG_FR; ?>" /></p>
               </form>
             </li>
             <li>
-              <form action="<?php echo getPageUrlForLanguage(LG_EN); ?>" method="post">
+              <form class="toolTips" 
+                    title="<?php printLgFileText("SITE_NAME2"); ?>" 
+                    rel="<?php printLgFileText("LANGUAGE_MSG","en"); ?>" 
+                    action="<?php echo getPageUrlForLanguage(LG_EN); ?>" method="post">
                 <p><input type="submit" name="lg" value="<?php echo LANG_EN; ?>" /></p>
               </form>
             </li>
             <li>
-              <form action="<?php echo getPageUrlForLanguage(LG_ES); ?>" method="post">
+              <form class="toolTips" 
+                    title="<?php printLgFileText("SITE_NAME2"); ?>" 
+                    rel="<?php printLgFileText("LANGUAGE_MSG","es"); ?>" 
+                    action="<?php echo getPageUrlForLanguage(LG_ES); ?>" method="post">
                 <p><input type="submit" name="lg" value="<?php echo LANG_ES; ?>" /></p>
               </form>
             </li>

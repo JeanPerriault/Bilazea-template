@@ -27,6 +27,7 @@
   <?php echo META_CONTENT_KEY."\n" ?>
   <?php echo META_LINK_RSS."\n" ?>
   <?php echo META_LINK_ATOM."\n" ?>
+  <?php echo META_SITEMAP."\n" ?>
 
   <!-- TITLE -->
   <title><?php echo getMetaTitle(); ?></title>

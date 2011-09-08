@@ -11,6 +11,8 @@
  * 2010/10/10
  * R1: 2011/01/23
  * R2: 2011/02/27
+ * R2: 2011/05/15
+ * R3: 2011/09/08
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web */
@@ -85,6 +87,25 @@ if(Browser.Plugins.Flash)
 }
 
 
+// Extend string prototype
+// From http://www.somacon.com/p355.php
+String.prototype.trim = function() {
+	return this.replace(/^\s+|\s+$/g,"");
+}
+String.prototype.ltrim = function() {
+	return this.replace(/^\s+/,"");
+}
+String.prototype.rtrim = function() {
+	return this.replace(/\s+$/,"");
+}
+// Test
+//var myString = "hello world";
+//alert("*"+myString.trim()+"*");
+//alert("*"+myString.ltrim()+"*");
+//alert("*"+myString.rtrim()+"*");
+
+
+
 
 // WHEN DOM IS READY //////////////////////////////////////////////////////////
 window.addEvent('domready',function()
@@ -92,6 +113,7 @@ window.addEvent('domready',function()
 
   /* Images preload **********************************************************/
   var imagesToPreload = [
+    './img/mail_h.gif',
     './img/externalLink_h.gif',
     './img/arrow_top_h.gif',
     './img/panel_h2.gif',
@@ -107,11 +129,15 @@ window.addEvent('domready',function()
     $('titleLink').addEvents({
       'mouseover': function()
       {
-        $('titleLink').fade(0.6);
+        $('titleLink').fade(1);
+        //var myTog = new Fx.Tween($('titleLink'));
+        //myTog.set('color', '#CCC');
       },
       'mouseout': function()
       {
-        $('titleLink').fade(1);
+        $('titleLink').fade(0.5);
+        //var myTog = new Fx.Tween($('titleLink'));
+        //myTog.set('color', '#555');
       }
     });
   }
@@ -123,6 +149,7 @@ window.addEvent('domready',function()
     var myAccordion = new Fx.Accordion($$('h2.accordionTitle1'),$$('div.accordionPanel1'),
     {
       opacity : false,
+      alwaysHide: true,
       onActive : function(toggler, element)
       {
         var myTog = new Fx.Tween(toggler);
@@ -151,6 +178,7 @@ window.addEvent('domready',function()
     var myAccordionPart = new Fx.Accordion($$('h4.accordionTitle1_1'), $$('div.accordionPanel1_1'),
     {
       opacity: false,
+      alwaysHide: true,
       onActive: function(toggler, element)
       {
         var myTog = new Fx.Tween(toggler);
@@ -174,12 +202,14 @@ window.addEvent('domready',function()
     });
   }
 
+
   /* Blog ********************************************************************/
   if ($$('div.blog_head'))
   {
     var myAccordionBlog = new Fx.Accordion($$('div.blog_head'),$$('div.blog_content'),
     {
       opacity : false,
+      alwaysHide: true,
       onActive : function(toggler, element)
       {
         var myTog = new Fx.Tween(toggler);
@@ -188,6 +218,11 @@ window.addEvent('domready',function()
         myTog.set('background-color','#222222');
         myTog.set('background-position', 'center center');
         myTog.set('background-repeat', 'no-repeat');
+
+        var myTog2 = $(toggler).getElements('div')[1].getElement('p');
+        var myEl2 = new Fx.Tween(myTog2);
+        myEl2.set('text-decoration','underline');
+        myEl2.set('font-weight','bolder');
       },
       onBackground : function(toggler, element)
       {
@@ -197,6 +232,11 @@ window.addEvent('domready',function()
         myTog.set('background-color', '#61615F');
         myTog.set('background-position', 'center center');
         myTog.set('background-repeat', 'no-repeat');
+
+        var myTog2 = $(toggler).getElements('div')[1].getElement('p');
+        var myEl2 = new Fx.Tween(myTog2);
+        myEl2.set('text-decoration','none');
+        myEl2.set('font-weight','normal');
       }
     });
   }
@@ -225,16 +265,24 @@ window.addEvent('domready',function()
   /* Check active menu ********************************************************/
   function checkActive(){
     var a =$$('a.menu');
-    if (window.location.href.substr(location.href.length - 1, 1) == '/'){
+    if (window.location.href.substr(location.href.length - 1, 1) == '/')
+    {
       var loc = window.location.href + 'index.php'; 
     }
-    else{
+    else
+    {
       var loc = window.location.href;
     }
-    for(var i=0; i < a.length; i++) {
-      if (a[i].href == loc) {
+    for(var i=0; i < a.length; i++)
+    {
+      if (a[i].href == loc)
+      {
+        if (a[i].getAttribute("id").length === 7)
+        {
+       	  var aParent = a[i].getAttribute("id").substring(0,5);
+          $(aParent).setAttribute("class", "menu activeMenu");
+        }
         a[i].setAttribute("class", "menu activeMenu");
-        //alert(a[i].class);
       }
     }
   }
@@ -254,7 +302,11 @@ window.addEvent('domready',function()
 
 
   /* COOKIES STUFF ***********************************************************/
-  var cookies = new Hash.Cookie('Bilazea.com Cookies - For design',{duration: 3600});
+  var siteName = $$('#title a.title').get('text');
+  var siteNameTrimed = siteName[0].trim();
+  var cookieName = siteNameTrimed+' Cookies - For design';
+
+  var cookies = new Hash.Cookie(cookieName,{duration: 3600});
   var cookTop = cookies.get('top');
   var cookAside = cookies.get('aside');
   //var cookSettings = cookies.get('settings');
@@ -303,10 +355,10 @@ window.addEvent('domready',function()
   }
 
   // Footer
-  if ($('footer'))
+  if ($('footerL'))
   {
-    var verticalFooter = new Fx.Slide('footer') || null;
-    var verticalFooterHidden = new Fx.Slide('footerHidden') || null;
+    var verticalFooter = new Fx.Slide('footerL') || null;
+    var verticalFooterHidden = new Fx.Slide('footerLHidden') || null;
     var verticalFooterLinkSlideIn = $('footerLinkSlideIn') || null;
     var verticalFooterLinkSlideOut = $('footerLinkSlideOut') || null;
     if (cookAside)
@@ -395,13 +447,9 @@ window.addEvent('domready',function()
       cookies.set('settings', 'closed');
     });
   }
-});
 
 
-
-// WHEN DOM IS LOADED /////////////////////////////////////////////////////////
-window.addEvent("load",function()
-{
+  // Zero clipboard stuff
   // Set path
   ZeroClipboard.setMoviePath('./tools/zeroclipboard/ZeroClipboard.swf');
 
