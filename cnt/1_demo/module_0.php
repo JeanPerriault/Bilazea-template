@@ -3,7 +3,7 @@
     <a class="bigLinks toolTips" 
        title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
        rel="<?php echo printLgFileText("CAT_1_1"); ?>" 
-       href="<?php echo LINK_CAT_5_1 ?>">
+       href="<?php echo LINK_CAT_1_1 ?>">
       <?php echo printLgFileText("CAT_1_1"); ?>
     </a>
   </li>
