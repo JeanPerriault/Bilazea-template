@@ -19,7 +19,8 @@
 /* Body **********************************************************************/
 body
 {
-  background:url(../cnt/img/bilazea_fond.jpg) fixed;
+  /*background:#fff url(../cnt/img/bilazea_fond.jpg) no-repeat;*/
+  background:#ffffff url('../cnt/img/bilazea_fond.jpg') repeat-x right top;
   font-family:"Arial";
   padding:0;
   margin:0;
@@ -189,17 +190,16 @@ form
 /* Last/Most *****************************************************************/
 #lastMost
 {
-  background-color:#FFF;
+  background-color:#000;
   height:120px;
   margin-bottom:10px;
   padding:5px;
-  border-bottom:5px solid #DDD;
+  opacity:0.9;
 }
 #lastMostHidden
 {
-  background-color:#DDD;
+  background-color:#000;
   height:25px;
-  opacity:0.4;
 }
 
 .titleLastMost
@@ -272,8 +272,9 @@ form
 {
   background-color:#FFF;
   min-height:700px;
-  margin-bottom:40px;
   padding:5px;
+  border-left:1px solid #ddd;
+  border-right:1px solid #ddd;
 }
 
 
@@ -367,6 +368,14 @@ p.module_title_txt
 }
 
 
+/* AddThis *******************************************************************/
+#addThis
+{
+  margin:40px 0 40px 0;
+  margin-left:600px;
+}
+
+
 /* Footer ********************************************************************/
 #footer
 {
@@ -387,7 +396,6 @@ p.module_title_txt
 /* Footer links **************************************************************/
 #footerL
 {
-
   height:180px;
 }
 #footerLIn
@@ -404,12 +412,13 @@ p.module_title_txt
 
 #footerLHidden
 {
-  background-color:#555;
+  background-color:#000;
   width:800px;
   height:25px;
   margin-left:auto;
   margin-right:auto;
   text-align:left;
+  border-bottom:5px solid #AAA;
 }
 #footerLHiddenIn
 {
@@ -420,7 +429,8 @@ p.module_title_txt
 }
 .footerLinkTitle
 {
-  background-color:#646464;
+  /*background-color:#555;*/
+ border-bottom:2px solid #555;
   color:#FFF;
   margin:0 0 10px 0;
   padding:0 0 0 10px;
