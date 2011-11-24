@@ -89,7 +89,8 @@ h3
 {
   background-color:#FFF;
   height:65px;
-  padding:5px;
+  padding-right:10px;
+  padding-top:5px;
   border-bottom:5px solid #BBB;
   text-align:right;
 }
@@ -98,8 +99,8 @@ h3
 {
   background-color:#000;
   height:16px;
-  padding-right:5px;
-  padding-top:1px;
+  padding-right:10px;
+  padding-top:5px;
 }
 
 ul#navlist
