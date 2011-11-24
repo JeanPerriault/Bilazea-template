@@ -6,16 +6,16 @@
  * Description:
  * This file contains js functions used in Bilazea template
  * It's using mootools framework
+ * Mootools used version:
+ * - Core: 1.4.1
+ * - More: 1.4.0.1
  * 
- * Date:
- * 2010/10/10
- * R1: 2011/01/23
- * R2: 2011/02/27
- * R2: 2011/05/15
- * R3: 2011/09/08
+ * Created: 2010/10/10
+ * Last Modification: 2011/10/25
  * 
  * @author Bilazea.com - Jean Perriault <admin@bilazea.com>
- * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web */
+ * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
+ */
 ///////////////////////////////////////////////////////////////////////////////
 
 
