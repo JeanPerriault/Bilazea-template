@@ -9,6 +9,8 @@
  * 2010/10/10
  * R1: 2011/01/10
  * R2: 2011/02/27
+ * R3: 2011/05/15
+ * R4: 2011/06/08
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
@@ -17,7 +19,8 @@
 /* Body **********************************************************************/
 body
 {
-  background:#FFF;
+  /*background:#fff url(../cnt/img/bilazea_fond.jpg) no-repeat;*/
+  background:#ffffff url('../cnt/img/bilazea_fond.jpg') repeat-x right top;
   font-family:"Arial";
   padding:0;
   margin:0;
@@ -37,7 +40,8 @@ ul
 
 li
 {
-  
+  color: #666;
+  list-style-type: square;
 }
 
 table
@@ -50,6 +54,12 @@ hr
   clear:both;
   border:none;
   margin:0;
+}
+
+legend
+{
+  font-size:13px;
+  font-style:italic;
 }
 
 
@@ -77,20 +87,20 @@ h3
 /* DIV settings template *****************************************************/
 #settings
 {
-  text-align:right;
   background-color:#FFF;
-  padding:5px;
+  height:65px;
+  padding-right:10px;
+  padding-top:5px;
   border-bottom:5px solid #BBB;
-  height:70px;
+  text-align:right;
 }
 
 #settingsHidden
 {
+  background-color:#000;
   height:16px;
-  background:#000;
-  opacity:0.4;
-  padding-right:5px;
-  padding-top:1px;
+  padding-right:10px;
+  padding-top:5px;
 }
 
 ul#navlist
@@ -114,63 +124,62 @@ form
 /* DIV language **************************************************************/
 #language
 {
-  background:#BBB;
+  background-color:#BBB;
+  width:300px;
+  height:70px;
   float:right;
   margin-right:10px;
   text-align:center;
-  width:300px;
-  padding-bottom:5px;
-  height:70px;
 }
 #language p
 {
-  margin:0;
   background-color:#333;
   color:#FFF;
+  margin:0;
 }
 #language_doc
 {
-  text-align:right;
   color:#333;
   margin-right:5px;
+  text-align:right;
 }
 #language input
 {
+  background-color:#222;
+  width:80px;
+  height:25px;
   cursor:pointer;
   border:#DDD;
-  background:#222222;
-  color:#EEEEEE;
+  color:#EEE;
   display:block;
   float:left;
-  height:25px;
   text-align:center;
   text-decoration:none;
-  width:80px;
   font-size:0.8em;
 }
 #language input:hover
 {
+  background-color:#646464;
   color:#FFF;
   font-size:0.9em;
-  background-color:#646464;
 }
 
 
 /* DIV documentation *********************************************************/
 #documentation
 {
-  background:#BBB;
+  background-color:#BBB;
+  width:260px;
+  height:70px;
   float:right;
   margin-right:10px;
   text-align:center;
-  width:260px;
-  height:75px;
 }
 #documentation p
 {
-  margin:0;
   background-color:#333;
   color:#FFF;
+  margin:0;
   border:none;
 }
 #documentation a:hover
@@ -182,28 +191,27 @@ form
 /* Last/Most *****************************************************************/
 #lastMost
 {
-  background-color:#FFF;
-  padding:5px;
-  border-bottom:5px solid #DDD;
-  margin-bottom:10px;
+  background-color:#000;
   height:120px;
+  margin-bottom:10px;
+  padding:5px;
+  opacity:0.9;
 }
 #lastMostHidden
 {
+  background-color:#000;
   height:25px;
-  background:#DDD;
-  opacity:0.4;
 }
 
 .titleLastMost
 {
-  color:#EEE;
   background-color:#4C4C4C;
+  color:#EEE;
+  margin:2px;
   padding-left:5px;
   padding-right:2px;
   padding-top:2px;
   padding-bottom:2px;
-  margin:2px;
 }
 #last
 {
@@ -263,17 +271,18 @@ form
 
 #content
 {
+  background-color:#FFF;
   min-height:700px;
   padding:5px;
-  background-color:#FFF;
-  margin-bottom:40px;
+  border-left:1px solid #ddd;
+  border-right:1px solid #ddd;
 }
 
 
 /* DIV modules template *****************************************************/
 .module
 {
-  background-color: #DDD;
+  background-color:#DDD;
   margin-bottom:20px;
   padding:0 5px 0 5px;
 }
@@ -318,12 +327,12 @@ a:hover.module_link
 
 .module_title
 {
-  margin-top:40px;
   background-color:#333;
   color:#EEE;
+  margin-top:40px;
+  padding:0 0 0 5px;
   font-size:26px;
   font-weight:bold;
-  padding:0 0 0 5px;
   text-align:left;
 }
 p.module_title_txt
@@ -332,87 +341,98 @@ p.module_title_txt
 }
 .module_video
 {
-  text-align:center;
   background-color: #DDD;
   margin-bottom:20px;
+  text-align:center;
 }
-
 
 .moduleCode
 {
-  background:#1A1A1A;
+  background-color:#1A1A1A;
   margin-bottom:50px;
 }
 
 .moduleCodeTitle
 {
-  margin-top:40px;
   background-color:#333;
   color:#EEE;
+  margin-top:40px;
   text-align:left;
 }
 
 .moduleCodeTitleTxt
 {
-  font-size:26px;
-  font-weight:bold;
   margin:0;
   padding:0 0 0 5px;
+  font-size:26px;
+  font-weight:bold;
 }
 
 
-/* Aside *********************************************************************/
-#aside
+/* AddThis *******************************************************************/
+#addThis
 {
-  clear:both;
-  opacity:0.7;
-}
-#underAside
-{
-  margin-left: auto;
-  margin-right: auto;
-  text-align:center;
-  color:#EEE;
-  width:800px;
-  background-color:#000;
-  padding-top:10px;
-  padding-bottom:10px;
-  opacity:0.8;
+  margin:40px 0 40px 0;
+  margin-left:600px;
 }
 
 
 /* Footer ********************************************************************/
 #footer
 {
-  opacity:0.8;
+  clear:both;
+}
+#aside
+{
+  background-color:#000;
+  width:800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:10px;
+  text-align:center;
+  color:#EEE;
+}
+
+
+/* Footer links **************************************************************/
+#footerL
+{
   height:180px;
 }
-#footerIn
+#footerLIn
 {
+  background-color:#000;
   width:800px;
   margin-left:auto;
   margin-right:auto;
   border-bottom:5px solid #646464;
   height:175px;
+  text-align:left;
+  opacity:0.9;
 }
 
-#footerHidden
+#footerLHidden
 {
+  background-color:#000;
+  width:800px;
   height:25px;
-  opacity:0.4;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  border-bottom:5px solid #AAA;
 }
-#footerHiddenIn
+#footerLHiddenIn
 {
-  background:#DDD;
+  background-color:#DDD;
   width:800px;
   margin-left:auto;
   margin-right:auto;
 }
-
 .footerLinkTitle
 {
+  /*background-color:#555;*/
+ border-bottom:2px solid #555;
   color:#FFF;
-  background:none repeat scroll 0 0 #646464;
   margin:0 0 10px 0;
   padding:0 0 0 10px;
   text-transform:uppercase;
@@ -420,10 +440,10 @@ p.module_title_txt
 
 #footerLinksDiv1
 {
+  width:40%;
+  height:134px;
   float:left;
   margin-left:10px;
-  height:134px;
-  width:40%;
 }
 #footerLinksDiv2
 {

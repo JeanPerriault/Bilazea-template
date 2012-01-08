@@ -6,7 +6,8 @@
  * This file contains css used for links in Bilazea template
  * 
  * Date:
- * 2010/10/10
+ * R1: 2010/10/10
+ * R2: 2011/06/08
  * 
  * @author Bilazea.com - Jean Perriault <bilazea@aol.fr>
  * @copyright Copyright (c) 2000-2010, Bilazea.com Agence web
@@ -29,9 +30,10 @@ a:hover
 /* TITLE *********************************************************************/
 a.title,a:visited.title,a:link.title
 {
-  color:#DDD;
+  color:#AAA;
   text-decoration:none;
-  font-size:1.8em;
+  font-size: 2.2em;
+  font-weight: bolder;
 }
 a:hover.title
 {
@@ -80,8 +82,9 @@ a.activeMenu
 /* FIXED TITLE ***************************************************************/
 a.fixedTitleLeft
 {
-  color:#646464;
+  color:#CCC;
   display:block;
+  opacity:0.5;
   font-family:"Arial Black","Arial";
   font-size:89px;
   line-height:1;
@@ -100,18 +103,18 @@ a.lang,a:visited.lang,a:link.lang
 
 a:hover.lang
 {
-  color:#DDDDDD;
+  color:#DDD;
 }
 
 
 /* Last most *****************************************************************/
 #lastMost a
 {
-  color:black;
+  color:#AAA;
 }
 #lastMost a:hover
 {
-  color:grey;
+  color:#FFF;
 }
 
 
@@ -149,7 +152,7 @@ a:hover.lang
 }
 #footer a:hover
 {
-  color: #BBB;
+  color: #FFF;
 }
 #footer a:focus
 {
@@ -201,7 +204,7 @@ a.openImg
   background:#DDD;
   width:800px;
   display:block;
-  margin: 0px auto;
+  float:right;
   width:30px;
   height:25px;
   background:url('../img/panel.gif') 0 0 no-repeat;
@@ -209,6 +212,21 @@ a.openImg
 a:hover.openImg
 {
   background:url('../img/panel_h2.gif') 0 0 no-repeat;
+}
+a.openImg2
+{
+  height:10px;
+  background:#DDD;
+  width:800px;
+  display:block;
+  float:right;
+  width:30px;
+  height:25px;
+  background:url('../img/panel_h2.gif') 0 0 no-repeat;
+}
+a:hover.openImg2
+{
+  background:url('../img/panel_h.gif') 0 0 no-repeat;
 }
 
 
@@ -251,4 +269,71 @@ a.iconGoToTopRcl
 a.iconGoToTopRcl:hover
 {
   background:url('../img/arrow_top_h.gif') no-repeat scroll right 0 transparent;
+}
+
+a.bigLinks
+{
+  font-size:2em;
+  font-weight:bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Metabox temp */
+.metabox #download_button, .metabox #download_button:visited {
+    background: -moz-linear-gradient(90deg, #ECECEC, #F4F4F4) repeat scroll 0 0 transparent;
+    border: 1px solid #D4D4D4;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 0 #ECECEC;
+    color: #666666;
+    display: block;
+    float:right;
+    margin-top:-10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 15px;
+    margin-bottom: 10px;
+    padding: 10px 15px 10px 16px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+.has-downloads-no-desc #download_button, .has-downloads-no-desc #download_button:visited {
+    margin-bottom: 0;
+}
+.metabox #download_button .icon {
+    background-image: url("../img/download.png");
+    background-position: 0 52%;
+    background-repeat: no-repeat;
+    line-height: 15px;
+    margin: 0 4px 0 0;
+    padding: 0 0 0 20px;
+}
+.metabox #download_button:hover .icon, .metabox #download_button:active .icon {
+    background-position: -21px 52%;
+}
+.metabox #download_button:hover {
+    background: -moz-linear-gradient(90deg, #4A444C, #66615C) repeat scroll 0 0 transparent;
+    border: 1px solid #AAA;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #2E63A5;
+}
+.metabox #download_button:active {
+    background: -moz-linear-gradient(90deg, #222, #66615C) repeat scroll 0 0 transparent;
+    border: 1px solid #BBB;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #2E63A5;
+}
+
+.undermetabox
+{
+  clear:both;
 }

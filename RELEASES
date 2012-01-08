@@ -20,11 +20,10 @@ Release-notes
 -------------
 
 Also available on github host: 
-https://github.com/JeanPerriault/Bilazea-template/wiki/Roadmap
+https://github.com/JeanPerriault/Bilazea-template/wiki/Release-notes
 
 
 TODO:
-
     * Try to pass CSS validation
           o Problems due to:
                 + '-moz-border-radius' css attribute not valid

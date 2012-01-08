@@ -14,6 +14,12 @@
  * @copyright Copyright (c) 2000-2011, Bilazea.com Agence web
  */
 
+/* Class center **************************************************************/
+.center
+{
+  text-align:center;
+}
+
 /* Images ********************************************************************/
 .img-accueil
 {
@@ -54,7 +60,7 @@
 /* Pre / Code ****************************************************************/
 pre
 {
-  font-size:1em;
+  font-size:0.8em;
   padding: 1em 0 1em 0;
   background-color: #1A1A1A;
   color: #EEEEEE;
@@ -164,7 +170,7 @@ table.tableArticle td
 
 #carouselDiv
 {
-  padding-left: 160px;
+  text-align:center;
 }
 
 #videoDiv
@@ -177,7 +183,7 @@ table.tableArticle td
 .blog
 {
   background:#DDD;
-  margin-bottom:50px;
+  margin-bottom:20px;
 }
 .blog_head
 {

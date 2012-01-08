@@ -23,9 +23,9 @@
       <div id="lastMostHidden">
         <a id="lastmostLinkSlideIn" 
            href="#" 
-           class="openImg toolTips" 
+           class="closeImg toolTips" 
            title="<?php echo printLgFileText("SITE_NAME2"); ?>"
-           rel="<?php printLgFileText("OPEN_PANEL"); ?>">
+           rel="<?php printLgFileText("OPEN_PANEL2"); ?>">
         </a>
       </div>
 
@@ -34,18 +34,60 @@
         <div id="last">
           <p class="titleLastMost"><?php echo printLgFileText("LAST_NEWS"); ?></p>
           <ul>
-            <li><a href="<?php echo LINK_CAT_1_4 ?>"><?php echo printLgFileText("CAT_1_4"); ?></a></li>
-            <li><a href="<?php echo LINK_CAT_1_3 ?>"><?php echo printLgFileText("CAT_1_3"); ?></a></li>
-            <li><a href="<?php echo LINK_CAT_1_2 ?>"><?php echo printLgFileText("CAT_1_2"); ?></a></li>
+            <li>
+              <a href="<?php echo LINK_CAT_1_4 ?>" 
+                 class="toolTips" 
+                 title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("CAT_1_4"); ?>">
+                <?php echo printLgFileText("CAT_1_4"); ?>
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo LINK_CAT_1_2 ?>" 
+                 class="toolTips" 
+                 title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("CAT_1_2"); ?>">
+                <?php echo printLgFileText("CAT_1_2"); ?>
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo LINK_CAT_1_3 ?>" 
+                 class="toolTips" 
+                 title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("CAT_1_3"); ?>">
+                <?php echo printLgFileText("CAT_1_3"); ?>
+              </a>
+            </li>
           </ul>
         </div>
 
         <div id="most">
           <p class="titleLastMost"><?php printLgFileText("MOST_READ"); ?></p>
           <ul>
-            <li><a href="<?php echo LINK_CAT_1 ?>"><?php printLgFileText("CAT_1"); ?></a></li>
-            <li><a href="<?php echo LINK_CAT_1_1 ?>"><?php printLgFileText("CAT_1_1"); ?></a></li>
-            <li><a href="<?php echo LINK_CAT_4 ?>"><?php printLgFileText("CAT_4"); ?></a></li>
+            <li>
+              <a href="<?php echo LINK_CAT_1_1 ?>" 
+                 class="toolTips" 
+                 title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("CAT_1_1"); ?>">
+                <?php printLgFileText("CAT_1_1"); ?>
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo LINK_CAT_4 ?>"
+                 class="toolTips" 
+                 title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("CAT_4"); ?>">
+                <?php printLgFileText("CAT_4"); ?>
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo LINK_CAT_3_1 ?>"
+                 class="toolTips" 
+                 title="<?php echo printLgFileText("SITE_NAME2"); ?>" 
+                 rel="<?php printLgFileText("CAT_3_1"); ?>">
+                <?php printLgFileText("CAT_3_1"); ?>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -53,6 +95,6 @@
            href="#" 
            class="closeImg toolTips" 
            title="<?php printLgFileText("SITE_NAME2"); ?>" 
-           rel="<?php printLgFileText("CLOSE_PANEL"); ?>">
+           rel="<?php printLgFileText("CLOSE_PANEL2"); ?>">
         </a>
       </div>

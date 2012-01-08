@@ -19,9 +19,12 @@
  */
 ///////////////////////////////////////////////////////////////////////////////
 
+  //echo phpinfo();
+
   // GENERAL //////////////////////////////////////////////////////////////////
   $link_website ='http://localhost/Bilazea-template/';
   $maintenance = false;
+  $version = 1.0;
 
   // INIT SET & SESSION ///////////////////////////////////////////////////////
   $init = ini_set('session.use_trans_sid','0');
@@ -59,6 +62,8 @@
   define(META_LINK_ATOM,     '<link title="Atom 1.0" type="application/atom+xml" '
                              .'rel="alternate" href="/index.php?'
                              .getLgFileText("CONTENT").'=atom" />');
+  define(META_SITEMAP,       '<meta name="google-site-verification" '
+                             .'content="8oQiVgFS7ly7oILNKFmVmGgTW7weDa9rSNtRmTv8lrc" />');
 
   /////////////////////////////////////////////////////////////////////////////
   // LAUNCH SITE
