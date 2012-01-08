@@ -24,6 +24,7 @@
   // GENERAL //////////////////////////////////////////////////////////////////
   $link_website ='http://localhost/Bilazea-template/';
   $maintenance = false;
+  $version = 1.0;
 
   // INIT SET & SESSION ///////////////////////////////////////////////////////
   $init = ini_set('session.use_trans_sid','0');
